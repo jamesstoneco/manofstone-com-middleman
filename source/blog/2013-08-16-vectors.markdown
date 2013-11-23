@@ -1,0 +1,180 @@
+---
+title: Vectors
+date: 2013/08/16
+tags: studio, processing, pvector, emergence, ecology
+---
+
+
+
+Last night I read through Chapter 1, Vectors in Nature of Code by Daniel Shiffman which was some great reinforcement. He went through the process of why is is better to use PVectors for objects that need to move and foreshadowed that it would be even more important as you put more and more layers of complexity into your systems, wind, gravity, etc. At the end of the chapter there is an exercise to create an ecosystem of animals and to try and create differentiation by their behavior rather than their appearance.
+
+SPLIT\_SUMMARY\_BEFORE\_THIS
+
+I thought this was a pretty good challenge and I awoke with the goal of trying to replicate some of my favorite microbes from the Guadalupe River. Namely, diatoms (the most obvious) and amoebas (which move rather fast).
+
+This is just a simple sketch but I think there is the idea of emergence. My sketch is reliant upon random() and noise() so it is hardly that, but I think as I progress it might open up other ideas in which to approach emergence within the constrain of the OOP paradigm.
+
+Thoughts for the future are creating a food source, in the case of diatoms it would be silicon. Also using principals of economics to drive the probability and dispersement organisms upon initialization. Fun exercise, fantastic book. Can't wait for Chapter 2.
+
+<canvas id="ch01sketch" data-processing-sources="ch_01_sketch.pde" width="970" height="247">
+</canvas>
+<br>
+
+<pre><code data-language="java">class Organism {
+  PVector loc;
+  PVector vel;
+  float h;
+  float w;
+  color c;
+  float rot;
+  int alpha;
+
+  Organism() {
+    loc = new PVector(width/2, height/2);
+    vel = new PVector(0,0);
+    h = 50;
+    w = 50;
+    if (random(0,1) &gt; 0.1) {
+      c = color(114, 103, 77);
+    } else if (random(0,1) &gt; 0.3) {
+      c = color(139, 134, 103);
+    } else {
+      c = color(121, 120, 104);
+    }
+    rot = 0.0;
+    alpha = 180;
+  }
+
+  // HACK: via Daniel Shiffman for p5js, http://shiffman.net/2011/02/03/rotate-a-vector-processing-js/
+  void rotate2D(PVector v, float theta) {
+    float xTemp = v.x;
+    v.x = v.x*cos(theta) - v.y*sin(theta);
+    v.y = xTemp*sin(theta) + v.y*cos(theta);
+  }
+
+
+  void calc() {
+    loc = PVector.add(loc,vel);
+    if (loc.x &gt; width || loc.x &lt; 0) {
+      vel.mult(-1);
+    }
+    if (loc.y &gt; height || loc.y &lt; 0) {
+      vel.mult(-1);
+    }
+
+  }
+
+  void rotateThis(float r) {
+    rot += r;
+    rotate2D(vel, r);
+  }
+
+  void display() {
+    calc();
+    noStroke();
+    fill(c, alpha);
+    pushMatrix();
+      translate(loc.x, loc.y);
+      rotate(rot);
+      ellipse(0, 0, w, h);
+    popMatrix();
+  }
+}
+
+class Diatom extends Organism {
+  int offset;
+
+  Diatom() {
+    super();
+    loc.x = random(0, width);
+    loc.y = random(0, height);
+    vel.x = random(-0.25,0.25);
+    vel.y = random(0.01, 0.01);
+    h = w/4;
+    rot = random(-PI/3,PI/3);
+    rotate2D(vel,rot);
+    offset = floor(random(0,9));
+  }
+
+  void calc() {
+    if ((frameCount + offset) % 10 == 0) {
+      if (random(0,1) &gt; 0.9) {
+        vel.mult(-1);
+      } else {
+        rotateThis(random(-PI/30, PI/30));
+      }
+    }
+    super.calc();
+  }
+}
+
+
+class Amoeba extends Organism {
+  float t;
+  float t_inc;
+
+  Amoeba() {
+    super();
+    loc.x = random(0, width);
+    loc.y = random(0, height);
+    c = color(153, 141, 141);
+    vel.x = 3;
+    vel.y = 3;
+    h = 5;
+    w = 5;
+    t = 0.0;
+    t_inc = 0.1;
+  }
+
+  void calc() {
+    if (random(0,1) &lt; 0.1) {
+      rotateThis(noise(t+=t_inc*10));
+    } else {
+      rotateThis(noise(t+=t_inc)/10);
+    }
+    if (frameCount % 30 == 0) {
+      // vel.setMag(random(0.1,5));
+      // processing js compat below
+      vel.normalize();
+      vel.mult(random(0.1,5));
+    }
+    super.calc();
+  }
+
+}
+
+ArrayList&lt;Diatom&gt; diatoms;
+ArrayList&lt;Amoeba&gt; amoebas;
+int spawn = 200;
+
+void setup(){
+  size(512, 512);
+  diatoms = new ArrayList&lt;Diatom&gt;();
+  amoebas = new ArrayList&lt;Amoeba&gt;();
+  for (int i = 0; i &lt; spawn; i++) {
+    if (random(0,1) &lt; 0.985) {
+      Diatom d = new Diatom();
+      diatoms.add(d);
+    } else {
+      Amoeba a = new Amoeba();
+      a.t = random(0,10000); // seed for perlin noise offset
+      amoebas.add(a);
+    }
+  }
+}
+
+void draw(){
+  background(189, 192, 196);
+  for (int i = 0; i &lt; diatoms.size(); i++) {
+    diatoms.get(i).display();
+  }
+  for (int i = 0; i &lt; amoebas.size(); i++) {
+    amoebas.get(i).display();
+  }
+}
+</code></pre>
+
+
+
+
+

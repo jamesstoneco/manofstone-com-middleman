@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="9FUywMd926za9lLIK5X7myny7HYoAF48CHemANB8Zu0" />
+    <meta name='yandex-verification' content='4d1b71b148f932e6' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <meta name="description" content="">
+    
+    <title>My Top 10 Web Development Tools</title>
+    <link href="/stylesheets/app-5d956af6.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor/modernizr-8c8a2ced.js" defer="defer" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    
+
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h2 class="title"><a href="/">manofstone.com</a></h2>
+      </section>
+
+
+
+      <!-- <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section> -->
+
+
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>James Stone</label></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/studio">Studio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        ...
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
+
+
+    
+<div class="content-top-spacing"></div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2 align="center">My Top 10 Web Development Tools</h2>
+    <p align="center">
+      Written by James Stone <time class="timeago published" datetime="2013-09-06T00:00:00+02:00">September  6, 2013 12:00 AM</time>
+
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <div class="entry-content">
+      
+      
+        <div class="row">
+          <div class="small-12 medium-8 medium-centered large-12 columns">
+            <p><img src="/blog/featured-images/top-10-web-design-f9ad9338.jpg"></p>
+          </div>
+        </div>
+      
+      <p>I am someone that is pretty excited and passionate about modern web development. Today I will share with you some of my top tools that I use on a daily basis developing responsive sites with Zurb Foundation 4.</p>
+
+<p></p>
+
+<h4>1. <a href="http://www.iterm2.com/">iTerm 2</a></h4>
+
+<p>On macosx the default terminal application is okay. If you spend most of your day in and out of a terminal it is time to look for a better solution. I have mine set up to automatically go full screen, using <a href="http://levien.com/type/myfonts/inconsolata.html">Incosolata</a> (my favorite programming font), and use a variation of solarized dark theme. I also have a light one that I can switch between if I find myself blinded by the sun.</p>
+
+<p>Although I use tmux with tmuxinator (more below) extensively I love being able to press cmd-t to spawn new terminal windows full screen and hit cmd-# (1-9) to quickly move between them.</p>
+
+<h4>2. <a href="http://livereload.com/">LiveReload</a> <small>(commercial $9.99, macosx only, available on the mac app store)</small></h4>
+
+<p>This program does many things but I use it only for one thing, automatically refreshing browsers when files are modified. It is pretty easy to set up, just choose a folder to watch, install the plugins in your favorite browsers and turn them on. NOTE: you need to serve the pages (not display directly from files) on Chrome so that it works correctly.</p>
+
+<p>I know there are other options for this, grunt et al, however this was the easiest for me to implement and continues to work great.</p>
+
+<p>Also, when I preview on a mobile device like ipad, there is an option to inject a javascript reloader. This works flawlessly and allows me to do the same thing on browsers without the plugin (mobile browsers, iPhoney, etc.)</p>
+
+<h4>3. <a href="http://www.sublimetext.com/">Sublime Text 2/3</a> <small>(commercial, $69 direct from developer)</small></h4>
+
+<p>I have been an avid VIM user for years and continue to use VIM when I don&rsquo;t have this available, but ST2/3 is simply amazing. How can I compare it. It is like the difference between modern languages like Ruby and less modern languages like Java. Sure you can get things done in VIM but ST is just a pleasure to use. ST Looks great, very fast, great plugin architecture. Specific features like multiple cursors just makes more sense to me. Maybe because I am a more visually oriented person.</p>
+
+<h4>4. <a href="https://developers.google.com/chrome-developer-tools/">Chrome Developer Tools</a></h4>
+
+<p>I also use the same tool set in Firefox but I have to say I just prefer the tools available in Chrome. They are quickly available cmd-opt-j and provide me the tools I need quickly 90% of the time. Like, did my files load, I can tell quickly by looking at source tree. I can open each file and see what error message was returned.</p>
+
+<p>Some people start editing the code within chrome which I guess could be a good strategy but I prefer to just switch back to ST where I have a more advanced text editing tool kit.</p>
+
+<h4>5. <a href="https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh?hl=en">YSlow</a></h4>
+
+<p>Defacto standard to see if your front end is lacking. I love that it gives you specific strategies and tells you where to get started for implementation.</p>
+
+<h4>6. <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">PostMan</a></h4>
+
+<p>Just learned about this recently but it is now part of my daily set of tools. Lets you interact with pages and apis very quickly. You can POST or GET and pass parameters or json data. Really speeds things along when you can see exactly what is going on quickly with an api and the returned data.</p>
+
+<h4>7. <a href="http://www.bohemiancoding.com/sketch/">Sketch 2</a> <small>(commercial, $49.99 on the mac app store)</small></h4>
+
+<p>Sketch 2 is like Illustrator for the web. It does one thing very well. Pixel perfect vector graphics that can be output as either SVG or rasterized PNGs or JPGs along with their double resolution retina cousins. If you don&rsquo;t know what I mean by pixel perfect, I mean that the vector elements are aligned to a grid of &ldquo;pixels&rdquo; so you don&rsquo;t get anti-aliased lines for example on the edge of a rectangle.</p>
+
+<p>There is some extra goodness with being able to play with elements quickly and visually and export the CSS. I never copy the CSS directly but it can be a good starting point.</p>
+
+<h4>8. <a href="http://middlemanapp.com/">Middleman</a> <small>(gem middleman)</small></h4>
+
+<p>Middleman is a static website generator written in ruby that is fantastic. I have tried a bunch, octopress, piecrust, etc. What does middleman do right? One thing, a simple templating structure. Many of the others work great if you use one of their templates, but creating your own can be a real hassle. Middleman is great because you can use partials and templates and it is somewhat flexible. Save time by putting your navigation into a _header.html.erb file. Use .markdown for your blog posts. It is a pretty robust solution although the documentation can be lacking at times.</p>
+
+<p>The other reason I love middleman, middleman-s3\_sync. After you build you can push everything to s3 with one command <span class="inline-code">midddleman s3\_sync</span>. This is exactly how I built and maintain this site at the momement. It is hosted through AWS S3 and AWS Cloudfront with an apache server that just redirects / alaises <span class="inline-code">manofstone.com</span> to <span class="inline-code">www.manofstone.com</span>.</p>
+
+<h4>9. <a href="https://github.com/aziz/tmuxinator">Tmuxinator</a> <small>(gem tmuxinator)</small></h4>
+
+<p>I started using Tmux a while back and could never really get into it. I do a lot of front end work using Zurb Foundation in ST and this allows me to automate the generation and serving of files. I have a standard .tmuxinator file that I have created where I just change the directory name. Then I have a shell set up at that directory, <span class="inline-code">compass watch</span> on a second, a web server on port 8k and <span class="inline-code">localtunnel</span> amongst other things as well.</p>
+
+<p>It is very quick for me to check what is going on. I changed the default command to ctrl-a (great for dvorak) and just hit a number 0-5 which allows me to quickly switch through the commands.</p>
+
+<p>I also have it fire up LiveReload and the specific ST project file so one command <span class="inline-code">tmuxinator projectName</span> recreates my entire workspace in a matter of seconds. To switch to another project I just close down all the tmux windows and run the same command with a different project name.</p>
+
+<h4>10. <a href="http://progrium.com/localtunnel/">Local Tunnel</a> <small>(gem localtunnel)</small></h4>
+
+<p>Local Tunnel is another new addition to my kit but one that is here to stay. It does one thing but does it perfectly. It allows you to push your local host connection (on one port) to the outside world. I use this to allow myself to preview pages automatically (see javascript injection in LiveReload above) on my iPad. I can also get an iPhone sized site by using Dolphin Browser for iPhone (more below) which allows me to quickly check responsive sites both at my firewalled wifi setup at home as well as the local starbucks.</p>
+
+<p>The other benefit is when working with rails or node projects it allows me to share my dev server with a client which removes the process of having to push to a staging server for quick demonstrations.</p>
+
+<p>A big thanks to Twillio for putting this one out.</p>
+
+<h3>Honerable Mentions</h3>
+
+<p>Didn&rsquo;t quite make it into the list but definitely worth being aware of. Some of these I don&rsquo;t quite use daily but I definitely turn to at least once a week or more. Using Git is kind of like brushing your teeth. Everyone should be doing it several times per day.</p>
+
+<h4><a href="http://www.pixelmator.com/">Pixelmator</a> <small>(commercial, $14.99 available on the app store)</small></h4>
+
+<p>My Photoshop replacer. I do all of my pixel based image editing and creation here. Does 99% of what I used to use Photoshop for and does it with a smile. It is fast and lightweight and the UI/UX makes it fun to edit photos again. I think the price is about one month of Adobe Photoshop in their new Creative Cloud pricing structure.</p>
+
+<h4><a href="http://markedapp.com/">Marked</a> <small>(commercial $3.99, available on the app store)</small></h4>
+
+<p>All this does is render markdown file beautifully and automatically refresh them. It is my web browser of sorts for markdown files. I use it to generate beautiful pdf files from markdown for documentation and other projects.]</p>
+
+<h4><a href="http://dolphin.com/">Dolphin Browser for iPhone</a> <small>(free (with in app purchases), available on the app store)</small></h4>
+
+<p>I use this to preview web pages in an iPhone style browser on my Retina iPad 4th gen. If you are like me and have an iPad but no iPhone. This is the best way to simulate a preview on a smaller device.</p>
+
+<h4><a href="http://www.marketcircle.com/iphoney/">iPhoney</a></h4>
+
+<p>Just remember to hit cmd-0 after you load it. Once you do that you should have a preview similar to an old school 360px wide iPhone. Good for spot checking your designs. You can use the javascript injection with LiveReload for automatic reloading. If I forget my iPad at home this is what I turn to.</p>
+
+<h4><a href="http://www.yellowmug.com/yemuzip/">YemuZip</a></h4>
+
+<p>The easy way to generate .zip files quickly and easily on the mac.</p>
+
+<h4><a href="https://www.dropbox.com/">Dropbox</a></h4>
+
+<p>Has saved my life more than once by providing backups and versioning.</p>
+
+<h4><a href="http://git-scm.com/">Git</a></h4>
+
+<p>This is a no brainer. I also use a git repo (private on bit bucket, public on github) for all of my projects out side of simple demos and prototypes. I have on more than one occasion deleted an entire days work by not being careful trying to roll commits back so be careful and keep a secondary backup. I suggest dropbox.</p>
+
+<h4><a href="http://derailer.org/paparazzi/">Paparatzi</a> <small>(free, macosx only)</small></h4>
+
+<p>Takes full length screenshots for web pages. You can set the width to 360px wide to get nice mobile layouts in Zurb Foundation or other responsive frameworks. I use this to generate all of the screenshots for my books, screencasts and other materials.</p>
+
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+  <div class="small-10 small-centered medium-10 large-10 columns panel radius f4callout">
+    <h3 class="alt-text">Free Zurb Foundation Quick Reference</h3>
+    <p class="alt-text">If you enjoyed this post you might also enjoy my newsletter. If you sign up before November 30th I will send you my Zurb Foundation Quick Reference absolutely free.</p>
+    <div class="row">
+      <div class="medium-6 large-6 columns">
+        <p> <img src="/images/zurb-foundation-blueprints/quick-ref-placed-29da5bdb.jpg" alt=""> </p>
+      </div>
+      <div class="medium-6 large-6 columns">
+        <!-- Begin MailChimp Signup Form -->
+        <form action="http://jamesjamesjames.us5.list-manage1.com/subscribe/post?u=d4dbc5cdf8&amp;id=30ca2edfef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="custom" target="_blank" novalidate data-abide>
+        <input type="hidden" name="REF" id="mce-REF" value="/blog/my-top-10-web-development-tools/">
+
+<!--           <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div class="name-field">
+                <input type="text" name="FNAME" id="mce-FNAME" placeholder="first name" required pattern="[a-zA-Z]+">
+                <small class="error">Your first name is required.</small>
+              </div>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div class="email-field">
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@domain.com" required>
+                <small class="error">You must enter your email to subscribe and download.</small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <input type="submit" value="Download my Free Quick Reference Now &raquo;" name="subscribe" id="mc-embedded-subscribe" class="button cta radius expand">
+            </div>
+          </div>
+        </form>
+    <p class="alt-text">SPAM Sucks. Thats why I promise only to send you foundation goodness about two to three times per month. Unsubscribe at anytime.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <!-- comments -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'manofstone';
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+
+    
+
+<div id="mos-top-footer">
+  <div class="row">
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Categories</h4>
+      <ul class="side-nav">
+        
+        
+        <li><a href="/blog/code/">code</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/01sj/">01sj</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ecology/">ecology</a></a></li>
+        
+        
+        
+        <li><a href="/blog/fcp/">fcp</a></a></li>
+        
+        
+        
+        <li><a href="/blog/physical-computing/">physical computing</a></a></li>
+        
+        
+        
+        <li><a href="/blog/video/">video</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/arduino/">arduino</a></a></li>
+        
+        
+        
+        <li><a href="/blog/robot/">robot</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/isea2011/">isea2011</a></a></li>
+        
+        
+        
+        <li><a href="/blog/performance/">performance</a></a></li>
+        
+        
+        
+        
+        
+        <li><a href="/blog/wearable/">wearable</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/processing/">processing</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/rhizome/">rhizome</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/java/">java</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/jquery/">jquery</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/studio/">studio</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/zurb-foundation/">zurb-foundation</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/patterns/">patterns</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/foundation-quick-tips/">foundation-quick-tips</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ruby/">ruby</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Top Posts</h4>
+      <ul class="side-nav">
+      <li><a href="/blog/compass-sass-vs-sassc-for-zurb-foundation-4/">Compass Sass vs Sassc for Zurb Foundation 4</a></li>
+        <li><a href="/blog/zurb-foundation-5-medium-grid/">Zurb Foundation 5 Medium Grid</a></li>
+        <li><a href="/blog/using-zurb-ink-with-mailchimp/">Using Zurb Ink with MailChimp</a></li>
+        <li><a href="/blog/10-things-i-love-about-ruby/">10 Things I Love About Ruby</a></li>
+        <li><a href="/blog/semantic-ui-style-layouts-in-zurb-foundation/">Semantic UI Style Layouts in Zurb Foundation</a></li>
+        <li><a href="/blog/design-patterns-in-processing-the-agent/">Design Patterns in Processing the Agent</a></li>
+        <li><a href="/blog/ruby-slim-and-zurb-foundation/">Ruby Slim And Zurb Foundation</a></li>
+        <li><a href="/blog/shoehorn-zurb-foundation-into-weird-stuff/">Shoehorn Zurb Foundation Into Weird Stuff</a></li>
+        <li><a href="/blog/dotrb-ruby-confrence-in-paris-france/">Dotrb Ruby Confrence in Paris France</a></li>
+        <li><a href="/blog/the-event-driven-jquery-plugin-pattern-with-four04kids/">The Event Driven Jquery Plugin Pattern With Four04kids</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Products</h4>
+      <ul class="side-nav">
+        <li><a href="/zurb-foundation-blueprints">Zurb Foundation 4 Blueprints</a></li>
+        <li><a href="https://gum.co/foundation4quickref">Zurb Foundation 4 Quick Reference</a></li>
+        <li><a href="https://leanpub.com/aoeuandi">AOEU and I, Learn How to Type with the Dvorak Keyboard Layout, the Leading Alternative to QWERTY</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Latest Links</h4>
+      <ul class="side-nav">
+        <li><a href="http://bitly.com/bundles/manofstone/8">frontend-five-001</a></li>
+        <li><a href="http://bitly.com/bundles/manofstone/9">4-pub-001</a></li>
+        <li><a href="http://bitly.com/u/manofstone">my live bitly stream</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <p class="text-center"><small>Copyright 2013, James Stone, All Rights Reserved.</small></p>
+
+    </div>
+  </div>
+</div>
+
+<div id="mos-footer">
+  <div class="row">
+    <div class="medium-2 large-2 columns">
+      <h4 class="alt-text text-right">James Stone</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-nav">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="teaching">Teaching</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="studio">Studio</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="medium-4 large-4 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-social-nav">
+        <li><a href="http://feeds.feedburner.com/jamesmanofstone" rel="alternate" type="application/rss+xml"><i class="fi-rss"></i></a></li>
+        <li><a href="http://www.twitter.com/manofstone"><i class="fi-social-twitter"></i></a></li>
+        <li><a href="https://github.com/manofstone"><i class="fi-social-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/1560583"><i class="fi-social-stack-overflow"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/manofstone"><i class="fi-social-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+    <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+    </section><!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+
+    <script src="/javascripts/application-def5725c.js" defer="defer" type="text/javascript"></script>
+
+    <script type="text/javascript" defer="defer">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100671419);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100671419ns.gif" /></p></noscript>
+
+
+  </body>
+</html>

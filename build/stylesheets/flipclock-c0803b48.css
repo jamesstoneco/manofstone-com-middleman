@@ -1,0 +1,486 @@
+/* Get the bourbon mixin from http://bourbon.io */
+/* Reset */
+/* line 6, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 12, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc; }
+
+/* line 18, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+/* line 22, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+/* line 27, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 32, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+/* line 36, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+/* line 42, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper {
+  min-height: 100%;
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+/* line 48, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-meridium {
+  background: none;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important;
+  color: #313333;
+  bottom: 10px; }
+
+/* line 57, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em; }
+
+/* Skeleton */
+/* line 66, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px _prefixed;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+/* line 80, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 89, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+/* line 93, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important; }
+
+/* line 101, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden; }
+
+/* line 110, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+/* line 117, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+/* line 122, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+/* line 134, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0; }
+
+/* line 139, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+/* line 153, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+/* line 158, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+/* line 164, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+/* line 168, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 2; }
+
+/* line 173, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+/* line 181, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-divider:first-child {
+  width: 0; }
+
+/* line 183, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+/* line 193, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+/* line 201, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+/* line 202, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+/* line 204, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-dot.top {
+  top: 30px; }
+
+/* line 208, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+@-webkit-keyframes asd {
+  /* line 213, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    z-index: 2; }
+
+  /* line 216, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  20% {
+    z-index: 4; }
+
+  /* line 219, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    z-index: 4; } }
+
+@-moz-keyframes asd {
+  /* line 213, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    z-index: 2; }
+
+  /* line 216, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  20% {
+    z-index: 4; }
+
+  /* line 219, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    z-index: 4; } }
+
+@-o-keyframes asd {
+  /* line 213, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    z-index: 2; }
+
+  /* line 216, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  20% {
+    z-index: 4; }
+
+  /* line 219, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    z-index: 4; } }
+
+@keyframes asd {
+  /* line 213, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    z-index: 2; }
+
+  /* line 216, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  20% {
+    z-index: 4; }
+
+  /* line 219, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    z-index: 4; } }
+
+/* line 224, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+@-webkit-keyframes turn {
+  /* line 230, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -webkit-transform: rotateX(90deg); }
+
+  /* line 233, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+
+@-moz-keyframes turn {
+  /* line 230, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -moz-transform: rotateX(90deg); }
+
+  /* line 233, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -moz-transform: rotateX(0deg); } }
+
+@-o-keyframes turn {
+  /* line 230, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -o-transform: rotateX(90deg); }
+
+  /* line 233, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -o-transform: rotateX(0deg); } }
+
+@keyframes turn {
+  /* line 230, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    transform: rotateX(90deg); }
+
+  /* line 233, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    transform: rotateX(0deg); } }
+
+/* line 238, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+@-webkit-keyframes turn2 {
+  /* line 244, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -webkit-transform: rotateX(0deg); }
+
+  /* line 247, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -webkit-transform: rotateX(-90deg); } }
+
+@-moz-keyframes turn2 {
+  /* line 244, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -moz-transform: rotateX(0deg); }
+
+  /* line 247, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -moz-transform: rotateX(-90deg); } }
+
+@-o-keyframes turn2 {
+  /* line 244, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    -o-transform: rotateX(0deg); }
+
+  /* line 247, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    -o-transform: rotateX(-90deg); } }
+
+@keyframes turn2 {
+  /* line 244, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    transform: rotateX(0deg); }
+
+  /* line 247, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    transform: rotateX(-90deg); } }
+
+/* line 252, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+/* line 256, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+/* line 266, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+/*DOWN*/
+/* line 278, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+/* line 288, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+@-webkit-keyframes show {
+  /* line 299, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 302, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes show {
+  /* line 299, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 302, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes show {
+  /* line 299, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 302, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes show {
+  /* line 299, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 302, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  /* line 308, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 311, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes hide {
+  /* line 308, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 311, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes hide {
+  /* line 308, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 311, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 0; } }
+
+@keyframes hide {
+  /* line 308, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 311, /Users/james/Dropbox Archive/Project Support Files/Manofstone-com/manofstone-middleman/source/stylesheets/flipclock.scss */
+  100% {
+    opacity: 0; } }

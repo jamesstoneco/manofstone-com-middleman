@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="small-10 small-centered large-4 large-uncentered columns">
+    <ul class="clearing-thumbs" data-clearing="">
+      <li class="clearing-feature">
+        <p>
+          <a href="images/port-bio.png"><img src="images/port-bio-desktop.jpg" data-interchange="[images/port-bio-desktop.jpg, (default)], [images/port-bio-retina.jpg, (retina)]" data-caption="Growing Lights"></a>
+        </p>
+      </li>
+      <li class="hide"><a href="images/port-tech.png"><img src="images/port-tech.png" data-caption="Vertical Garden"></a></li>
+      <li class="hide"><a href="images/port-robo.png"><img src="images/port-robo.png" data-caption="Fontana Bot"></a></li>
+    </ul>
+  </div>
+  <div class="small-10 small-centered large-4 large-uncentered columns">
+    <ul class="clearing-thumbs" data-clearing="">
+      <li class="hide"><a href="images/port-bio.png"><img src="images/port-bio.png" data-caption="Growing Lights"></a></li>
+      <li class="clearing-feature">
+        <p>
+          <a href="images/port-tech.png"><img src="images/port-tech-desktop.jpg" data-interchange="[images/port-tech-desktop.jpg, (default)], [images/port-tech-retina.jpg, (retina)]" data-caption="Vertical Garden"></a>
+        </p>
+      </li>
+      <li class="hide"><a href="images/port-robo.png"><img src="images/port-robo.png" data-caption="Fontana Bot"></a></li>
+    </ul>
+  </div>
+  <div class="small-10 small-centered large-4 large-uncentered columns">
+    <ul class="clearing-thumbs" data-clearing="">
+      <li class="hide"><a href="images/port-bio.png"><img src="images/port-bio.png" data-caption="Growing Lights"></a></li>
+      <li class="hide"><a href="images/port-tech.png"><img src="images/port-tech.png" data-caption="Vertical Garden"></a></li>
+      <li class="clearing-feature">
+        <p>
+          <a href="images/port-robo.png"><img src="images/port-robo-desktop.jpg" data-interchange="[images/port-robo-desktop.jpg, (default)], [images/port-robo-retina.jpg, (retina)]" data-caption="Fontana Bot"></a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="large-10 large-centered columns">
+    <hr class="hide-for-small">
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns push-4">
+    <p>
+      In my current research I explore the notion of the cyborg plant. I am interested to see what happens when the vegetable is augmented with technology.
+    </p>
+    <p>
+      Some questions I have are:
+    </p>
+    <ul class="resume-bullets">
+      <li>Can plants make decisions?
+      </li>
+      <li>Can they show preference?
+      </li>
+      <li>Could the plant perspective be translated to human?
+      </li>
+    </ul>
+    <p>
+      I approach this process by using the tools of science and engineering but most importantly by looking through the lens of art.
+                </p>
+            </div>
+            <div class="large-4 columns pull-8">
+                <ul class="side-nav">
+                    <li>
+                        <a href="zurb-foundation-4-blueprints">Zurb Foundation 4 Blueprints</a>
+                    </li>
+                    <li>
+                        <a href="http://html5devconf.com/sessions.html#j_stone">HTML 5 Developers Confrence</a>
+                    </li>
+                    <li>
+                        <a href="http://tedxtalks.ted.com/video/TEDxPSU-James-Stone-A-Technolog">TEDxPSU</a>
+                    </li>
+                    <li>
+                        <a href="http://isea2011.sabanciuniv.edu/workshop/touchstone">ISEA Istanbul</a>
+                    </li>
+                    <li>
+                        <a href="http://www.zero1biennial.org/living-map">Zero One Festival</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        

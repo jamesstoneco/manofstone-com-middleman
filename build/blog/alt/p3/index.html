@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="9FUywMd926za9lLIK5X7myny7HYoAF48CHemANB8Zu0" />
+    <meta name='yandex-verification' content='4d1b71b148f932e6' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <meta name="description" content="">
+    
+    <title>James Stone</title>
+    <link href="/stylesheets/app-5d956af6.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor/modernizr-8c8a2ced.js" defer="defer" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    
+
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h2 class="title"><a href="/">manofstone.com</a></h2>
+      </section>
+
+
+
+      <!-- <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section> -->
+
+
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>James Stone</label></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/studio">Studio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        ...
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
+
+
+      <p>Page 3 of 4</p>
+
+  
+    <p><a href="/blog/alt/p2/">Previous page</a></p>
+  
+
+  <h2><a href="/blog/good-wp-code-plugin/">Good WP Code Snippet Plugin</a> <span>Oct 22</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I have been searching around for a good code snippet plugin for word press. I really like the style of <a href="http://wordpress.org/extend/plugins/codecolorer/">codecolorer</a>, however, I wanted something with a clean style and also would allow for the copy to clipboard functionality. A lot of the time I refer to my website in class and have students use processing or arduino code and having the copy button really simplifies things.</p>
+
+<p>Today I came across <a href="http://wordpress.org/extend/plugins/easy-google-syntax-highlighter/">Easy Google Syntax Highlighter</a> by Neil Burlock. It is incredibly easy to use, but not automatic, as codecolorer was.</p>
+
+<p></p>
+
+<p>You use it in the following way:</p>
+
+<pre><code>&lt;pre class=&quot;brush: java&quot;&gt;
+void setup() {
+    size(300,300);
+}
+
+void draw() {
+    background(0);
+    fill(255);
+    rect(0,0,floor(random(width)),floor(random(height)));
+}
+&lt;/pre&gt;
+</code></pre>
+
+<p>and you are provided with something like this:</p>
+
+<pre><code>void setup() {
+    size(300,300);
+}
+
+void draw() {
+    background(0);
+    fill(255);
+    rect(0,0,floor(random(width)),floor(random(height)));
+}
+</code></pre>
+
+<p>There is also some additional documentation for the plug-in here on <a href="http://blog.burlock.org/wordpress/88-easy-google-syntax-highlighter-for-wordpress">Neil&rsquo;s Website</a>.</p>
+
+  <h2><a href="/blog/cnc-pc-board-test/">CNC PC Board Test</a> <span>Aug  3</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p><img src="http://www.manofstone.com/wp-content/uploads/2011/08/cnc-pc-board-test-300x163.jpg" /></p>
+
+<p>Today with the assistance of Jamie Heilman I was able to mill out some test circuits of thomas&#39; amplifier design using a 3/32&quot; tapered bit out of 2 sided copper clad board from radio shack. I will have to play with the size of the pads and the traces, they still seem a bit small to me and tomorrow I want to place some text on the board as well.</p>
+
+<p></p>
+
+  <h2><a href="/blog/rhizome-thesis-development/">Rhizome Thesis Development</a> <span>Jul 31</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Photos from installation in PSU Sculpture area 7/29/2011</p>
+
+<p></p>
+
+  <h2><a href="/blog/wordookie-fix/">Wordookie Processing Library Compiled for Java 1.5</a> <span>Jul 28</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I am playing around with the Wordookie (Worldle like) Processing library and had to recompile it with the Java 1.5 JDK which was a bit of a pain. It seems to be working for me now on Macosx and might save some people some time in working with the library. I am linking to the complete distribution with a recompiled Wordookie.jar file.</p>
+
+<p></p>
+
+<p>update:</p>
+
+<p>this can also be resolved by turning off java 1.5 on the mac. You go to Applications/Utilities/Java Preferences, then turn off the java 1.5 option if you have 1.6. This seems to resolve a lot of these issues with other libraries.</p>
+
+<p>here is the fix:</p>
+
+<p><a href="http://www.manofstone.com/wp-content/uploads/2011/07/Wordookie.zip">Wordookie.zip</a></p>
+
+<p>This is to resolve the following bug:</p>
+
+<p><code>
+UnsupportedClassVersionError: A library is using code compiled with an unsupported version of Java
+</code></p>
+
+<p>discussed here:</p>
+
+<p><a href="http://code.google.com/p/wordookie/issues/detail?id=1">http://code.google.com/p/wordookie/issues/detail?id=1</a></p>
+
+<p>The original Wordookie library can be found here:</p>
+
+<p><a href="http://code.google.com/p/wordookie/">http://code.google.com/p/wordookie/</a></p>
+
+  <h2><a href="/blog/mr-bricolage-touchstone-kickstarter-funded/">Mr. Bricolage Touchstone Kickstarter Funded</a> <span>Jul 24</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p><a href="http://www.manofstone.com/wp-content/uploads/2011/07/kickstarter-funded.jpg"><img src="http://www.manofstone.com/wp-content/uploads/2011/07/kickstarter-funded-300x262.jpg" /></a></p>
+
+<p>Its official. The Touchstone Audio Glove Kickstarter fundraising campaign was funded. A big thanks to all of our backers. Thomas and I are very excited about this project and appreciate your support.</p>
+
+<p></p>
+
+<p>Watch the final countdown here:</p>
+
+<p><a href="http://www.kickstarter.com/projects/mr-bricolage/touchstone-audio-glove/posts/99366">http://www.kickstarter.com/projects/mr-bricolage/touchstone-audio-glove/posts/99366</a></p>
+
+<p>Check out the project here:</p>
+
+  <h2><a href="/blog/seeking-performers-isea-2011/">Seeking Performers and Activists in Istanbul</a> <span>Mar 14</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>As Mr. Bricolage, Thomas Asmuth and myself have been selected to present our <a href="http://kidneutrino.blogspot.com/2011/03/project-selected-for-isea2011-istanbul.html">Touchstone Workshop</a> at ISEA 2011 in Instanbul, Turkey. We are currently seeking both performers and activists to parcitipate in the workshop.</p>
+
+<p></p>
+
+<p>From Thomas&#39; Blog:</p>
+
+<blockquote>
+<p>the focus of the project is to build a platform/instruments and working with communities rather than making an artifact or specific performance. Stone and i want to release the idea to the world as a creativity tool at this phase.</p>
+</blockquote>
+
+<p>we are seeking to partner with a Turkish or international performance or activist group who we could guide in building the low cost hacktivist sound generators. Mr. Bricolage is working on securing the funding for hardware and logistics of getting ourselves and materials to the conference and soon we will be announcing fund raising campaigns. </p>
+
+<p>we specifically seek groups interested in using our design of wearable device for mobile and tactical sonification of the performance space. ideally, we would like to work with a local Turkish performers. if you know of some group who might be interested in an extremely low cost or no-cost workshop to build new sound tools for their work, please contact us at: </p>
+
+<p>info [at] mr-bricolage [dot] us</p>
+
+  <h2><a href="/blog/experimenting-with-lidar-data-in-processing/">Experimenting with Lidar data in Processing</a> <span>Feb 21</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>experimenting with lidar arduino data, visualized as an animation</p>
+
+<p></p>
+
+<h2>lidar<em>polar</em>graph.pde:</h2>
+
+<pre><code class="java">/**
+* lidar_polar_graph.pde
+*
+* experimenting with lidar arduino data, visualized as an animation
+*
+* @author James M. Stone (jamesmanofstone@gmail.com)
+*
+* @date 21-Feb-2011
+*
+* Table.pde from Visualizing Data by Ben Fry
+*
+**/
+
+int i = 0;
+    int myCol = 0;
+    Table dataTable;
+
+    void setup() {
+    size(600, 300); // for screen graphics
+    dataTable = new Table("data/all_readings.txt");
+    noStroke();
+    background(0);
+    fill(0);
+    smooth();
+    }
+
+    void draw() {
+    translate(height, width/2); // start graph at bottom of sketch
+
+    // conv from polar to cart.
+    float theta = dataTable.getFloat(i, 0) + (float)Math.PI;
+    float r = dataTable.getFloat(i, 1);
+    float x = r * cos(theta);
+    float y = r * sin(theta);
+    fill(255-r, 100 - myCol, 100, 50);
+    ellipse(x, y, r/10, r/10);
+    if (i % 180 == 0) {
+    myCol += 10;
+    }
+    i++;
+    if (i >= dataTable.getRowCount()) {
+    i = 0;
+    myCol = 0;
+    background(random(50), random(50), random(50));
+    }
+    delay(10);
+    }</code></pre>
+
+<h2>Table.pde</h2>
+
+<p>From Ben Fry&rsquo;s excellent book, visualizing data. Basically opens the tsv data file and puts it into an object that is easy to navigate.</p>
+
+<pre><code class="java">class Table {
+    int rowCount;
+    String[][] data;
+
+    Table(String filename) {
+    String[] rows = loadStrings(filename);
+    data = new String[rows.length][];
+
+    for (int i = 0; i < rows.length; i++) {
+    if (trim(rows[i]).length() == 0) {
+    continue; // skip empty rows
+    }
+    if (rows[i].startsWith("#")) {
+    continue; // skip comment lines
+    }
+
+    // split the row on the tabs
+    String[] pieces = split(rows[i], TAB);
+    // copy to the table array
+    data[rowCount] = pieces;
+    rowCount++;
+
+    // this could be done in one fell swoop via:
+    //data[rowCount++] = split(rows[i], TAB);
+    }
+    // resize the 'data' array as necessary
+    data = (String[][]) subset(data, 0, rowCount);
+    }
+
+    int getRowCount() {
+    return rowCount;
+    }
+
+    // find a row by its name, returns -1 if no row found
+    int getRowIndex(String name) {
+    for (int i = 0; i < rowCount; i++) {
+    if (data[i][0].equals(name)) {
+    return i;
+    }
+    }
+    println("No row named '" + name + "' was found");
+    return -1;
+    }
+
+    String getRowName(int row) {
+    return getString(row, 0);
+    }
+
+    String getString(int rowIndex, int column) {
+    return data[rowIndex][column];
+    }
+
+    String getString(String rowName, int column) {
+    return getString(getRowIndex(rowName), column);
+    }
+
+    int getInt(String rowName, int column) {
+    return parseInt(getString(rowName, column));
+    }
+
+    int getInt(int rowIndex, int column) {
+    return parseInt(getString(rowIndex, column));
+    }
+
+    float getFloat(String rowName, int column) {
+    return parseFloat(getString(rowName, column));
+    }
+
+    float getFloat(int rowIndex, int column) {
+    return parseFloat(getString(rowIndex, column));
+    }
+
+    void setRowName(int row, String what) {
+    data[row][0] = what;
+    }
+
+    void setString(int rowIndex, int column, String what) {
+    data[rowIndex][column] = what;
+    }
+
+    void setString(String rowName, int column, String what) {
+    int rowIndex = getRowIndex(rowName);
+    data[rowIndex][column] = what;
+    }
+
+    void setInt(int rowIndex, int column, int what) {
+    data[rowIndex][column] = str(what);
+    }
+
+    void setInt(String rowName, int column, int what) {
+    int rowIndex = getRowIndex(rowName);
+    data[rowIndex][column] = str(what);
+    }
+
+    void setFloat(int rowIndex, int column, float what) {
+    data[rowIndex][column] = str(what);
+    }
+
+    void setFloat(String rowName, int column, float what) {
+    int rowIndex = getRowIndex(rowName);
+    data[rowIndex][column] = str(what);
+    }
+    }</code></pre>
+
+<h2>all_readings.txt</h2>
+
+<p>I used a ir sensor outfitted to a servo through a arduino to generate this data through the serial port.</p>
+
+<pre><code>0.0000000000 29
+    0.0174532914 28
+    0.0349065828 34
+    0.0523598766 90
+    0.0698131656 70
+    0.0872664546 121
+    0.1047197580 114
+    0.1221730470 144
+    0.1396263360 256
+    0.1570796394 479
+    0.1745329141 149
+    0.1919862174 50
+    0.2094395160 33
+    0.2268928050 29
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 29
+    0.3141592741 29
+    0.3316125631 30
+    0.3490658283 30
+    0.3665191650 31
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 33
+    0.4537856101 34
+    0.4712388992 34
+    0.4886921882 36
+    0.5061454772 38
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 37
+    0.5934119224 37
+    0.6108652114 36
+    0.6283185482 35
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 30
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 29
+    0.8377580642 28
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 29
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 28
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 31
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 34
+    1.4137166976 36
+    1.4311699867 31
+    1.4486232757 22
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 21
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 25
+    1.6580628395 30
+    1.6755161285 51
+    1.6929693222 68
+    1.7104226112 69
+    1.7278759479 61
+    1.7453292846 85
+    1.7627825736 144
+    1.7802357673 94
+    1.7976890563 137
+    1.8151424407 185
+    1.8325957298 224
+    1.8500490188 203
+    1.8675023078 192
+    1.8849555015 193
+    1.9024087905 182
+    1.9198621749 178
+    1.9373154640 172
+    1.9547687530 89
+    1.9722221374 25
+    1.9896753311 20
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 20
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 21
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 30
+    2.2165682315 60
+    2.2340214252 154
+    2.2514746189 259
+    2.2689280509 993
+    2.2863812446 819
+    2.3038346767 230
+    2.3212878704 151
+    2.3387410640 80
+    2.3561944961 62
+    2.3736476898 37
+    2.3911011219 36
+    2.4085543155 39
+    2.4260077476 36
+    2.4434609413 42
+    2.4609141349 48
+    2.4783675670 46
+    2.4958207607 52
+    2.5132741928 58
+    2.5307273864 44
+    2.5481805801 31
+    2.5656340122 32
+    2.5830872058 36
+    2.6005406379 37
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 38
+    2.7576200962 39
+    2.7750735282 47
+    2.7925267219 62
+    2.8099802017 80
+    2.8274333953 49
+    2.8448865890 44
+    2.8623399734 44
+    2.8797931671 43
+    2.8972465515 42
+    2.9146997451 43
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 50
+    3.0368728637 49
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 49
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 49
+    0.0000000000 48
+    0.0174532914 51
+    0.0349065828 36
+    0.0523598766 45
+    0.0698131656 105
+    0.0872664546 28
+    0.1047197580 28
+    0.1221730470 32
+    0.1396263360 213
+    0.1570796394 516
+    0.1745329141 134
+    0.1919862174 48
+    0.2094395160 37
+    0.2268928050 28
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 29
+    0.3141592741 29
+    0.3316125631 30
+    0.3490658283 30
+    0.3665191650 31
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 34
+    0.4537856101 34
+    0.4712388992 35
+    0.4886921882 36
+    0.5061454772 38
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 38
+    0.5934119224 38
+    0.6108652114 36
+    0.6283185482 34
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 30
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 29
+    0.8377580642 29
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 29
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 28
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 31
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 34
+    1.4137166976 36
+    1.4311699867 30
+    1.4486232757 22
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 21
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 25
+    1.6580628395 31
+    1.6755161285 51
+    1.6929693222 64
+    1.7104226112 67
+    1.7278759479 61
+    1.7453292846 79
+    1.7627825736 146
+    1.7802357673 97
+    1.7976890563 139
+    1.8151424407 183
+    1.8325957298 223
+    1.8500490188 215
+    1.8675023078 202
+    1.8849555015 193
+    1.9024087905 182
+    1.9198621749 179
+    1.9373154640 156
+    1.9547687530 91
+    1.9722221374 28
+    1.9896753311 20
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 21
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 22
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 30
+    2.2165682315 56
+    2.2340214252 140
+    2.2514746189 460
+    2.2689280509 768
+    2.2863812446 0
+    2.3038346767 396
+    2.3212878704 136
+    2.3387410640 88
+    2.3561944961 56
+    2.3736476898 39
+    2.3911011219 36
+    2.4085543155 38
+    2.4260077476 36
+    2.4434609413 42
+    2.4609141349 48
+    2.4783675670 45
+    2.4958207607 53
+    2.5132741928 59
+    2.5307273864 44
+    2.5481805801 31
+    2.5656340122 33
+    2.5830872058 36
+    2.6005406379 38
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 39
+    2.7576200962 39
+    2.7750735282 45
+    2.7925267219 59
+    2.8099802017 80
+    2.8274333953 50
+    2.8448865890 44
+    2.8623399734 43
+    2.8797931671 43
+    2.8972465515 42
+    2.9146997451 43
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 49
+    3.0368728637 49
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 49
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 49
+    0.0000000000 48
+    0.0174532914 50
+    0.0349065828 38
+    0.0523598766 38
+    0.0698131656 108
+    0.0872664546 28
+    0.1047197580 28
+    0.1221730470 34
+    0.1396263360 223
+    0.1570796394 508
+    0.1745329141 122
+    0.1919862174 55
+    0.2094395160 34
+    0.2268928050 28
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 28
+    0.3141592741 29
+    0.3316125631 30
+    0.3490658283 30
+    0.3665191650 30
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 34
+    0.4537856101 34
+    0.4712388992 35
+    0.4886921882 36
+    0.5061454772 39
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 37
+    0.5934119224 37
+    0.6108652114 36
+    0.6283185482 34
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 30
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 29
+    0.8377580642 28
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 29
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 28
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 31
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 35
+    1.4137166976 36
+    1.4311699867 30
+    1.4486232757 23
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 21
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 25
+    1.6580628395 31
+    1.6755161285 52
+    1.6929693222 65
+    1.7104226112 68
+    1.7278759479 61
+    1.7453292846 83
+    1.7627825736 148
+    1.7802357673 96
+    1.7976890563 134
+    1.8151424407 185
+    1.8325957298 232
+    1.8500490188 209
+    1.8675023078 193
+    1.8849555015 188
+    1.9024087905 182
+    1.9198621749 179
+    1.9373154640 158
+    1.9547687530 79
+    1.9722221374 26
+    1.9896753311 21
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 21
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 21
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 30
+    2.2165682315 60
+    2.2340214252 156
+    2.2514746189 295
+    2.2689280509 832
+    2.2863812446 0
+    2.3038346767 343
+    2.3212878704 159
+    2.3387410640 80
+    2.3561944961 62
+    2.3736476898 37
+    2.3911011219 36
+    2.4085543155 38
+    2.4260077476 36
+    2.4434609413 42
+    2.4609141349 47
+    2.4783675670 45
+    2.4958207607 54
+    2.5132741928 60
+    2.5307273864 45
+    2.5481805801 29
+    2.5656340122 32
+    2.5830872058 36
+    2.6005406379 38
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 39
+    2.7576200962 40
+    2.7750735282 45
+    2.7925267219 60
+    2.8099802017 79
+    2.8274333953 48
+    2.8448865890 44
+    2.8623399734 44
+    2.8797931671 43
+    2.8972465515 42
+    2.9146997451 44
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 50
+    3.0368728637 49
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 49
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 48
+    0.0000000000 49
+    0.0174532914 50
+    0.0349065828 40
+    0.0523598766 34
+    0.0698131656 90
+    0.0872664546 29
+    0.1047197580 28
+    0.1221730470 33
+    0.1396263360 222
+    0.1570796394 528
+    0.1745329141 133
+    0.1919862174 57
+    0.2094395160 34
+    0.2268928050 28
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 29
+    0.3141592741 29
+    0.3316125631 30
+    0.3490658283 30
+    0.3665191650 31
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 33
+    0.4537856101 34
+    0.4712388992 35
+    0.4886921882 36
+    0.5061454772 39
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 37
+    0.5934119224 37
+    0.6108652114 35
+    0.6283185482 34
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 29
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 29
+    0.8377580642 29
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 29
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 28
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 30
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 35
+    1.4137166976 37
+    1.4311699867 30
+    1.4486232757 22
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 22
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 26
+    1.6580628395 33
+    1.6755161285 56
+    1.6929693222 67
+    1.7104226112 71
+    1.7278759479 62
+    1.7453292846 71
+    1.7627825736 132
+    1.7802357673 98
+    1.7976890563 132
+    1.8151424407 184
+    1.8325957298 223
+    1.8500490188 207
+    1.8675023078 190
+    1.8849555015 186
+    1.9024087905 182
+    1.9198621749 182
+    1.9373154640 165
+    1.9547687530 96
+    1.9722221374 32
+    1.9896753311 20
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 21
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 21
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 30
+    2.2165682315 72
+    2.2340214252 143
+    2.2514746189 349
+    2.2689280509 734
+    2.2863812446 848
+    2.3038346767 321
+    2.3212878704 131
+    2.3387410640 83
+    2.3561944961 59
+    2.3736476898 36
+    2.3911011219 37
+    2.4085543155 39
+    2.4260077476 37
+    2.4434609413 44
+    2.4609141349 47
+    2.4783675670 47
+    2.4958207607 51
+    2.5132741928 58
+    2.5307273864 47
+    2.5481805801 30
+    2.5656340122 32
+    2.5830872058 36
+    2.6005406379 38
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 38
+    2.7576200962 40
+    2.7750735282 45
+    2.7925267219 66
+    2.8099802017 89
+    2.8274333953 48
+    2.8448865890 44
+    2.8623399734 44
+    2.8797931671 43
+    2.8972465515 42
+    2.9146997451 44
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 50
+    3.0368728637 49
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 50
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 48
+    0.0000000000 48
+    0.0174532914 49
+    0.0349065828 39
+    0.0523598766 29
+    0.0698131656 71
+    0.0872664546 29
+    0.1047197580 28
+    0.1221730470 33
+    0.1396263360 245
+    0.1570796394 523
+    0.1745329141 146
+    0.1919862174 55
+    0.2094395160 35
+    0.2268928050 27
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 29
+    0.3141592741 29
+    0.3316125631 30
+    0.3490658283 30
+    0.3665191650 31
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 33
+    0.4537856101 34
+    0.4712388992 35
+    0.4886921882 36
+    0.5061454772 38
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 37
+    0.5934119224 37
+    0.6108652114 35
+    0.6283185482 34
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 30
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 28
+    0.8377580642 29
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 29
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 29
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 30
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 34
+    1.4137166976 36
+    1.4311699867 27
+    1.4486232757 22
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 22
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 24
+    1.6580628395 34
+    1.6755161285 50
+    1.6929693222 67
+    1.7104226112 70
+    1.7278759479 63
+    1.7453292846 72
+    1.7627825736 148
+    1.7802357673 98
+    1.7976890563 126
+    1.8151424407 185
+    1.8325957298 218
+    1.8500490188 216
+    1.8675023078 190
+    1.8849555015 186
+    1.9024087905 183
+    1.9198621749 182
+    1.9373154640 170
+    1.9547687530 93
+    1.9722221374 31
+    1.9896753311 20
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 21
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 21
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 30
+    2.2165682315 74
+    2.2340214252 142
+    2.2514746189 342
+    2.2689280509 714
+    2.2863812446 874
+    2.3038346767 327
+    2.3212878704 127
+    2.3387410640 83
+    2.3561944961 57
+    2.3736476898 38
+    2.3911011219 37
+    2.4085543155 39
+    2.4260077476 36
+    2.4434609413 42
+    2.4609141349 47
+    2.4783675670 47
+    2.4958207607 50
+    2.5132741928 60
+    2.5307273864 46
+    2.5481805801 30
+    2.5656340122 32
+    2.5830872058 36
+    2.6005406379 37
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 39
+    2.7576200962 40
+    2.7750735282 44
+    2.7925267219 62
+    2.8099802017 87
+    2.8274333953 51
+    2.8448865890 44
+    2.8623399734 44
+    2.8797931671 42
+    2.8972465515 42
+    2.9146997451 43
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 50
+    3.0368728637 48
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 49
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 48
+    0.0000000000 49
+    0.0174532914 49
+    0.0349065828 41
+    0.0523598766 30
+    0.0698131656 77
+    0.0872664546 29
+    0.1047197580 28
+    0.1221730470 33
+    0.1396263360 241
+    0.1570796394 541
+    0.1745329141 126
+    0.1919862174 60
+    0.2094395160 33
+    0.2268928050 27
+    0.2443460941 26
+    0.2617993831 27
+    0.2792526721 28
+    0.2967059612 29
+    0.3141592741 29
+    0.3316125631 29
+    0.3490658283 30
+    0.3665191650 30
+    0.3839724349 31
+    0.4014257431 32
+    0.4188790321 33
+    0.4363323211 34
+    0.4537856101 34
+    0.4712388992 35
+    0.4886921882 35
+    0.5061454772 39
+    0.5235987663 39
+    0.5410520553 38
+    0.5585053443 38
+    0.5759586811 37
+    0.5934119224 37
+    0.6108652114 35
+    0.6283185482 34
+    0.6457717895 33
+    0.6632251262 32
+    0.6806784152 31
+    0.6981316566 30
+    0.7155849933 30
+    0.7330383300 30
+    0.7504915714 29
+    0.7679448604 29
+    0.7853981971 29
+    0.8028514862 29
+    0.8203047752 28
+    0.8377580642 29
+    0.8552113533 28
+    0.8726646423 28
+    0.8901178359 28
+    0.9075712203 28
+    0.9250245094 28
+    0.9424777984 28
+    0.9599310874 28
+    0.9773843765 28
+    0.9948376655 28
+    1.0122909545 28
+    1.0297442674 28
+    1.0471975803 28
+    1.0646508932 29
+    1.0821040916 29
+    1.0995573997 29
+    1.1170107126 29
+    1.1344640254 29
+    1.1519173383 29
+    1.1693705320 29
+    1.1868238449 30
+    1.2042771577 30
+    1.2217304706 30
+    1.2391837835 30
+    1.2566370964 30
+    1.2740902900 30
+    1.2915435981 31
+    1.3089969158 31
+    1.3264502286 31
+    1.3439035415 31
+    1.3613568544 32
+    1.3788100481 33
+    1.3962633609 34
+    1.4137166976 36
+    1.4311699867 28
+    1.4486232757 22
+    1.4660766124 21
+    1.4835298061 21
+    1.5009831428 21
+    1.5184364318 21
+    1.5358897209 21
+    1.5533430576 21
+    1.5707963943 22
+    1.5882495880 22
+    1.6057028770 22
+    1.6231561660 23
+    1.6406095027 25
+    1.6580628395 35
+    1.6755161285 53
+    1.6929693222 69
+    1.7104226112 69
+    1.7278759479 62
+    1.7453292846 75
+    1.7627825736 151
+    1.7802357673 100
+    1.7976890563 136
+    1.8151424407 191
+    1.8325957298 234
+    1.8500490188 206
+    1.8675023078 191
+    1.8849555015 186
+    1.9024087905 183
+    1.9198621749 185
+    1.9373154640 161
+    1.9547687530 98
+    1.9722221374 27
+    1.9896753311 20
+    2.0071287155 20
+    2.0245819091 20
+    2.0420351028 20
+    2.0594885349 21
+    2.0769417285 21
+    2.0943951606 21
+    2.1118483543 21
+    2.1293017864 22
+    2.1467549800 22
+    2.1642081737 22
+    2.1816616058 24
+    2.1991147994 33
+    2.2165682315 62
+    2.2340214252 154
+    2.2514746189 381
+    2.2689280509 619
+    2.2863812446 891
+    2.3038346767 299
+    2.3212878704 132
+    2.3387410640 86
+    2.3561944961 59
+    2.3736476898 38
+    2.3911011219 36
+    2.4085543155 39
+    2.4260077476 36
+    2.4434609413 40
+    2.4609141349 45
+    2.4783675670 44
+    2.4958207607 55
+    2.5132741928 59
+    2.5307273864 42
+    2.5481805801 30
+    2.5656340122 32
+    2.5830872058 36
+    2.6005406379 37
+    2.6179938316 38
+    2.6354472637 38
+    2.6529004573 38
+    2.6703536510 38
+    2.6878070831 38
+    2.7052602767 38
+    2.7227137088 38
+    2.7401669025 38
+    2.7576200962 39
+    2.7750735282 46
+    2.7925267219 62
+    2.8099802017 85
+    2.8274333953 54
+    2.8448865890 44
+    2.8623399734 44
+    2.8797931671 43
+    2.8972465515 42
+    2.9146997451 43
+    2.9321532249 45
+    2.9496064186 47
+    2.9670596122 49
+    2.9845130920 50
+    3.0019662380 50
+    3.0194196701 50
+    3.0368728637 49
+    3.0543260574 48
+    3.0717794895 50
+    3.0892326831 49
+    3.1066861152 49
+    3.1241393089 49
+    3.1415927410 48</code></pre>
+
+  <h2><a href="/blog/protozone-in-bringing-symposia-to-life/">Protozone in Bringing Symposia to Life</a> <span>Feb 19</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Protozone is being exhibited in Bringing Symposia to Life, an independent Science Art virtual exhibit whose selection of images was inspired by the 2011 Annual Meeting of the American Association for the Advancement of Science (AAAS) in Washington, DC, (February 17-21). Protozone is featured under topic 26: Aiming for Scientific Literacy by Teaching the Process, Nature, and Limits of Science.</p>
+
+<p></p>
+
+<p><a href="http://www.stanford.edu/group/stanfordbirds/SAN/Exhibit/AAAS-DC.html">Bringing Symposia to Life</a></p>
+
+  <h2><a href="/blog/1st-year-show-process-photos/">1st Year Show Process Photos</a> <span>Feb  2</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Just wanted to share some process photos and lighting tests from my upcoming 1st year mfa show.</p>
+
+<p></p>
+
+  <h2><a href="/blog/os-robotic-arm-servo-test/">OS Robotic Arm Servo Test</a> <span>Oct  3</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Today I finished the assembling and fabrication of the 1st generation of the Open Source Robotic Arm in preperation for a workshop. Below are some pictures and a video of the testing of some of the servos.</p>
+
+<p></p>
+
+<h3>Photos:</h3>
+
+<h3>Servo Test:</h3>
+
+
+  
+    <p><a href="/blog/alt/p4/">Next page</a></p>
+  
+
+
+    
+
+<div id="mos-top-footer">
+  <div class="row">
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Categories</h4>
+      <ul class="side-nav">
+        
+        
+        <li><a href="/blog/code/">code</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/01sj/">01sj</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ecology/">ecology</a></a></li>
+        
+        
+        
+        <li><a href="/blog/fcp/">fcp</a></a></li>
+        
+        
+        
+        <li><a href="/blog/physical-computing/">physical computing</a></a></li>
+        
+        
+        
+        <li><a href="/blog/video/">video</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/arduino/">arduino</a></a></li>
+        
+        
+        
+        <li><a href="/blog/robot/">robot</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/isea2011/">isea2011</a></a></li>
+        
+        
+        
+        <li><a href="/blog/performance/">performance</a></a></li>
+        
+        
+        
+        
+        
+        <li><a href="/blog/wearable/">wearable</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/processing/">processing</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/rhizome/">rhizome</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/java/">java</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/jquery/">jquery</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/studio/">studio</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/zurb-foundation/">zurb-foundation</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/patterns/">patterns</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/foundation-quick-tips/">foundation-quick-tips</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ruby/">ruby</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Top Posts</h4>
+      <ul class="side-nav">
+      <li><a href="/blog/compass-sass-vs-sassc-for-zurb-foundation-4/">Compass Sass vs Sassc for Zurb Foundation 4</a></li>
+        <li><a href="/blog/zurb-foundation-5-medium-grid/">Zurb Foundation 5 Medium Grid</a></li>
+        <li><a href="/blog/using-zurb-ink-with-mailchimp/">Using Zurb Ink with MailChimp</a></li>
+        <li><a href="/blog/10-things-i-love-about-ruby/">10 Things I Love About Ruby</a></li>
+        <li><a href="/blog/semantic-ui-style-layouts-in-zurb-foundation/">Semantic UI Style Layouts in Zurb Foundation</a></li>
+        <li><a href="/blog/design-patterns-in-processing-the-agent/">Design Patterns in Processing the Agent</a></li>
+        <li><a href="/blog/ruby-slim-and-zurb-foundation/">Ruby Slim And Zurb Foundation</a></li>
+        <li><a href="/blog/shoehorn-zurb-foundation-into-weird-stuff/">Shoehorn Zurb Foundation Into Weird Stuff</a></li>
+        <li><a href="/blog/dotrb-ruby-confrence-in-paris-france/">Dotrb Ruby Confrence in Paris France</a></li>
+        <li><a href="/blog/the-event-driven-jquery-plugin-pattern-with-four04kids/">The Event Driven Jquery Plugin Pattern With Four04kids</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Products</h4>
+      <ul class="side-nav">
+        <li><a href="/zurb-foundation-blueprints">Zurb Foundation 4 Blueprints</a></li>
+        <li><a href="https://gum.co/foundation4quickref">Zurb Foundation 4 Quick Reference</a></li>
+        <li><a href="https://leanpub.com/aoeuandi">AOEU and I, Learn How to Type with the Dvorak Keyboard Layout, the Leading Alternative to QWERTY</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Latest Links</h4>
+      <ul class="side-nav">
+        <li><a href="http://bitly.com/bundles/manofstone/8">frontend-five-001</a></li>
+        <li><a href="http://bitly.com/bundles/manofstone/9">4-pub-001</a></li>
+        <li><a href="http://bitly.com/u/manofstone">my live bitly stream</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <p class="text-center"><small>Copyright 2013, James Stone, All Rights Reserved.</small></p>
+
+    </div>
+  </div>
+</div>
+
+<div id="mos-footer">
+  <div class="row">
+    <div class="medium-2 large-2 columns">
+      <h4 class="alt-text text-right">James Stone</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-nav">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="teaching">Teaching</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="studio">Studio</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="medium-4 large-4 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-social-nav">
+        <li><a href="http://feeds.feedburner.com/jamesmanofstone" rel="alternate" type="application/rss+xml"><i class="fi-rss"></i></a></li>
+        <li><a href="http://www.twitter.com/manofstone"><i class="fi-social-twitter"></i></a></li>
+        <li><a href="https://github.com/manofstone"><i class="fi-social-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/1560583"><i class="fi-social-stack-overflow"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/manofstone"><i class="fi-social-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+    <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+    </section><!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+
+    <script src="/javascripts/application-def5725c.js" defer="defer" type="text/javascript"></script>
+
+    <script type="text/javascript" defer="defer">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100671419);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100671419ns.gif" /></p></noscript>
+
+
+  </body>
+</html>

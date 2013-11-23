@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>James Stone</title>
+  <subtitle>Open Studio</subtitle>
+  <id>http://www.manofstone.com/blog</id>
+  <link href="http://www.manofstone.com/blog"/>
+  <link href="http://www.manofstone.com/blog/feed.xml" rel="self"/>
+  <updated>2013-11-15T23:00:00Z</updated>
+  <author>
+    <name>James Stone</name>
+  </author>
+  <entry>
+    <title>Compass Sass vs Sassc for Zurb Foundation 4</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/compass-sass-vs-sassc-for-zurb-foundation-4/"/>
+    <id>http://www.manofstone.com/blog/compass-sass-vs-sassc-for-zurb-foundation-4/</id>
+    <published>2013-11-15T23:00:00Z</published>
+    <updated>2013-11-16T01:24:13+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;Thats a lot of S&amp;rsquo;s. Try and say that five times fast. I was pretty excited about the &lt;a href="http://zurb.com/article/1274/we-feel-the-need-the-need-for-speed-what-"&gt;Zurb announcement of Zurb Foundation 5&lt;/a&gt; due for release this next week. One thing that caught my eye was this line:&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Zurb Foundation 5 Medium Grid</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/zurb-foundation-5-medium-grid/"/>
+    <id>http://www.manofstone.com/blog/zurb-foundation-5-medium-grid/</id>
+    <published>2013-11-12T23:00:00Z</published>
+    <updated>2013-11-13T21:35:28+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;One of the &lt;a href="http://zurb.com/article/1226/foundation-4-3-paving-the-road-to-5"&gt;hidden features included with Foundation 4.3&lt;/a&gt; is the Tablet or Medium grid. This isn&amp;rsquo;t enabled by default but it is super easy to implement. I just recently added it on this site. Lets take a look at how I went about it.&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Using Zurb Ink with MailChimp</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/using-zurb-ink-with-mailchimp/"/>
+    <id>http://www.manofstone.com/blog/using-zurb-ink-with-mailchimp/</id>
+    <published>2013-11-12T23:00:00Z</published>
+    <updated>2013-11-13T22:29:39+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;Zurb Ink is for email as Zurb Foundation is for the web. &lt;a href="http://zurb.com/article/1119/create-emails-for-any-device-introducing-"&gt;Zurb teased us late last year&lt;/a&gt; with their responsive email templates but they have now taken it one huge step further. They have created a easy to use responsive framework that is available with the same permissive MIT license. I wanted to see how difficult it would be to use this new framework with MailChimp, my newsletter and email provider. Turns out, it was super simple. Lets take a look at how I went about it.&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>10 Things I Love About Ruby</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/10-things-i-love-about-ruby/"/>
+    <id>http://www.manofstone.com/blog/10-things-i-love-about-ruby/</id>
+    <published>2013-11-06T23:00:00Z</published>
+    <updated>2013-11-07T21:02:08+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;I have been using Ruby and RoR (Ruby on Rails) for the past couple of years and here are some of the things that I really appreciate about the language coming from a Java background.&lt;/p&gt;
+
+&lt;p&gt;Oh BTW, don&amp;rsquo;t tell Java.&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Ruby Slim and Zurb Foundation</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/ruby-slim-and-zurb-foundation/"/>
+    <id>http://www.manofstone.com/blog/ruby-slim-and-zurb-foundation/</id>
+    <published>2013-10-28T23:00:00Z</published>
+    <updated>2013-11-07T17:59:07+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;Today I spent a lot of time working with Foundation and Bootstrap using Ruby Slim. If you haven&amp;rsquo;t used slim before and you are still using erb or haml you should give it a try. If you love Emmet or Zencoding (which shall be referred from this point forward as Emmet) you will love slim. It is nearly the same format. For this Zurb Quicktip I will tell you how maintain your row structures for great Zurb Foundation presentational goodness.&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>DotRB Ruby Conference in Paris, France</title>
+    <link rel="alternate" href="http://www.manofstone.com/blog/dotrb-ruby-confrence-in-paris-france/"/>
+    <id>http://www.manofstone.com/blog/dotrb-ruby-confrence-in-paris-france/</id>
+    <published>2013-10-22T22:00:00Z</published>
+    <updated>2013-11-07T17:46:23+01:00</updated>
+    <author>
+      <name>James Stone</name>
+    </author>
+    <summary type="html">&lt;p&gt;Last week I had the opportunity to attend the &lt;a href="http://www.dotrb.eu"&gt;dotRB conference&lt;/a&gt; in Paris, France. Beautiful venue, beautiful city and great food. Whats the catch? The organizer declared it a wifi (pronounced wee fee in French) free day, somewhat akin to being at a spa or on holiday. Since I still haven&amp;rsquo;t quite figured out how to get a microsim &lt;em&gt;sans engagement&lt;/em&gt; in Paris it took me a few more days to gather my thoughts in to a proper post.&lt;/p&gt;
+
+&lt;p&gt;</summary>
+  </entry>
+</feed>

@@ -1,0 +1,63 @@
+---
+pageable: true
+per_page: 6
+---
+
+<div class="content-top-spacing"></div>
+
+<div class="row">
+  <div class="large-12 columns">
+  <h2><%= tagname %></h2>
+    <% page_articles.each_slice(2) do | row | %>
+    <div class="row">
+      <% row.each do |article| %>
+      <div class="medium-6 large-6 columns">
+        <div class="panel">
+          <% test_featured_image = article.data.featured_image %>
+          <% if ( defined?(test_featured_image)) %>
+            <p><a href="<%= article.url %>"><img src="<%= article.data.featured_image %>"></a></p>
+          <% end %>
+          <h4 class="entry-title"><%= link_to article.title, article %></h4>
+          <p><time class="timeago published" datetime="<%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").to_time.iso8601 %>"><%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").strftime('%B %e, %Y %I:%M %p') %></time></p>
+          <p class="entry-summary"><%= article.summary(125) %></p>
+          <%= link_to "Read more &raquo;", article, :class => "button primary" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="pagination-centered">
+  <% if paginate && num_pages > 1 %>
+    <h4>
+      <ul class="pagination">
+      <% if prev_page %>
+        <li class="arrow"><%= link_to '&laquo;', prev_page %></li>
+      <% else %>
+        <li class="arrow unavailable"><%= link_to '&laquo;', prev_page %></li>
+      <% end %>
+
+      <% for i in 1..num_pages do %>
+        <% if i == page_number %>
+          <li class="current">
+        <% else %>
+          <li>
+        <% end %>
+        <% if i == 1 %>
+          <a href="/blog/<%= tagname %>"><%= i %></a></li>
+        <% else %>
+          <a href="/blog/<%= tagname %>/p<%= i %>"><%= i %></a></li>
+        <% end %>
+      <% end %>
+      <% if next_page %>
+        <li class="arrow"><%= link_to '&raquo;', next_page %></li>
+      <% else %>
+        <li class="arrow unavailable"><%= link_to '&raquo;', next_page %></li>
+      <% end %>
+        <% end %>
+      </ul>
+    </h4>
+</div>

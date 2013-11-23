@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="9FUywMd926za9lLIK5X7myny7HYoAF48CHemANB8Zu0" />
+    <meta name='yandex-verification' content='4d1b71b148f932e6' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <meta name="description" content="">
+    
+    <title>James Stone</title>
+    <link href="/stylesheets/app-5d956af6.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor/modernizr-8c8a2ced.js" defer="defer" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    
+
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h2 class="title"><a href="/">manofstone.com</a></h2>
+      </section>
+
+
+
+      <!-- <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section> -->
+
+
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>James Stone</label></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/studio">Studio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        ...
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
+
+
+      <p>Page 2 of 4</p>
+
+  
+    <p><a href="/blog/alt/">Previous page</a></p>
+  
+
+  <h2><a href="/blog/my-top-10-web-development-tools/">My Top 10 Web Development Tools</a> <span>Sep  6</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I am someone that is pretty excited and passionate about modern web development. Today I will share with you some of my top tools that I use on a daily basis developing responsive sites with Zurb Foundation 4.</p>
+
+<p></p>
+
+<h4>1. <a href="http://www.iterm2.com/">iTerm 2</a></h4>
+
+<p>On macosx the default terminal application is okay. If you spend most of your day in and out of a terminal it is time to look for a better solution. I have mine set up to automatically go full screen, using <a href="http://levien.com/type/myfonts/inconsolata.html">Incosolata</a> (my favorite programming font), and use a variation of solarized dark theme. I also have a light one that I can switch between if I find myself blinded by the sun.</p>
+
+<p>Although I use tmux with tmuxinator (more below) extensively I love being able to press cmd-t to spawn new terminal windows full screen and hit cmd-# (1-9) to quickly move between them.</p>
+
+<h4>2. <a href="http://livereload.com/">LiveReload</a> <small>(commercial $9.99, macosx only, available on the mac app store)</small></h4>
+
+<p>This program does many things but I use it only for one thing, automatically refreshing browsers when files are modified. It is pretty easy to set up, just choose a folder to watch, install the plugins in your favorite browsers and turn them on. NOTE: you need to serve the pages (not display directly from files) on Chrome so that it works correctly.</p>
+
+<p>I know there are other options for this, grunt et al, however this was the easiest for me to implement and continues to work great.</p>
+
+<p>Also, when I preview on a mobile device like ipad, there is an option to inject a javascript reloader. This works flawlessly and allows me to do the same thing on browsers without the plugin (mobile browsers, iPhoney, etc.)</p>
+
+<h4>3. <a href="http://www.sublimetext.com/">Sublime Text 2/3</a> <small>(commercial, $69 direct from developer)</small></h4>
+
+<p>I have been an avid VIM user for years and continue to use VIM when I don&rsquo;t have this available, but ST2/3 is simply amazing. How can I compare it. It is like the difference between modern languages like Ruby and less modern languages like Java. Sure you can get things done in VIM but ST is just a pleasure to use. ST Looks great, very fast, great plugin architecture. Specific features like multiple cursors just makes more sense to me. Maybe because I am a more visually oriented person.</p>
+
+<h4>4. <a href="https://developers.google.com/chrome-developer-tools/">Chrome Developer Tools</a></h4>
+
+<p>I also use the same tool set in Firefox but I have to say I just prefer the tools available in Chrome. They are quickly available cmd-opt-j and provide me the tools I need quickly 90% of the time. Like, did my files load, I can tell quickly by looking at source tree. I can open each file and see what error message was returned.</p>
+
+<p>Some people start editing the code within chrome which I guess could be a good strategy but I prefer to just switch back to ST where I have a more advanced text editing tool kit.</p>
+
+<h4>5. <a href="https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh?hl=en">YSlow</a></h4>
+
+<p>Defacto standard to see if your front end is lacking. I love that it gives you specific strategies and tells you where to get started for implementation.</p>
+
+<h4>6. <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">PostMan</a></h4>
+
+<p>Just learned about this recently but it is now part of my daily set of tools. Lets you interact with pages and apis very quickly. You can POST or GET and pass parameters or json data. Really speeds things along when you can see exactly what is going on quickly with an api and the returned data.</p>
+
+<h4>7. <a href="http://www.bohemiancoding.com/sketch/">Sketch 2</a> <small>(commercial, $49.99 on the mac app store)</small></h4>
+
+<p>Sketch 2 is like Illustrator for the web. It does one thing very well. Pixel perfect vector graphics that can be output as either SVG or rasterized PNGs or JPGs along with their double resolution retina cousins. If you don&rsquo;t know what I mean by pixel perfect, I mean that the vector elements are aligned to a grid of &ldquo;pixels&rdquo; so you don&rsquo;t get anti-aliased lines for example on the edge of a rectangle.</p>
+
+<p>There is some extra goodness with being able to play with elements quickly and visually and export the CSS. I never copy the CSS directly but it can be a good starting point.</p>
+
+<h4>8. <a href="http://middlemanapp.com/">Middleman</a> <small>(gem middleman)</small></h4>
+
+<p>Middleman is a static website generator written in ruby that is fantastic. I have tried a bunch, octopress, piecrust, etc. What does middleman do right? One thing, a simple templating structure. Many of the others work great if you use one of their templates, but creating your own can be a real hassle. Middleman is great because you can use partials and templates and it is somewhat flexible. Save time by putting your navigation into a _header.html.erb file. Use .markdown for your blog posts. It is a pretty robust solution although the documentation can be lacking at times.</p>
+
+<p>The other reason I love middleman, middleman-s3\_sync. After you build you can push everything to s3 with one command <span class="inline-code">midddleman s3\_sync</span>. This is exactly how I built and maintain this site at the momement. It is hosted through AWS S3 and AWS Cloudfront with an apache server that just redirects / alaises <span class="inline-code">manofstone.com</span> to <span class="inline-code">www.manofstone.com</span>.</p>
+
+<h4>9. <a href="https://github.com/aziz/tmuxinator">Tmuxinator</a> <small>(gem tmuxinator)</small></h4>
+
+<p>I started using Tmux a while back and could never really get into it. I do a lot of front end work using Zurb Foundation in ST and this allows me to automate the generation and serving of files. I have a standard .tmuxinator file that I have created where I just change the directory name. Then I have a shell set up at that directory, <span class="inline-code">compass watch</span> on a second, a web server on port 8k and <span class="inline-code">localtunnel</span> amongst other things as well.</p>
+
+<p>It is very quick for me to check what is going on. I changed the default command to ctrl-a (great for dvorak) and just hit a number 0-5 which allows me to quickly switch through the commands.</p>
+
+<p>I also have it fire up LiveReload and the specific ST project file so one command <span class="inline-code">tmuxinator projectName</span> recreates my entire workspace in a matter of seconds. To switch to another project I just close down all the tmux windows and run the same command with a different project name.</p>
+
+<h4>10. <a href="http://progrium.com/localtunnel/">Local Tunnel</a> <small>(gem localtunnel)</small></h4>
+
+<p>Local Tunnel is another new addition to my kit but one that is here to stay. It does one thing but does it perfectly. It allows you to push your local host connection (on one port) to the outside world. I use this to allow myself to preview pages automatically (see javascript injection in LiveReload above) on my iPad. I can also get an iPhone sized site by using Dolphin Browser for iPhone (more below) which allows me to quickly check responsive sites both at my firewalled wifi setup at home as well as the local starbucks.</p>
+
+<p>The other benefit is when working with rails or node projects it allows me to share my dev server with a client which removes the process of having to push to a staging server for quick demonstrations.</p>
+
+<p>A big thanks to Twillio for putting this one out.</p>
+
+<h3>Honerable Mentions</h3>
+
+<p>Didn&rsquo;t quite make it into the list but definitely worth being aware of. Some of these I don&rsquo;t quite use daily but I definitely turn to at least once a week or more. Using Git is kind of like brushing your teeth. Everyone should be doing it several times per day.</p>
+
+<h4><a href="http://www.pixelmator.com/">Pixelmator</a> <small>(commercial, $14.99 available on the app store)</small></h4>
+
+<p>My Photoshop replacer. I do all of my pixel based image editing and creation here. Does 99% of what I used to use Photoshop for and does it with a smile. It is fast and lightweight and the UI/UX makes it fun to edit photos again. I think the price is about one month of Adobe Photoshop in their new Creative Cloud pricing structure.</p>
+
+<h4><a href="http://markedapp.com/">Marked</a> <small>(commercial $3.99, available on the app store)</small></h4>
+
+<p>All this does is render markdown file beautifully and automatically refresh them. It is my web browser of sorts for markdown files. I use it to generate beautiful pdf files from markdown for documentation and other projects.]</p>
+
+<h4><a href="http://dolphin.com/">Dolphin Browser for iPhone</a> <small>(free (with in app purchases), available on the app store)</small></h4>
+
+<p>I use this to preview web pages in an iPhone style browser on my Retina iPad 4th gen. If you are like me and have an iPad but no iPhone. This is the best way to simulate a preview on a smaller device.</p>
+
+<h4><a href="http://www.marketcircle.com/iphoney/">iPhoney</a></h4>
+
+<p>Just remember to hit cmd-0 after you load it. Once you do that you should have a preview similar to an old school 360px wide iPhone. Good for spot checking your designs. You can use the javascript injection with LiveReload for automatic reloading. If I forget my iPad at home this is what I turn to.</p>
+
+<h4><a href="http://www.yellowmug.com/yemuzip/">YemuZip</a></h4>
+
+<p>The easy way to generate .zip files quickly and easily on the mac.</p>
+
+<h4><a href="https://www.dropbox.com/">Dropbox</a></h4>
+
+<p>Has saved my life more than once by providing backups and versioning.</p>
+
+<h4><a href="http://git-scm.com/">Git</a></h4>
+
+<p>This is a no brainer. I also use a git repo (private on bit bucket, public on github) for all of my projects out side of simple demos and prototypes. I have on more than one occasion deleted an entire days work by not being careful trying to roll commits back so be careful and keep a secondary backup. I suggest dropbox.</p>
+
+<h4><a href="http://derailer.org/paparazzi/">Paparatzi</a> <small>(free, macosx only)</small></h4>
+
+<p>Takes full length screenshots for web pages. You can set the width to 360px wide to get nice mobile layouts in Zurb Foundation or other responsive frameworks. I use this to generate all of the screenshots for my books, screencasts and other materials.</p>
+
+  <h2><a href="/blog/form/">Form</a> <span>Aug 26</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+      <p>Earlier this morning I have been experimenting with some different ideas in form for smaller cyborgplants.</p>
+
+    
+
+    <ul class="clearing-thumbs" data-clearing>
+      <li><a href="../../../images/studio/2013/form/moi_progress_screenshot-e13d4c7d.png"><img src="../../../images/studio/2013/form/moi_progress_screenshot-e13d4c7d.png" class="th" width="225" height="150"></a></li>
+      <li><a href="../../../images/studio/2013/form/small_planter_twilight_render3-871b77b2.jpg"><img src="../../../images/studio/2013/form/small_planter_twilight_render3-871b77b2.jpg" class="th" width="150" height="150"></a></li>
+    </ul>
+    <br>
+
+  <h2><a href="/blog/vectors/">Vectors</a> <span>Aug 16</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Last night I read through Chapter 1, Vectors in Nature of Code by Daniel Shiffman which was some great reinforcement. He went through the process of why is is better to use PVectors for objects that need to move and foreshadowed that it would be even more important as you put more and more layers of complexity into your systems, wind, gravity, etc. At the end of the chapter there is an exercise to create an ecosystem of animals and to try and create differentiation by their behavior rather than their appearance.</p>
+
+<p></p>
+
+<p>I thought this was a pretty good challenge and I awoke with the goal of trying to replicate some of my favorite microbes from the Guadalupe River. Namely, diatoms (the most obvious) and amoebas (which move rather fast).</p>
+
+<p>This is just a simple sketch but I think there is the idea of emergence. My sketch is reliant upon random() and noise() so it is hardly that, but I think as I progress it might open up other ideas in which to approach emergence within the constrain of the OOP paradigm.</p>
+
+<p>Thoughts for the future are creating a food source, in the case of diatoms it would be silicon. Also using principals of economics to drive the probability and dispersement organisms upon initialization. Fun exercise, fantastic book. Can&rsquo;t wait for Chapter 2.</p>
+
+<p><canvas id="ch01sketch" data-processing-sources="ch_01_sketch.pde" width="970" height="247">
+</canvas>
+<br></p>
+
+<pre><code data-language="java">class Organism {
+  PVector loc;
+  PVector vel;
+  float h;
+  float w;
+  color c;
+  float rot;
+  int alpha;
+
+  Organism() {
+    loc = new PVector(width/2, height/2);
+    vel = new PVector(0,0);
+    h = 50;
+    w = 50;
+    if (random(0,1) &gt; 0.1) {
+      c = color(114, 103, 77);
+    } else if (random(0,1) &gt; 0.3) {
+      c = color(139, 134, 103);
+    } else {
+      c = color(121, 120, 104);
+    }
+    rot = 0.0;
+    alpha = 180;
+  }
+
+  // HACK: via Daniel Shiffman for p5js, http://shiffman.net/2011/02/03/rotate-a-vector-processing-js/
+  void rotate2D(PVector v, float theta) {
+    float xTemp = v.x;
+    v.x = v.x*cos(theta) - v.y*sin(theta);
+    v.y = xTemp*sin(theta) + v.y*cos(theta);
+  }
+
+
+  void calc() {
+    loc = PVector.add(loc,vel);
+    if (loc.x &gt; width || loc.x &lt; 0) {
+      vel.mult(-1);
+    }
+    if (loc.y &gt; height || loc.y &lt; 0) {
+      vel.mult(-1);
+    }
+
+  }
+
+  void rotateThis(float r) {
+    rot += r;
+    rotate2D(vel, r);
+  }
+
+  void display() {
+    calc();
+    noStroke();
+    fill(c, alpha);
+    pushMatrix();
+      translate(loc.x, loc.y);
+      rotate(rot);
+      ellipse(0, 0, w, h);
+    popMatrix();
+  }
+}
+
+class Diatom extends Organism {
+  int offset;
+
+  Diatom() {
+    super();
+    loc.x = random(0, width);
+    loc.y = random(0, height);
+    vel.x = random(-0.25,0.25);
+    vel.y = random(0.01, 0.01);
+    h = w/4;
+    rot = random(-PI/3,PI/3);
+    rotate2D(vel,rot);
+    offset = floor(random(0,9));
+  }
+
+  void calc() {
+    if ((frameCount + offset) % 10 == 0) {
+      if (random(0,1) &gt; 0.9) {
+        vel.mult(-1);
+      } else {
+        rotateThis(random(-PI/30, PI/30));
+      }
+    }
+    super.calc();
+  }
+}
+
+
+class Amoeba extends Organism {
+  float t;
+  float t_inc;
+
+  Amoeba() {
+    super();
+    loc.x = random(0, width);
+    loc.y = random(0, height);
+    c = color(153, 141, 141);
+    vel.x = 3;
+    vel.y = 3;
+    h = 5;
+    w = 5;
+    t = 0.0;
+    t_inc = 0.1;
+  }
+
+  void calc() {
+    if (random(0,1) &lt; 0.1) {
+      rotateThis(noise(t+=t_inc*10));
+    } else {
+      rotateThis(noise(t+=t_inc)/10);
+    }
+    if (frameCount % 30 == 0) {
+      // vel.setMag(random(0.1,5));
+      // processing js compat below
+      vel.normalize();
+      vel.mult(random(0.1,5));
+    }
+    super.calc();
+  }
+
+}
+
+ArrayList&lt;Diatom&gt; diatoms;
+ArrayList&lt;Amoeba&gt; amoebas;
+int spawn = 200;
+
+void setup(){
+  size(512, 512);
+  diatoms = new ArrayList&lt;Diatom&gt;();
+  amoebas = new ArrayList&lt;Amoeba&gt;();
+  for (int i = 0; i &lt; spawn; i++) {
+    if (random(0,1) &lt; 0.985) {
+      Diatom d = new Diatom();
+      diatoms.add(d);
+    } else {
+      Amoeba a = new Amoeba();
+      a.t = random(0,10000); // seed for perlin noise offset
+      amoebas.add(a);
+    }
+  }
+}
+
+void draw(){
+  background(189, 192, 196);
+  for (int i = 0; i &lt; diatoms.size(); i++) {
+    diatoms.get(i).display();
+  }
+  for (int i = 0; i &lt; amoebas.size(); i++) {
+    amoebas.get(i).display();
+  }
+}
+</code></pre>
+
+  <h2><a href="/blog/perlin-noise/">Perlin Noise</a> <span>Aug 12</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I just picked up a copy of Daniel Shiffman&rsquo;s book The Nature of Code. In the preface he makes some really interesting analogies to walking algorithms and makes a proclamation, don&rsquo;t just use random(). Then he goes on to explain what perlin noise is both thematically and historically. He then states, &ldquo;don&rsquo;t use perlin noise all the time.&rdquo;</p>
+
+<p></p>
+
+<p>So, it got me thinking and I did some experimentation in Processing 2. Started using the processing package in Sublime Text 2 and I have to say I much prefer this workflow, with the exception of how it spawns &ldquo;helper&rdquo; java apps for each time you run build.</p>
+
+<p>I started by creating an abstraction for some of the color functionality of ToxicLibs. ToxicLibs is great, it is deep, but the documentation sucks. You are basicly stuck with the JavaDoc output which, while better than nothing, is not much better.</p>
+
+<p>Much in the style of Daniel Shiffman&rsquo;s libraries I aimed to create a helper class that abstracts most of the commonly used functions and allows it to be used well in a processing context. You can pass it a single color and have it build a color scheme. It automatically sorts the colors by the distance to the original chosen color (the seed) and you can pick the next color in processing color / color() format by calling ColorPicker.nextC().</p>
+
+<p>This can make for some much prettier color choices without much effort as you can see from the examples below. All using Perlin noise. The more vertical stripes use sin() modulating the y-axis based on the frameCount for displacement.</p>
+
+<ul class="clearing-thumbs" data-clearing>
+  <li><a href="../../../images/studio/2013/perlin-noise/01-db81da7a.png"><img src="../../../images/studio/2013/perlin-noise/01-db81da7a.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/02-3e194aa7.png"><img src="../../../images/studio/2013/perlin-noise/02-3e194aa7.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/03-c843981b.png"><img src="../../../images/studio/2013/perlin-noise/03-c843981b.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/04-ddbd519c.png"><img src="../../../images/studio/2013/perlin-noise/04-ddbd519c.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/05-1b5716d7.png"><img src="../../../images/studio/2013/perlin-noise/05-1b5716d7.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/06-bc65ca63.png"><img src="../../../images/studio/2013/perlin-noise/06-bc65ca63.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/07-dfade218.png"><img src="../../../images/studio/2013/perlin-noise/07-dfade218.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/08-fa83aeb5.png"><img src="../../../images/studio/2013/perlin-noise/08-fa83aeb5.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/09-94dc2b4a.png"><img src="../../../images/studio/2013/perlin-noise/09-94dc2b4a.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/10-c0ed6c66.png"><img src="../../../images/studio/2013/perlin-noise/10-c0ed6c66.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/11-1fa4fa72.png"><img src="../../../images/studio/2013/perlin-noise/11-1fa4fa72.png" class="th" width="50" height="100"></a></li>
+  <li><a href="../../../images/studio/2013/perlin-noise/12-5ab1135e.png"><img src="../../../images/studio/2013/perlin-noise/12-5ab1135e.png" class="th" width="50" height="100"></a></li>
+</ul>
+
+<p><br></p>
+
+<p>Feel free to experiment with the code below. If you create something interesting with it or want to chat about Perlin Noise or Color Systems in creative coding or art, leave a message in the comments.</p>
+
+<pre><code class="language-java">
+// toxi core
+import toxi.math.conversion.*;
+import toxi.geom.*;
+import toxi.math.*;
+import toxi.geom.mesh2d.*;
+import toxi.util.datatypes.*;
+import toxi.util.events.*;
+import toxi.geom.mesh.subdiv.*;
+import toxi.geom.mesh.*;
+import toxi.math.waves.*;
+import toxi.util.*;
+import toxi.math.noise.*;
+// toxi color
+import toxi.color.*;
+import toxi.color.theory.*;
+
+
+/*****
+ * 
+ *  a helper class to provide a fast interface to the toxiclib.color
+ *  TColor and ColorList objects for experimentation
+ *
+ *****/
+
+class ColorPicker {
+  // color c;
+  TColor tc;
+  ColorList l;
+  int count;
+
+
+  ColorPicker(String _hex) {
+    tc = TColor.newHex(_hex);
+    count = 0;
+  }
+
+  ColorPicker(color _c) {
+    this(hex(_c));
+  }
+
+  /*
+
+  Fields in toxi.color.theory declared as ColorTheoryStrategy
+  static ColorTheoryStrategy  ColorTheoryRegistry.ANALOGOUS 
+  static ColorTheoryStrategy  ColorTheoryRegistry.COMPLEMENTARY 
+  static ColorTheoryStrategy  ColorTheoryRegistry.COMPOUND 
+  static ColorTheoryStrategy  ColorTheoryRegistry.LEFT_SPLIT_COMPLEMENTARY 
+  static ColorTheoryStrategy  ColorTheoryRegistry.MONOCHROME 
+  static ColorTheoryStrategy  ColorTheoryRegistry.RIGHT_SPLIT_COMPLEMENTARY
+  static ColorTheoryStrategy  ColorTheoryRegistry.SINGLE_COMPLEMENT
+  static ColorTheoryStrategy  ColorTheoryRegistry.SPLIT_COMPLEMENTARY
+  static ColorTheoryStrategy  ColorTheoryRegistry.TETRAD
+  static ColorTheoryStrategy  ColorTheoryRegistry.TRIAD
+
+  */
+
+  void colorSystem(ColorTheoryStrategy s) {
+    l = ColorList.createUsingStrategy(s, tc);
+    l = l.sortByDistance(false);
+  }
+
+  // experiment to build larger color systems, for example:
+  // doubleSystem(ColorTheoryRegistry.TETRAD, ColorTheoryRegistry.ANALOGOUS)
+  void doubleSystem(ColorTheoryStrategy sO, ColorTheoryStrategy sI) {
+    l = new ColorList(); // reset values in list
+    ColorList listO = ColorList.createUsingStrategy(sO, tc);
+    for (int o = 0; o&lt;listO.size(); o++){
+      ColorList listI = ColorList.createUsingStrategy(sI, listO.get(o));
+      for (int i = 0; i&lt;listI.size(); i++){
+        l.add(listI.get(i));
+      }
+    }
+    l = l.sortByDistance(false);
+  }
+
+  color nextC() {
+    color rC;
+    if (count &gt;= l.size()) count = 0;
+    rC =  this.p5c(l.get(count));
+    count++;
+    return rC;
+  }
+
+  color random() {
+    return this.p5c(l.getRandom());
+  }
+
+  color complement() {
+    return tc.getComplement().toARGB();
+  }
+
+  color darken(float _amt) {
+    return tc.getDarkened(_amt).toARGB();
+  }
+
+  color darken(int _amt) {
+    return tc.getDarkened(float(_amt)/100).toARGB();
+  }
+
+  color lighten(float _amt) {
+    return tc.getLightened(_amt).toARGB();
+  }
+
+  color lighten(int _amt) {
+    return tc.getLightened(float(_amt)/100).toARGB();
+  }
+
+  color p5c () {
+    return color(tc.toARGB());
+  }
+
+  color p5c (TColor _tc) {
+    return color(_tc.toARGB());
+  }
+
+}
+
+ColorPicker pick;
+float t = 0.0;
+float x_off = 10000;
+color myColor;
+float brushSize = width/2;
+float density = 0.001;
+
+void setup(){
+  size(512, 512);
+  frameRate(1000); // froce high fps
+  pick = new ColorPicker(&quot;00aec4&quot;);
+  pick.colorSystem(ColorTheoryRegistry.COMPLEMENTARY);
+  // pick.doubleSystem(ColorTheoryRegistry.COMPLEMENTARY, ColorTheoryRegistry.ANALOGOUS);
+  // pick.doubleSystem(ColorTheoryRegistry.TETRAD, ColorTheoryRegistry.ANALOGOUS);
+  background(pick.random());
+}
+
+
+void draw(){
+  noStroke();
+  fill(myColor, 10);    
+  translate(-width/2, -height/2);
+  scale(2);
+  ellipse(noise(t+=density)*width, height/2 + sin(frameCount)*height/2, brushSize, brushSize);
+  if (frameCount % int((width/2+10) - brushSize) == 0) { 
+    brushSize *= 0.98;
+  }
+  if (frameCount % 1500 == 0) { 
+    myColor = pick.nextC();
+  }
+  if (brushSize &lt; 1) brushSize = width/2;
+}
+</code></pre>
+
+  <h2><a href="/blog/top-5-on-linkedin/">Top 5% on LinkedIn</a> <span>Feb 12</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Saw this in my inbox this morning.</p>
+
+<p></p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2013/02/wpid-Photo-Feb-12-2013-1058-AM1.jpg"><img src="http://www.jamesjamesjames.com/wp-content/uploads/2013/02/wpid-Photo-Feb-12-2013-1058-AM1.jpg" /></a></p>
+
+  <h2><a href="/blog/zurb-foundation-4-awesome-2/">Zurb Foundation 4, Awesome!</a> <span>Feb  1</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I just got back from the Zurb Foundation Meetup where they gave us a walkthrough of some of the new features. I had a great time and here are some of the takeaways from the presentation:</p>
+
+<p></p>
+
+<h2>Mobile First</h2>
+
+<p>Rather than starting with a full fledged desktop website and figuring out how to use media queries to make things stack correctly and simplify on mobile, Mobile First takes a different approach. Now you can start from a Mobile perspective, limited set of options, simplicity and then build out more for the tablet and desktop browsers after that is complete. With mobile sure to surpass desktop use anyday now this approach makes a lot of sense to me.</p>
+
+<h2>Sass</h2>
+
+<p>(yes it has a <a href="http://dribbble.com/shots/760641-Getting-Sassy-Final-Logo">Sassy new logo</a>)</p>
+
+<p>Chris from Zurb gave a fantastic demo of how the new mixins work with Sass. I think these are going to be really powerful, especially if you are wanting to go beyond the basic css based Foundation. It allows you to create just the functionality that you want and tweak it in an endless posibility of ways. He demonstrated how this worked with buttons as well as with the grid. He also showed how to use simple media queries adjust the grid on the fly. He also showed the new shorter class naming style, giving up CamelCase for dashed-names.</p>
+
+<p>Someone asked a question, &ldquo;Do I need to know Ruby in order to use Sass?&rdquo;</p>
+
+<p>The answer from the Zurb Crew was was no, but you do need to be able to use a command line application. The entire crowd jumped in, &ldquo;use <a href="http://incident57.com/codekit/">CodeKit</a>.&rdquo;</p>
+
+<h2><a href="http://zeptojs.com/">Zepto</a> replaces jQuery</h2>
+
+<p>There was a joke here about IE support and Zepto. Right now Zepto lists ie10 as a maybe&hellip; But the good news if you need ie support you can always drop in jQuery instead of Zepto. The big point here is bloat. jQuery is a massive library (10k+ lines of code) wheras Zepto is about 1.5k (not confirmed, just what I heard at the meeting). Definitely got me thinking about Zepto especially for projects focused on the mobile space.</p>
+
+<h2>Refactoring and Libraries</h2>
+
+<p>This is probally something most Foundation users may never notice but I am excited that Zurb is taking some pride in their work and refactoring and rewriting some of their older libraries. I am sure in addition to having a cleaner more readable code base it will likely result in some optimization of some sort.</p>
+
+<blockquote>
+<p>So, when will it be released? Sometime in February.</p>
+</blockquote>
+
+<p>I can&rsquo;t wait. Thank you Zurb for putting on an awesome meetup and giving us a sneak peak at some of the new features. If you would like to read about this more in depth, I recommend taking a look at their <a href="http://zurb.com/article/1152/coding-smarter-the-why-of-foundation-4">official blog post</a>. </p>
+
+  <h2><a href="/blog/phonegap-helloworld/">Hello World on Phonegap (Bundle not of found type)</a> <span>Apr 26</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Today I was introduced to Phonegap by my friend Ethan Miller. It seems to be a great intermediate way to develop cross platform mobile applications. In going through the <a href="http://phonegap.com/start#android">Hello World Tutorial for Android</a> I ran into an issue in Eclipse. Basically there are two additional import statements that are needed for the app to run. Here is the java code from my corrected Hello World example:</p>
+
+<p></p>
+
+<p>&ldquo;` java cordovaExample.java<br>
+package com.phonegap.helloworld;
+// these next two lines were what had to be added for the example to compile
+import android.app.Activity;
+import android.os.Bundle;</p>
+
+<p>import org.apache.cordova.<em>;
+public class App extends DroidGap {
+  /</em>* Called when the activity is first created. */<br>
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    super.loadUrl(&quot;file:///android_asset/www/index.html&rdquo;);<br>
+  }
+}
+&ldquo;`</p>
+
+<p>I couldn&rsquo;t find an answer online so I thought I would post this here in case anyone else runs into the same issue. I resolved it by looking at the included cordova example &quot;cordovaExample.java&rdquo;.</p>
+
+  <h2><a href="/blog/gsoc-gui-toolkit/">GSOC Processing GUI Toolkit Proposal</a> <span>Apr  5</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>The GUI Toolkit will allow the rapid development of a UI visually and write framework code for interaction. By capitalizing on the amazing work of Andreas Schlegel in the ControlP5 library (<a href="http://www.sojamo.de/libraries/controlP5">http://www.sojamo.de/libraries/controlP5</a>) the goal is to create a set of tools that allows the rapid and graphical creation, alignment and customization of UI elements. Additionally a new color picker will be written for ControlP5.</p>
+
+<p></p>
+
+<h2>Project Description</h2>
+
+<p>The processing development environment is a valuable asset to both those new to programming, non-programmers and programmers alike. In my experience as a programmer, artist, student and university instructor there is one area that I believe is lacking in processing and that is of rapid development of user interface elements. In the mid 1990&rsquo;s, just after high school I used the Borland Delphi (Turbo Pascal) RAD (Rapid Application Development) environment. Although it did not work well by todays standards but I believe that a mashup of a Delphi style UI designer combined with the flexibility and ease of programming provided by the ControlP5 library could provide the processing community with a novel tool to approach programming projects that require a UI. This would ease the learning curve and lower the cost of entry for many projects.</p>
+
+<p>The project will comprise of the following elements:</p>
+
+<p>1) The UI Designer: a full screen application written in processing that uses controlP5 elements itself to quickly generate a user interface visually and by modifying parameters. This will save in the standard controlP5 xml format allowing it to be used with the following tools or directly from controlP5 for advanced programmers. Writing this component in Processing is necessary to avoid a complete rewrite of ControlP5 to work natively in JFC/Swing. Additionally it will be an advanced example of ControlP5 / UI work contributed to the community.</p>
+
+<p>screen capture of proof of concept:</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui-toolkit-ui-designer-window.png"><img src="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui-toolkit-ui-designer-window-300x242.png" /></a> <a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui-toolkit-ui-designer-fs.png"><img src="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui-toolkit-ui-designer-fs-300x187.png" /></a></p>
+
+<p>processing code for above example (required the ControlP5 library):</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/GSOC_GUIToolkit_UI_Designer_Draft.zip">GSOC<em>GUIToolkit</em>UI<em>Designer</em>Draft.zip</a></p>
+
+<p>2) The Framework Generator: This will have a simple GUI using swing that will allow users to select an xml file, choose several options, and then have the framework code generated on the fly. This will allow the easy sharing and reuse of user interface elements within the processing and controlP5 community.</p>
+
+<p>draft processing tool ui:</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui_toolkit_p5_tool_ui.png"><img src="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/gui_toolkit_p5_tool_ui.png" /></a></p>
+
+<p>3) Color Picker: a proper color picker for ControlP5. In my opinion this is a necessary addition to the ControlP5 library either within the project itself or within a fork of the project. This will be a color picker that allows RGB, HSV selection and advanced features.</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/color_picker_ui.png"><img src="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/color_picker_ui.png" /></a>  </p>
+
+<h2>Timeline</h2>
+
+<ul>
+<li><p>april 24 - 27: get to know mentors, read JFC/Swing/ControlP5 documentation, get up to speed</p></li>
+<li><p>april 30 - may 4: write ColorPicker element for ControlP5, examine XML export methods in ControlP5</p></li>
+<li><p>may 7 - may 11: write basic UI Designer (processing) (bangs, buttons) with parameters and xml export and parse</p></li>
+<li><p>may 14 - may 18: write basic UI Framework Tool (Java/JFC/Swing) converts basic xml to working code from previous week</p></li>
+<li><p>may 21 - may 25: create functionality for the rest of controlp5 including new color picker in ui designer</p></li>
+<li><p>may 28 - june 1: continue adding complete control p5 functionality, id any conflicts or missing features in xml</p></li>
+<li><p>june 4 - june 8: update UI Framework Tool to create basic code framework for all control P5 elements</p></li>
+<li><p>june 11 - june 15: continue updating framework tool</p></li>
+<li><p>june 18 - june 22: add additional features, verbose commenting, choice of framework styles, etc. to UI Framework Tool</p></li>
+<li><p>june 25 - june 29: documentation, testing and bug fixes for UI Designer</p></li>
+<li><p>july 2 - july 6: documentation, testing, and bug fixes for UI Framework Tool</p></li>
+<li><p>july 9 - july 13 : submit mid-term evaluation and prepare code base for new features below</p></li>
+<li><p>july 16 - july 20: add additional features such as snap to grid, relative alignment, etc. to UI Designer</p></li>
+<li><p>july 23 - july 27: add additional features such as above or agreed between mentor and myself</p></li>
+<li><p>july 30 - aug 3: additional small features, robust bug testing</p></li>
+<li><p>aug 6 - aug 10: robust bug testing, final packaging of code for distribution, javadocs, website, etc.</p></li>
+<li><p>aug 13 - pencils down - scrub code, write documentation, write tests,</p></li>
+<li><p>aug 20 - firm pencils down date, submit final evaluation</p></li>
+<li><p>aug 24 - final eval deadline</p></li>
+<li><p>aug 27 - gsoc final results announced</p></li>
+<li><p>aug 31 - submit required code samples to google</p></li>
+</ul>
+
+<h2>Resume/CV</h2>
+
+<p>Resume:</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/Stone_GSOC_Resume.pdf">Stone<em>GSOC</em>Resume.pdf</a></p>
+
+<p>Academic CV:</p>
+
+<p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/Stone_Academic_CV.pdf">Stone<em>Academic</em>CV.pdf</a>  </p>
+
+<h2>Other Code Examples</h2>
+
+<ul>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/boids_spatialed_sound.zip">boids<em>spatialed</em>sound</a> - Spatialized Sound using Boids Algorithm (drives a max/msp patch written by Ian Brill)</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/osra_sliders_ik.zip">osra<em>sliders</em>ik</a> - using controlP5 to control a open source robotic arm with an arduino, serial servo driver, etc.</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/multiZoogComplex.zip">multiZoogComplex</a> - based on Daniel Shiffman&rsquo;s book, showing more complex behaviors to demonstrate OOP concepts to my students</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/lidar_polar_graph.zip">lidar<em>polar</em>graph</a> - simple visualization of pseudo-lidar data from a rotating ir distance sensor captured with an arduino</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/LedMatrixWhite.zip">LedMatrixWhite</a> - a simple system to drive LedMatrix&rsquo;s in an installation using minim spectrum analysis.</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/firmata_ports.zip">firmata_ports</a> - ports of some simple arduino programs to run in processing using firmata and the arduino library. for teaching basic mechatronic concepts.</p></li>
+<li><p><a href="http://www.jamesjamesjames.com/wp-content/uploads/2012/04/chutesLadders.zip">chutesLadders</a> - a demo for my students of how to approach the chutes and ladders game using OOP.</p></li>
+</ul>
+
+  <h2><a href="/blog/uncreative-writing-chapter-1/">Uncreative Writing, Chapter 1</a> <span>Feb  2</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>In a graduate seminar this semester I am reading a book by Kenneth Goldsmith called <a href="http://www.amazon.com/gp/product/0231149913/">Uncreative Writing</a>. He teaches poetry at UPenn a class of the same name where he tells his students that they will not be doing any creative writing of any kind, that everything will be stolen and plagiarized, two big no-no&rsquo;s in academia. In fact his final assignment is to purchase a term paper from a &ldquo;paper mill&rdquo; and then defend it.</p>
+
+<p></p>
+
+<p>I have so far read the introduction and the 1st chapter. Some of my classmates complain about the mechanics of his writing but to be honest I am more interested in the ideas and I did not notice this in a negative way.</p>
+
+<p>To me this book is very smart. He seems to be taking some postmodern ideas such as that of Delueze&rsquo;s Rhizome, looking to visual art as a reference, and creating a poetic textual mash-up. It reminds me of some of the great enthusiasm and interest in the early internet in terms of hyper-textuality using the Rhizome metaphor and the hope for cyberspace outlined <em>à la</em> Mondo2000. It seems that thoughts and spaces such as the LambdaMOO seem to be reused today as maybe literature is falling way behind.</p>
+
+<p>When I think about this though, I do not think that this is exactly the case. What I think about is all of the open source projects and movements that have be archiving not just classic texts but any texts they can get their virtual hands on.</p>
+
+<p>And so, this book proposes, we should not be creating any new texts. There is enough of that already, but rather we should remix, mashup, and reconfigure such texts into expressions of the the now or contemporary society.</p>
+
+<p>On a side note, I am very interested and influenced by this book because of some <a href="http://www.jamesjamesjames.com/?p=1070">experiments</a> I did over the summer during my residency at the Institute for the Arts and the Humanities at Penn State. I was interested in how the rhizome or cyborg might manifest in the process of generating a traditional thesis in an non-traditional way. I am seeing a lot of connections between my experiment and what Goldsmith is speaking of. I feel that it is giving me a better context and way of describing these methods I was using. Right now these are just some fleeting thoughts. I hope to further reflect on these ideas and more specifically identify some of the intersections in the near future.</p>
+
+<p>Love this book so far. I highly recommend it. I am also reading it on kindle which is fun, however, it seems that the fact that it is linear and not &ldquo;hyperlinked&rdquo; is a missed opportunity.</p>
+
+<p>-James</p>
+
+  <h2><a href="/blog/new-blog/">New Blog</a> <span>Feb  2</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Last night I participated in an amazing webinar led by Andy Drish. I was super impressed by some of the tactics and concepts he suggest that people follow in regards to a job search and building ones network.</p>
+
+<p></p>
+
+<p>I an attempt to follow up on some of his suggestions I have made jamesjamesjames.com my personal career blog of sorts where I will post everything interesting I am doing and want to share.</p>
+
+<p>I will also be refining my other website <a href="http://www.manofstone.com">www.manofstone.com</a> to be a more formal portfolio website. Because I have a lot of content on that site, I will be slowly migrating it here, and adding a update link.</p>
+
+<p>Hope you enjoy what is to come.</p>
+
+
+  
+    <p><a href="/blog/alt/p3/">Next page</a></p>
+  
+
+
+    
+
+<div id="mos-top-footer">
+  <div class="row">
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Categories</h4>
+      <ul class="side-nav">
+        
+        
+        <li><a href="/blog/code/">code</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/01sj/">01sj</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ecology/">ecology</a></a></li>
+        
+        
+        
+        <li><a href="/blog/fcp/">fcp</a></a></li>
+        
+        
+        
+        <li><a href="/blog/physical-computing/">physical computing</a></a></li>
+        
+        
+        
+        <li><a href="/blog/video/">video</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/arduino/">arduino</a></a></li>
+        
+        
+        
+        <li><a href="/blog/robot/">robot</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/isea2011/">isea2011</a></a></li>
+        
+        
+        
+        <li><a href="/blog/performance/">performance</a></a></li>
+        
+        
+        
+        
+        
+        <li><a href="/blog/wearable/">wearable</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/processing/">processing</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/rhizome/">rhizome</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/java/">java</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/jquery/">jquery</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/studio/">studio</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/zurb-foundation/">zurb-foundation</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/patterns/">patterns</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/foundation-quick-tips/">foundation-quick-tips</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ruby/">ruby</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Top Posts</h4>
+      <ul class="side-nav">
+      <li><a href="/blog/compass-sass-vs-sassc-for-zurb-foundation-4/">Compass Sass vs Sassc for Zurb Foundation 4</a></li>
+        <li><a href="/blog/zurb-foundation-5-medium-grid/">Zurb Foundation 5 Medium Grid</a></li>
+        <li><a href="/blog/using-zurb-ink-with-mailchimp/">Using Zurb Ink with MailChimp</a></li>
+        <li><a href="/blog/10-things-i-love-about-ruby/">10 Things I Love About Ruby</a></li>
+        <li><a href="/blog/semantic-ui-style-layouts-in-zurb-foundation/">Semantic UI Style Layouts in Zurb Foundation</a></li>
+        <li><a href="/blog/design-patterns-in-processing-the-agent/">Design Patterns in Processing the Agent</a></li>
+        <li><a href="/blog/ruby-slim-and-zurb-foundation/">Ruby Slim And Zurb Foundation</a></li>
+        <li><a href="/blog/shoehorn-zurb-foundation-into-weird-stuff/">Shoehorn Zurb Foundation Into Weird Stuff</a></li>
+        <li><a href="/blog/dotrb-ruby-confrence-in-paris-france/">Dotrb Ruby Confrence in Paris France</a></li>
+        <li><a href="/blog/the-event-driven-jquery-plugin-pattern-with-four04kids/">The Event Driven Jquery Plugin Pattern With Four04kids</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Products</h4>
+      <ul class="side-nav">
+        <li><a href="/zurb-foundation-blueprints">Zurb Foundation 4 Blueprints</a></li>
+        <li><a href="https://gum.co/foundation4quickref">Zurb Foundation 4 Quick Reference</a></li>
+        <li><a href="https://leanpub.com/aoeuandi">AOEU and I, Learn How to Type with the Dvorak Keyboard Layout, the Leading Alternative to QWERTY</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Latest Links</h4>
+      <ul class="side-nav">
+        <li><a href="http://bitly.com/bundles/manofstone/8">frontend-five-001</a></li>
+        <li><a href="http://bitly.com/bundles/manofstone/9">4-pub-001</a></li>
+        <li><a href="http://bitly.com/u/manofstone">my live bitly stream</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <p class="text-center"><small>Copyright 2013, James Stone, All Rights Reserved.</small></p>
+
+    </div>
+  </div>
+</div>
+
+<div id="mos-footer">
+  <div class="row">
+    <div class="medium-2 large-2 columns">
+      <h4 class="alt-text text-right">James Stone</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-nav">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="teaching">Teaching</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="studio">Studio</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="medium-4 large-4 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-social-nav">
+        <li><a href="http://feeds.feedburner.com/jamesmanofstone" rel="alternate" type="application/rss+xml"><i class="fi-rss"></i></a></li>
+        <li><a href="http://www.twitter.com/manofstone"><i class="fi-social-twitter"></i></a></li>
+        <li><a href="https://github.com/manofstone"><i class="fi-social-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/1560583"><i class="fi-social-stack-overflow"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/manofstone"><i class="fi-social-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+    <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+    </section><!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+
+    <script src="/javascripts/application-def5725c.js" defer="defer" type="text/javascript"></script>
+
+    <script type="text/javascript" defer="defer">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100671419);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100671419ns.gif" /></p></noscript>
+
+
+  </body>
+</html>

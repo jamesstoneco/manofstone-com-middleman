@@ -1,0 +1,137 @@
+---
+title: "James Stone: Author, Speaker, Developer and Media Artist"
+seo_desc: James Stone is an Author, Speaker, Developer and Media Artist. He taught game and creative coding at Penn State and served as faculty for Eyebeam.
+pageable: true
+per_page: 4
+active_nav: home
+---
+
+
+
+<div id="mos-header">
+
+<div class="row">
+  <div class="medium-10 medium-centered large-10 large-centered columns">
+    <div class="row">
+      <div class="small-8 small-centered medium-4 medium-uncentered large-4 large-uncentered columns">
+        <p><a href="about"><img src="images/headshot-james-circle-retina.png" alt="James Stone"></a></p>
+<!--         <p><a href="about"><img data-interchange="[images/headshot-james-circle-mobile.png, (default)], [images/headshot-james-circle-desktop.png, (large)], [images/headshot-james-circle-retina.png, (retina)]" alt="James Stone"></a></p>
+ -->      </div>
+      <div class="small-10 small-centered medium-8 medium-uncentered large-8 large-uncentered columns">
+        <h2 class="alt-text">Hi, I'm James. <small class="alt-text">I like to build stuff.</small></h2>
+        <h5 class="alt-text">I have never taken the traditional path in life. I got kicked out of high school for hacking computers and later completed a masters degree with top honors at Penn State. I am both a developer and a designer, a musician and a poet and an accomplished media artist who is not afraid of the commercial world.</h5>
+
+        <h5 class="alt-text">If you are looking for Zurb Foundation, HTML5, Ruby, Creative Coding, Processing, or Cyborg Plants, you are at the right place.</h5>
+        <p>&nbsp;</p>
+
+<!--         <p class="hide-for-small text-right">
+          <a href="about" class="button large secondary radius">About my journey &raquo;</a>
+        </p>
+        <div class="show-for-small">
+          <a href="about" class="button large secondary radius expand">About my journey &raquo;</a>
+        </div>
+ -->
+       </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-top-spacing"></div>
+
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Recent Articles</h2>
+    <% page_articles.each_slice(2) do | row | %>
+    <div class="row">
+      <% row.each do |article| %>
+      <div class="medium-6 large-6 columns">
+        <div class="panel">
+          <% test_featured_image = article.data.featured_image %>
+          <% if ( defined?(test_featured_image)) %>
+            <p><a href="<%= article.url %>"><img src="<%= article.data.featured_image %>"></a></p>
+          <% end %>
+          <h4 class="entry-title"><%= link_to article.title, article %></h4>
+          <p><time class="timeago published" datetime="<%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").to_time.iso8601 %>"><%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").strftime('%B %e, %Y %I:%M %p') %></time></p>
+          <p class="entry-summary"><%= strip_html(article.summary(125)) %></p>
+          <%= link_to "Read more &raquo;", article, :class => "button primary" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="row"> <div class="large-12 columns"> <p>&nbsp;</p> </div> </div>
+
+
+<div id="products-banner">
+  <div class="row">
+    <div class="large-12 columns">
+      <h2 class="alt-text">Products</h2>
+    </div>
+    </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <h5 class="alt-text text-center">Zurb Foundation Blueprints</h5>
+      <div class="row">
+      <div class="small-8 small-centered medium-8 large-8 columns">
+          <p class="alt-text">
+            <a href="zurb-foundation-blueprints"><img src="images/zurb-foundation-blueprints/mocked-cover.png" alt=""></a>
+          </p>
+        </div>
+      </div>
+      <p class="alt-text text-center">Comming soon from Packt Publishing.</p>
+    </div>
+    <div class="medium-4 large-4 columns">
+      <h5 class="alt-text text-center">Zurb Foundation Quick Reference</h5>
+      <div class="row">
+        <div class="small-10 small-centered medium-10 large-10 columns">
+          <p class="alt-text">
+            <a href="zurb-foundation-blueprints"><img class="th" src="images/zurb-foundation-blueprints/quick-ref-placed.jpg" alt=""></a>
+          </p>
+        </div>
+      </div>
+      <p class="alt-text">Available free for a limited time by subscribing to my Zurb Foundation 4 Blueprints Newsletter.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Speaking Engagements and Presentations</h2>
+
+    <div class="row">
+      <div class="medium-6 large-6 columns">
+        <h5>
+
+          <ul class="inline-list">
+            <li>HTML5 Developers Confrence, San Francisco</li>
+            <li>Schreyers Honors College, the Pennsylvania State Univeristy</li>
+            <li>TEDxPSU</li>
+            <li>Digital Cultures and Creativity Honors College, University of Maryland</li>
+            <li>Salisbury University</li>
+            <li>ISEA Istanbul (International Symposium for the Electronic Arts)</li>
+            <li>Penn State Exploration Day</li>
+            <li>Penn State Altoona</li>
+          </ul>
+        </h5>
+      </div>
+      <div class="medium-6 large-6 columns">
+        <div class="flex-video widescreen">
+          <iframe width="853" height="480" src="//www.youtube.com/embed/MCiT8YGK0t8?autoplay=0&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>

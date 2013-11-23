@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="9FUywMd926za9lLIK5X7myny7HYoAF48CHemANB8Zu0" />
+    <meta name='yandex-verification' content='4d1b71b148f932e6' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <meta name="description" content="">
+    
+    <title>Using Zurb Ink with MailChimp</title>
+    <link href="/stylesheets/app-5d956af6.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor/modernizr-8c8a2ced.js" defer="defer" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    
+
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h2 class="title"><a href="/">manofstone.com</a></h2>
+      </section>
+
+
+
+      <!-- <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section> -->
+
+
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>James Stone</label></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/studio">Studio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        ...
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
+
+
+    
+<div class="content-top-spacing"></div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2 align="center">Using Zurb Ink with MailChimp</h2>
+    <p align="center">
+      Written by James Stone <time class="timeago published" datetime="2013-11-13T20:00:00+01:00">November 13, 2013 08:00 PM</time>
+
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <div class="entry-content">
+      
+      
+        <div class="row">
+          <div class="small-12 medium-8 medium-centered large-12 columns">
+            <p><img src="/blog/featured-images/iphone-blur-a12f424f.jpg"></p>
+          </div>
+        </div>
+      
+      <p>Zurb Ink is for email as Zurb Foundation is for the web. <a href="http://zurb.com/article/1119/create-emails-for-any-device-introducing-">Zurb teased us late last year</a> with their responsive email templates but they have now taken it one huge step further. They have created a easy to use responsive framework that is available with the same permissive MIT license. I wanted to see how difficult it would be to use this new framework with MailChimp, my newsletter and email provider. Turns out, it was super simple. Lets take a look at how I went about it.</p>
+
+<p></p>
+
+<p>Email and mobile email is becoming so important today. Not only is a lot of traffic going mobile but email is increasing an important tool for connecting with your audience and increasing engagement with your apps. Giving your customers a great mobile experience through email seems to be the next level of responsive design and modern website marketing and engagement.</p>
+
+<p>I read through all the documentation and there is one big issue with Zurb Ink. Ironically, it isn&rsquo;t Microsoft technology (I&rsquo;m looking at you IE) but rather from Google. The issue is with the Gmail app on android displaying the desktop style grid. However, the Gmail app for iOS works great. Go figure. Hopefully Google will catch on soon. Another note is this is just the Android Gmail app. If you use the built in android mail client it displays fine. Boo Google and awesome job MS, I commend you.</p>
+
+<p>I wanted to send out a simple newsletter and I took some time to see what types of elements caused the largest distortion in that particular email client. I noticed that the large social media buttons at the bottom of most of the templates that Zurb provides seemed to be the most glaring. Maybe because of the bold colors.</p>
+
+<p>I started with the <a href="http://zurb.com/ink/templates.php">Newsletter Template</a> (included in the all templates download) and edited and removed what I didn&rsquo;t need. Here is what I ended up with:</p>
+
+<p><code><pre class="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd</a>&quot;&gt;
+&lt;html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;/&gt;
+  &lt;style&gt;
+/**********************************************
+* Ink v1.0.1 - Copyright 2013 ZURB Inc        *
+**********************************************/</p>
+
+<p>/* Client-specific Styles &amp; Reset */
+...
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table class=&quot;body&quot;&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;center&quot; align=&quot;center&quot; valign=&quot;top&quot;&gt;
+        &lt;center&gt;
+          &lt;table class=&quot;row header&quot;&gt;
+            &lt;tr&gt;
+              &lt;td class=&quot;center&quot; align=&quot;center&quot;&gt;
+                &lt;center&gt;
+                  &lt;table class=&quot;container&quot;&gt;
+                    &lt;tr&gt;
+                      &lt;td class=&quot;wrapper last&quot;&gt;
+                        &lt;table class=&quot;twelve columns&quot;&gt;
+                          &lt;tr&gt;
+                            &lt;td class=&quot;six sub-columns&quot;&gt;
+                              &lt;span class=&quot;template-label&quot;&gt;ZURB FOUNDATION 4 BLUEPRINTS&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;six sub-columns last&quot; style=&quot;text-align:right; vertical-align:middle;&quot;&gt;
+                              &lt;span class=&quot;template-label&quot;&gt;NEWSLETTER&lt;/span&gt;
+                            &lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/center&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+          &lt;br&gt;
+          &lt;table class=&quot;container&quot;&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                &lt;!-- content start --&gt;
+                &lt;table class=&quot;row&quot;&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;wrapper last&quot;&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;
+                            &lt;h3&gt;Email Subject/Headline&lt;/h3&gt;
+                            &lt;p class=&quot;lead&quot;&gt;My intro paragraph.&lt;/p&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                    &lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;!-- Article List 1 --&gt;
+                &lt;table class=&quot;row&quot;&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;wrapper&quot;&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td class=&quot;three sub-columns&quot;&gt;
+                            &lt;!-- Top Left sub-grid --&gt;
+                            &lt;img width=&quot;110&quot; height=&quot;110&quot; src=&quot;<a href="http://placehold.it/220">http://placehold.it/220</a>&quot;&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;nine sub-columns last&quot;&gt;
+                            &lt;!-- Top Right sub-grid --&gt;
+                            &lt;h5&gt;Article 1&lt;/h5&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto, odio, blanditiis aliquam quod recusandae quas cum nihil placeat aliquid numquam vero iste corporis beatae?&lt;/p&gt;
+                            &lt;!-- custom wrapped button --&gt;
+                            &lt;table width=&quot;150&quot;&gt;
+                              &lt;tr&gt;
+                                &lt;td&gt;
+                                  &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+                                    &lt;table&gt;
+                                      &lt;tr&gt;
+                                        &lt;td&gt;
+                                          Read article &amp;raquo;
+                                        &lt;/td&gt;
+                                      &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                  &lt;/a&gt;
+                                &lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td class=&quot;three sub-columns&quot;&gt;
+                            &lt;!-- Top Left sub-grid --&gt;
+                            &lt;img width=&quot;110&quot; height=&quot;110&quot; src=&quot;<a href="http://placehold.it/220">http://placehold.it/220</a>&quot;&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;nine sub-columns last&quot;&gt;
+                            &lt;!-- Top Right sub-grid --&gt;
+                            &lt;h5&gt;Article 2&lt;/h5&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto, odio, blanditiis aliquam quod recusandae quas cum nihil placeat aliquid numquam vero iste corporis beatae?&lt;/p&gt;
+                            &lt;!-- custom wrapped button --&gt;
+                            &lt;table width=&quot;150&quot;&gt;
+                              &lt;tr&gt;
+                                &lt;td&gt;
+                                  &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+                                    &lt;table&gt;
+                                      &lt;tr&gt;
+                                        &lt;td&gt;
+                                          Read article &amp;raquo;
+                                        &lt;/td&gt;
+                                      &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                  &lt;/a&gt;
+                                &lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                    &lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;!-- Panel with call to action --&gt;
+                &lt;table class=&quot;row  callout&quot;&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;wrapper last&quot;&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td class=&quot;panel&quot;&gt;
+                            &lt;p&gt;If you love Zurb Foundation, be sure to check out my other Zurb Related Articles. &lt;a href=&quot;<a href="http://www.manofstone.com/blog/zurb-foundation/&amp;quot;&amp;gt;Take">http://www.manofstone.com/blog/zurb-foundation/&amp;quot;&amp;gt;Take</a> me to the Blogosphere &raquo;&lt;/a&gt;&lt;/p&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                    &lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;br&gt;
+                &lt;!-- Article List 2 --&gt;
+                &lt;table class=&quot;row&quot;&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;wrapper&quot;&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td class=&quot;three sub-columns&quot;&gt;
+                            &lt;!-- Top Left sub-grid --&gt;
+                            &lt;img width=&quot;110&quot; height=&quot;110&quot; src=&quot;<a href="http://placehold.it/220">http://placehold.it/220</a>&quot;&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;nine sub-columns last&quot;&gt;
+                            &lt;!-- Top Right sub-grid --&gt;
+                            &lt;h5&gt;Article 3&lt;/h5&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto, odio, blanditiis aliquam quod recusandae quas cum nihil placeat aliquid numquam vero iste corporis beatae?&lt;/p&gt;
+                            &lt;!-- custom wrapped button --&gt;
+                            &lt;table width=&quot;150&quot;&gt;
+                              &lt;tr&gt;
+                                &lt;td&gt;
+                                  &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+                                    &lt;table&gt;
+                                      &lt;tr&gt;
+                                        &lt;td&gt;
+                                          Read article &amp;raquo;
+                                        &lt;/td&gt;
+                                      &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                  &lt;/a&gt;
+                                &lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                      &lt;table class=&quot;twelve columns&quot;&gt;
+                        &lt;tr&gt;
+                          &lt;td class=&quot;three sub-columns&quot;&gt;
+                            &lt;!-- Top Left sub-grid --&gt;
+                            &lt;img width=&quot;110&quot; height=&quot;110&quot; src=&quot;<a href="http://placehold.it/220">http://placehold.it/220</a>&quot;&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;nine sub-columns last&quot;&gt;
+                            &lt;!-- Top Right sub-grid --&gt;
+                            &lt;h5&gt;Article 4&lt;/h5&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto, odio, blanditiis aliquam quod recusandae quas cum nihil placeat aliquid numquam vero iste corporis beatae?&lt;/p&gt;
+                            &lt;!-- custom wrapped button --&gt;
+                            &lt;table width=&quot;150&quot;&gt;
+                              &lt;tr&gt;
+                                &lt;td&gt;
+                                  &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+                                    &lt;table&gt;
+                                      &lt;tr&gt;
+                                        &lt;td&gt;
+                                          Read article &amp;raquo;
+                                        &lt;/td&gt;
+                                      &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                  &lt;/a&gt;
+                                &lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+                          &lt;/td&gt;
+                          &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                    &lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;!-- container end below --&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/center&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code></p>
+
+<p>The first time I opened one of these templates I was thinking, wow. This some sort of nested table bad dream. I thought we had moved past tables and started using divs for most of everything. Well, I guess when it comes to email, even mobile email we are still circa 1996. If you are interested in the real reason for the table use I suggest you check out <a href="http://zurb.com/article/1119/create-emails-for-any-device-introducing-">Zurb&rsquo;s original post</a>.</p>
+
+<p>What is an improvement here though is the use of clearly labeled presentational class names. They look familiar because they use the old Zurb Foundation 3 naming convention: twelve columns, etc. What is nice here is you can just inline the css that comes with the framework in a style tag and that will get you set for the next step. Getting this all to work with MailChimp.</p>
+
+<h2>MailChimp Integration</h2>
+
+<p>So how difficult was it to get it to work with MailChimp. Not difficult at all. I just copied and pasted all of this html, nested table nonsense and it gave me the option to auto inline the css. Everything looked great, just as I expected it.</p>
+
+<ul class="clearing-thumbs" data-clearing>
+  <li><a href="../../images/blog/2013/zurb-ink-mailchimp/mailchimp-preview-options-9e2c32ad.png"><img src="../../images/blog/2013/zurb-ink-mailchimp/mailchimp-preview-options-9e2c32ad.png" class="th" width="200"></a></li>
+  <li><a href="../../images/blog/2013/zurb-ink-mailchimp/mailchimp-builtin-preview-06b7b084.png"><img src="../../images/blog/2013/zurb-ink-mailchimp/mailchimp-builtin-preview-06b7b084.png" class="th" width="200"></a></li>
+</ul>
+
+<p><br></p>
+
+<p>If you have a paid monthly MailChimp account there is this great feature called inbox inspection. It is not instantaneous but it tests your email against either the top 10 email clients used on your list or your choice of 10. What is even better is that it is powered by Litmus, the same service that Zurb recommends for testing your emails. Just as a point of comparison, the cheapest Litmus account is the freelance account and it is $39 per month. Thank you MailChimp. If you are curious what types of results I got, check out the screenshots below.</p>
+
+<ul class="clearing-thumbs" data-clearing>
+  <li><a href="../../images/blog/2013/zurb-ink-mailchimp/inbox-inspection-28a92519.png"><img src="../../images/blog/2013/zurb-ink-mailchimp/inbox-inspection-28a92519.png" class="th" width="200"></a></li>
+</ul>
+
+<p><br></p>
+
+<p>Have you started using Zurb Ink or is responsive email in your road map? I would love to hear about your thoughts about responsive email or if you have any questions about Zurb Ink. Just post in the comments.</p>
+
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+  <div class="small-10 small-centered medium-10 large-10 columns panel radius f4callout">
+    <h3 class="alt-text">Free Zurb Foundation Quick Reference</h3>
+    <p class="alt-text">If you enjoyed this post you might also enjoy my newsletter. If you sign up before November 30th I will send you my Zurb Foundation Quick Reference absolutely free.</p>
+    <div class="row">
+      <div class="medium-6 large-6 columns">
+        <p> <img src="/images/zurb-foundation-blueprints/quick-ref-placed-29da5bdb.jpg" alt=""> </p>
+      </div>
+      <div class="medium-6 large-6 columns">
+        <!-- Begin MailChimp Signup Form -->
+        <form action="http://jamesjamesjames.us5.list-manage1.com/subscribe/post?u=d4dbc5cdf8&amp;id=30ca2edfef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="custom" target="_blank" novalidate data-abide>
+        <input type="hidden" name="REF" id="mce-REF" value="/blog/using-zurb-ink-with-mailchimp/">
+
+<!--           <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div class="name-field">
+                <input type="text" name="FNAME" id="mce-FNAME" placeholder="first name" required pattern="[a-zA-Z]+">
+                <small class="error">Your first name is required.</small>
+              </div>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div class="email-field">
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@domain.com" required>
+                <small class="error">You must enter your email to subscribe and download.</small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-12 large-12 columns">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <input type="submit" value="Download my Free Quick Reference Now &raquo;" name="subscribe" id="mc-embedded-subscribe" class="button cta radius expand">
+            </div>
+          </div>
+        </form>
+    <p class="alt-text">SPAM Sucks. Thats why I promise only to send you foundation goodness about two to three times per month. Unsubscribe at anytime.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <!-- comments -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'manofstone';
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+
+    
+
+<div id="mos-top-footer">
+  <div class="row">
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Categories</h4>
+      <ul class="side-nav">
+        
+        
+        <li><a href="/blog/code/">code</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/01sj/">01sj</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ecology/">ecology</a></a></li>
+        
+        
+        
+        <li><a href="/blog/fcp/">fcp</a></a></li>
+        
+        
+        
+        <li><a href="/blog/physical-computing/">physical computing</a></a></li>
+        
+        
+        
+        <li><a href="/blog/video/">video</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/arduino/">arduino</a></a></li>
+        
+        
+        
+        <li><a href="/blog/robot/">robot</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/isea2011/">isea2011</a></a></li>
+        
+        
+        
+        <li><a href="/blog/performance/">performance</a></a></li>
+        
+        
+        
+        
+        
+        <li><a href="/blog/wearable/">wearable</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/processing/">processing</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/rhizome/">rhizome</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/java/">java</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/jquery/">jquery</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/studio/">studio</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/zurb-foundation/">zurb-foundation</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/patterns/">patterns</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/foundation-quick-tips/">foundation-quick-tips</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="/blog/ruby/">ruby</a></a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Top Posts</h4>
+      <ul class="side-nav">
+      <li><a href="/blog/compass-sass-vs-sassc-for-zurb-foundation-4/">Compass Sass vs Sassc for Zurb Foundation 4</a></li>
+        <li><a href="/blog/zurb-foundation-5-medium-grid/">Zurb Foundation 5 Medium Grid</a></li>
+        <li><a href="/blog/using-zurb-ink-with-mailchimp/">Using Zurb Ink with MailChimp</a></li>
+        <li><a href="/blog/10-things-i-love-about-ruby/">10 Things I Love About Ruby</a></li>
+        <li><a href="/blog/semantic-ui-style-layouts-in-zurb-foundation/">Semantic UI Style Layouts in Zurb Foundation</a></li>
+        <li><a href="/blog/design-patterns-in-processing-the-agent/">Design Patterns in Processing the Agent</a></li>
+        <li><a href="/blog/ruby-slim-and-zurb-foundation/">Ruby Slim And Zurb Foundation</a></li>
+        <li><a href="/blog/shoehorn-zurb-foundation-into-weird-stuff/">Shoehorn Zurb Foundation Into Weird Stuff</a></li>
+        <li><a href="/blog/dotrb-ruby-confrence-in-paris-france/">Dotrb Ruby Confrence in Paris France</a></li>
+        <li><a href="/blog/the-event-driven-jquery-plugin-pattern-with-four04kids/">The Event Driven Jquery Plugin Pattern With Four04kids</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Products</h4>
+      <ul class="side-nav">
+        <li><a href="/zurb-foundation-blueprints">Zurb Foundation 4 Blueprints</a></li>
+        <li><a href="https://gum.co/foundation4quickref">Zurb Foundation 4 Quick Reference</a></li>
+        <li><a href="https://leanpub.com/aoeuandi">AOEU and I, Learn How to Type with the Dvorak Keyboard Layout, the Leading Alternative to QWERTY</a></li>
+      </ul>
+    </div>
+    <div class="medium-3 large-3 columns">
+      <h4 class="alt-text">Latest Links</h4>
+      <ul class="side-nav">
+        <li><a href="http://bitly.com/bundles/manofstone/8">frontend-five-001</a></li>
+        <li><a href="http://bitly.com/bundles/manofstone/9">4-pub-001</a></li>
+        <li><a href="http://bitly.com/u/manofstone">my live bitly stream</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <p class="text-center"><small>Copyright 2013, James Stone, All Rights Reserved.</small></p>
+
+    </div>
+  </div>
+</div>
+
+<div id="mos-footer">
+  <div class="row">
+    <div class="medium-2 large-2 columns">
+      <h4 class="alt-text text-right">James Stone</h4>
+    </div>
+    <div class="medium-6 large-6 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-nav">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="teaching">Teaching</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="studio">Studio</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="medium-4 large-4 columns hide-for-small">
+      <ul class="inline-list" id="mos-footer-social-nav">
+        <li><a href="http://feeds.feedburner.com/jamesmanofstone" rel="alternate" type="application/rss+xml"><i class="fi-rss"></i></a></li>
+        <li><a href="http://www.twitter.com/manofstone"><i class="fi-social-twitter"></i></a></li>
+        <li><a href="https://github.com/manofstone"><i class="fi-social-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/1560583"><i class="fi-social-stack-overflow"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/manofstone"><i class="fi-social-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+    <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+    </section><!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+
+    <script src="/javascripts/application-def5725c.js" defer="defer" type="text/javascript"></script>
+
+    <script type="text/javascript" defer="defer">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100671419);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100671419ns.gif" /></p></noscript>
+
+
+  </body>
+</html>

@@ -1,0 +1,167 @@
+---
+title: "Shoehorn Zurb Foundation into Weird Stuff #1 MiddleMan"
+date: 2013/10/02
+tags: foundation-quick-tips, zurb-foundation, middleman, middlemanapp
+signup_zurb: "true"
+featured_image: /blog/featured-images/middleman-foundation.jpg
+---
+
+Zurb Foundation is great. I mean really great. It is a Ruby Gem, it plays well with Rails and the Asset Pipeline. It even has its own generator to save you time. It also works well standalone with Compass and Sass from the command line but what happens when you try and use it with something else? Well, I will just come out and say it. Zurb Foundation doesn't always play well with others. In this Foundation Quicktip I will show how to get Zurb Foundation to play well with the excellent [MiddleMan](http://www.middlemanapp.com) Ruby based static website and blog generator.
+
+SPLIT\_SUMMARY\_BEFORE\_THIS
+
+MiddleMan is a fantastic static website generator that runs under Ruby. It is what I use to run this site and is one of the most flexible and least opinionated options on the market. [OctoPress](http://octopress.org) is much more popular, but just try and edit some of the basic themes. There is way more complexity in the templating system when compared to MiddleMan.
+
+First lets add the zurb-foundation gem to our Gemfile:
+
+<pre><code class="language-ruby">gem &quot;zurb-foundation&quot;, :require =&gt; false
+</code></pre>
+
+<span class="inline-code">:require =&gt; false</span> is needed here so it doesn't load up all of the dependencies of the <span class="inline-code">zurb-foundation</span> gem.
+
+MiddleMan can use Compass and Sass to compile your files but it will not work with out some extra configuration. Lets take a look at the modifications I made to the <span class="inline-code">config.rb</span> file.
+
+<pre><code class="language-ruby">set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
+foundation_path = Gem::Specification.find_by_name('zurb-foundation').gem_dir
+set :js_assets_paths, [File.join(foundation_path, 'js')]
+set :sass_assets_paths, [File.join(foundation_path, 'scss')]
+</code></pre>
+
+A [blog post by Roman Ernst](http://wanderwort.de/2013/04/11/using-zurb-foundation-with-middleman/) got me part way there. All that was needed was to add the :sass_assets_paths and everything works great.
+
+Now lets take a look at my layout.erb file.
+
+<pre><code class="language-html-ruby">&lt;!DOCTYPE html&gt;
+&lt;!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --&gt;
+&lt;!--[if lt IE 7 ]&gt; &lt;html class="ie6" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt;    &lt;html class="ie7" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt;    &lt;html class="ie8" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if (gte IE 9)|!(IE)]&gt;&lt;!--&gt; &lt;html lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+
+    &lt;!-- Uncomment to make IE8 render like IE7 --&gt;
+    &lt;!-- &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=7&quot; /&gt; --&gt;
+
+    &lt;!-- Set the viewport width to device width for mobile --&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+
+    &lt;title&gt;&lt;%= current_page.data.title || &quot;James Stone&quot; %&gt;&lt;/title&gt;
+
+    &lt;%= stylesheet_link_tag &quot;app&quot; %&gt;
+    &lt;%= javascript_include_tag &quot;vendor/custom.modernizr&quot; %&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;%= partial &quot;header&quot; %&gt;
+    &lt;%= yield %&gt;
+    &lt;%= partial &quot;footer&quot; %&gt;
+    &lt;%= javascript_include_tag  &quot;application&quot; %&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+This should look pretty familiar if you use the Assets Pipeline / Sprokets in Rails. The only difference here is that we want to load vendor/custom.modernizr.js at the top of the page separately so I made a copy from the original gem file to my javascripts/vendor directory. You can find the path of to your current zurb-foundation gem(s) by running <span class="inline-code">gem which zurb-foundation</span>. The javascripts can be found one level down in the <span class="inline-code">../js/vendor</span> directory.
+
+Now lets move on to our app.js file.
+
+<blockquote class="panel">
+	<p>This is a manifest file that&#039;ll be compiled into application.js, which will include all the files listed below.</p>
+	<p>Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts, or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.</p>
+	<p>It&#039;s not advisable to add code directly here, but if you do, it&#039;ll appear at the bottom of the the compiled file.</p>
+	<p>WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT&#039;S TO BE PROCESSED, ANY BLANK LINE SHOULD GO AFTER THE REQUIRES BELOW.</p>
+</blockquote>
+
+
+Here is the message in the comments of this file generated by MiddleMan that I have removed, for your reference.
+
+<pre><code class="language-js">//= require vendor/jquery
+//= require foundation/foundation
+//= require foundation/foundation.clearing
+//= require foundation/foundation.abide
+//= require foundation/foundation.forms
+//= require foundation/foundation.section
+//= require vendor/highlight
+//= require vendor/processing
+//= require_directory .
+
+$(document).foundation();
+
+// other code I want to load every page, such as my code highlighting library
+hljs.initHighlightingOnLoad();
+</code></pre>
+
+There are a couple things going on here. First, I am deciding to use jQuery only<sup><a href="#note1">1</a></sup> for my site because I have some jQuery specific functionality that is not compatible with Zepto. Second, you will notice that I am only including a subset of the full Foundation JavaScripts. This is because I am optimizing it by not including features that I am not using on my site. Finally I load two additional libraries I am using, highlight and processing from the vendor directory. Finally I have changed <span class="inline-code">//=require-all</span> to <span class="inline-code">//=require_directory .</span> This is important to prevent Sprokets from requesting all of our Foundation JavaScript files from the gem file. Now it will only look at the current directory for files to compile at the end of this file.
+
+Against the suggestion of the MiddleMen I just place my JavaScript in the file, starting with the <span class="inline-code">$(document).foundation()</span> jQuery Plugin call.
+
+Now, we are almost set to go but there is one more thing. Sassy CSS or SCSS. To get this working I have copied over the <span class="inline-code">../scss/normalize.scss</span> and <span class="inline-code">../scss/foundation/variables.scss</span> files from the gem file and renamed them with a prefixed underscore. 
+
+Here is the contents of my app.scss file:
+
+<pre><code class="langugage-sass">// Global Foundation Settings
+@import &quot;settings&quot;;
+
+// Comment out this import if you don&#039;t want to use normalize
+@import &quot;normalize&quot;;
+
+// Import specific parts of Foundation by commenting the import &quot;foundation&quot;
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import &quot;foundation/components/global&quot;; // *always required
+@import &quot;foundation/components/grid&quot;;
+
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+// @import &quot;foundation/components/grid-5&quot;;
+
+@import &quot;foundation/components/visibility&quot;;
+// @import &quot;foundation/components/block-grid&quot;;
+@import &quot;foundation/components/type&quot;;
+@import &quot;foundation/components/buttons&quot;;
+@import &quot;foundation/components/forms&quot;; // *requires components/buttons
+@import &quot;foundation/components/custom-forms&quot;; // *requires components/buttons, components/forms
+@import &quot;foundation/components/button-groups&quot;; // *requires components/buttons
+// @import &quot;foundation/components/dropdown-buttons&quot;; // *requires components/buttons
+// @import &quot;foundation/components/split-buttons&quot;; // *requires components/buttons
+@import &quot;foundation/components/flex-video&quot;;
+@import &quot;foundation/components/section&quot;;
+// @import &quot;foundation/components/top-bar&quot;;  // *requires components/grid
+// @import &quot;foundation/components/orbit&quot;;
+// @import &quot;foundation/components/reveal&quot;;
+// @import &quot;foundation/components/joyride&quot;;
+@import &quot;foundation/components/clearing&quot;;
+// @import &quot;foundation/components/alert-boxes&quot;;
+// @import &quot;foundation/components/breadcrumbs&quot;;
+// @import &quot;foundation/components/keystrokes&quot;;
+// @import &quot;foundation/components/labels&quot;;
+@import &quot;foundation/components/inline-lists&quot;;
+@import &quot;foundation/components/pagination&quot;;
+@import &quot;foundation/components/panels&quot;;
+// @import &quot;foundation/components/pricing-tables&quot;;
+// @import &quot;foundation/components/progress-bars&quot;;
+@import &quot;foundation/components/side-nav&quot;;
+// @import &quot;foundation/components/sub-nav&quot;;
+// @import &quot;foundation/components/switch&quot;;
+// @import &quot;foundation/components/magellan&quot;;
+// @import &quot;foundation/components/tables&quot;;
+@import &quot;foundation/components/thumbs&quot;;
+// @import &quot;foundation/components/tooltips&quot;;
+// @import &quot;foundation/components/dropdown&quot;;
+@import &quot;highlight-styles/solarized_dark&quot;;
+</code></pre>
+
+Here I have left all of my commented out <span class="inline-code">@import</span> statements because when Sprokets renders the CSS it removes all <span class="inline-code">//</span> style comments and only preserves <span class="inline-code">/* */</span> style comments. After all of my Foundation <span class="inline-code">@imports</span> I place all of my site specific Sass and CSS.
+
+This has been working really well for me so far. First it is using the latest version of Foundation from the gem file and only requires minimal config changes to my MiddleMan <span class="inline-code">config.rb</span> file. I can just run <span class="inline-code">middleman server</span> and it will recompile scss changes on the fly so they are reflected immediately on my development server. Another great benefit it is the Sprokets assets system that provides a best practice creating a single concatenated and minified javascript and css file per site.
+
+I host everything on AWS S3 / CloudFront and use the <span class="inline-code">middleman-s3_sync</span> gem to keep everything up to date.
+
+If you have been using MiddleMan with Foundation or have any questions please feel free to get in touch through the comments below. Is there something strange you are trying to get Foundation Sass to work with? Let me know in the comments and I might featured it in a future post.
+
+[<a name="note1">1</a>] jQuery only: If you want to have the default behavior of Foundation choosing Zepto or jQuery automatically, you can approach it as I did with the custom.modernizr.js file.
