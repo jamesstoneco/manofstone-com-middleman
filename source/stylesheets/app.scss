@@ -46,49 +46,6 @@
 
 
 
-
-
-/*
-@import "foundation/components/accordion";
-@import "foundation/components/alert-boxes";
-// @import "foundation/components/block-grid";
-// @import "foundation/components/breadcrumbs";
-@import "foundation/components/button-groups";
-@import "foundation/components/buttons";
-@import "foundation/components/clearing";
-// @import "foundation/components/dropdown";
-// @import "foundation/components/dropdown-buttons";
-@import "foundation/components/flex-video";
-@import "foundation/components/forms";
-@import "foundation/components/grid";
-@import "foundation/components/inline-lists";
-// @import "foundation/components/joyride";
-@import "foundation/components/keystrokes";
-// @import "foundation/components/labels";
-// @import "foundation/components/magellan";
-// @import "foundation/components/orbit";
-@import "foundation/components/pagination";
-@import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/reveal";
-@import "foundation/components/side-nav";
-// @import "foundation/components/split-buttons";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-// @import "foundation/components/tables";
-// @import "foundation/components/tabs";
-@import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-// @import "foundation/components/tabs";
-// @import "foundation/components/offcanvas";
-@import "foundation/components/visibility";
-
- */
-
-
-
-
 @import "highlight-styles/solarized_dark";
 
 // foundation icon fonts 3
@@ -203,70 +160,70 @@ nav.tab-bar:after  {
 
 // disqus bloat
 
-// #dsq-comments-title h4 {
-// color:#333;
-// }
-// #disqus_thread {
-// padding:12px;
-// margin-bottom:-10px;
-// }
-// #disqus_thread h4 {
-// color:#333;
-// font-family: Helvetica, sans-serif;
-// font-size:12px;
-// padding-bottom:.5em;
-// }
-// #dsq-content div.dsq-options {
-// background:none;
-// padding-bottom:10px;
-// }
-// #dsq-comments li.dsq-comment {
-// margin-top:12px;
-// margin-bottom:10px;
-// padding:5px;
-// background:#FFFFFF;
-// -moz-border-radius: 5px;
-// -webkit-border-radius: 5px;
-// border:0px solid #ccc;
-// }
-// #dsq-content div.dsq-post-area {
-// padding:5px;
-// background:#F0F0E9;
-// -moz-border-radius: 5px;
-// -webkit-border-radius: 5px;
-// border:1px solid #ccc;
-// -webkit-box-shadow: 0px 0px 10px #FFFFFF;
-// -moz-box-shadow: 0px 0px 10px #ECF40B;
-// }
-// #dsq-content .dsq-comment-header {
-// background:#F5F5F5;
-// -moz-border-radius: 5px;
-// -webkit-border-radius: 5px;
-// border: 1px solid #ccc;
-// }
-// .dsq-brlink {
-// display:none;
-// }
-// #dsq-content .dsq-comment-message {
-// background:#EDEDED;
-// padding:5px;
-// margin-left: 15px;
-// -moz-border-radius: 5px;
-// -webkit-border-radius: 5px;
-// }
-// #dsq-content #dsq-authenticate .dsq-login-buttons {
-// background:none;
-// background-image:none;
-// margin-bottom:0;
-// }
-// #dsq-content #dsq-form-area .dsq-textarea .dsq-textarea-wrapper,
-// #dsq-content #dsq-form-area .dsq-post-fields .dsq-input-wrapper {
-// border: 1px solid #ccc;
-// }
-// #dsq-new-post div.dsq-request-user-info {
-// background:none;
-// padding-bottom:0px;
-// }
+#dsq-comments-title h4 {
+color:#333;
+}
+#disqus_thread {
+padding:12px;
+margin-bottom:-10px;
+}
+#disqus_thread h4 {
+color:#333;
+font-family: Helvetica, sans-serif;
+font-size:12px;
+padding-bottom:.5em;
+}
+#dsq-content div.dsq-options {
+background:none;
+padding-bottom:10px;
+}
+#dsq-comments li.dsq-comment {
+margin-top:12px;
+margin-bottom:10px;
+padding:5px;
+background:#FFFFFF;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border:0px solid #ccc;
+}
+#dsq-content div.dsq-post-area {
+padding:5px;
+background:#F0F0E9;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border:1px solid #ccc;
+-webkit-box-shadow: 0px 0px 10px #FFFFFF;
+-moz-box-shadow: 0px 0px 10px #ECF40B;
+}
+#dsq-content .dsq-comment-header {
+background:#F5F5F5;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #ccc;
+}
+.dsq-brlink {
+display:none;
+}
+#dsq-content .dsq-comment-message {
+background:#EDEDED;
+padding:5px;
+margin-left: 15px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+#dsq-content #dsq-authenticate .dsq-login-buttons {
+background:none;
+background-image:none;
+margin-bottom:0;
+}
+#dsq-content #dsq-form-area .dsq-textarea .dsq-textarea-wrapper,
+#dsq-content #dsq-form-area .dsq-post-fields .dsq-input-wrapper {
+border: 1px solid #ccc;
+}
+#dsq-new-post div.dsq-request-user-info {
+background:none;
+padding-bottom:0px;
+}
 
 .f4callout {
   background: $primary-color;
