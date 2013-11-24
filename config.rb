@@ -194,3 +194,14 @@ activate :s3_sync do |s3_sync|
   # caching_policy 'text/html', max_age: 0, must_revalidate: true
   # s3_sync.default_caching_policy max_age:(300)
 end
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = ENV['MOS_WWW_HOST']
+  deploy.path   = ENV['MOS_WWW_PATH']
+  # Optional Settings
+  deploy.user  = ENV['MOS_WWW_USER'] # no default
+  deploy.port  = ENV['MOS_WWW_PORT'] # ssh port, default: 22
+  deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = "-rltgoDvzO --no-p --del -e" # add custom flags, default: -avze
+end
