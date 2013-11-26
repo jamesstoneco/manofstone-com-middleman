@@ -62,33 +62,9 @@ set :images_dir, 'images'
 
 # foundation patch per http://wanderwort.de/2013/04/11/using-zurb-foundation-with-middleman/
 
-# foundation_path = Gem::Specification.find_by_name('foundation').gem_dir
-# foundation_path = Bundler.load.specs.find{|s| s.name == 'foundation' }
-# foundation_path.full_gem_path
-
-
-# foundation_path = Gem::Specification.find_by_name('foundation-rails').gem_dir
 bourbon_path = Gem::Specification.find_by_name('bourbon').gem_dir
-# set :js_assets_paths, [File.join(foundation_path, 'js')]
-# set :js_assets_paths, [File.join(foundation_path, 'vendor/assets/javascripts')]
 set :js_assets_paths, [File.join(root, 'bower_components')]
-# sprockets.append_path File.join "#{root}", "bower_components"
 set :sass_assets_paths, [File.join(root, 'bower_components/foundation/scss'), File.join(bourbon_path, 'app/assets/stylesheets')]
-# set :sass_assets_paths, [File.join(foundation_path, 'vendor/assets/stylesheets'), File.join(bourbon_path, 'app/assets/stylesheets')]
-
-# after_configuration do
-#   sprockets.append_path [File.join(foundation_path, 'js')].to_s
-  # # sprockets.append_path [File.join(foundation_path, 'scss')].to_s
-  # sprockets.append_path [File.join(bourbon_path, 'scss')].to_s
-# end
-
-
-# set :sass_assets_paths, [File.join(bourbon_path, 'scss')]
-# sprockets.append_path foundation_path
-
-# sprockets.import_asset 'normalize.css'
-# sprockets.import_asset 'vendor/custom.modernizr.js'
-# not working
 
 activate :blog do |blog|
   # set options on blog
