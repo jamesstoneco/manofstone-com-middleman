@@ -28,24 +28,16 @@
 //= require vendor/highlight
 //= require vendor/processing
 //= require vendor/jquery.timeago
+//= require vendor/socialite/socialite
+// vendor/socialite/extensions/socialite.hackernews
 //= require_directory .
 
 $(document).foundation();
 
 $(document).ready(function() {
-  // function showHiddenParagraphs() {
-  //   $("p.hidden").fadeIn(500);
-  // }
-  // setTimeout(showHiddenParagraphs, 1000);
-
-  // $('a.mobile-jump').on('click', function(e) {
-  //     e.preventDefault();
-  //     Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 1000);
-  // });
-
   $("time.timeago").timeago();
-  // code highlighting
   hljs.initHighlightingOnLoad();
+  Socialite.load("blog-social");
 });
 
 // google analytics below

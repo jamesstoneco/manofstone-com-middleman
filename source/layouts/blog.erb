@@ -28,6 +28,27 @@
   </div>
 </div>
 
+<% permalink_url = "http://www.manofstone.com#{current_page.url}" %>
+
+<div class="row">
+<div class="small-12 medium-5 large-5 small-centered columns blog-social">
+    <ul class="social-buttons cf">
+        <li>
+            <a href="http://twitter.com/share" class="socialite twitter-share" data-text="<%= URI.encode(current_page.title) %>" data-url="<%= permalink_url %>" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/share?url=<%= permalink_url %>" class="socialite googleplus-one" data-size="tall" data-href="<%= permalink_url %>" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com/sharer.php?u=<%= permalink_url %>&t=<%= URI.encode(current_page.title) %>" class="socialite facebook-like" data-href="<%= permalink_url %>" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%= permalink_url %>&title=<%= URI.encode(current_page.title) %>" class="socialite linkedin-share" data-url="<%= permalink_url %>" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a>
+        </li>
+    </ul>
+  </div>
+</div>
+
 <% test_signup_zurb = current_page.data.signup_zurb %>
 <% if ( defined?(test_signup_zurb) and test_signup_zurb == "true") %>
   <%= partial "zurbsignup" %>

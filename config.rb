@@ -1,7 +1,7 @@
 require 'builder'
 require 'closure-compiler'
 require 'sanitize'
-
+require 'uri'
 
 ###
 # Compass
