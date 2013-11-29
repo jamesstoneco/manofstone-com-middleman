@@ -1,7 +1,7 @@
 ---
 title: Mobile First by Luke Wroblewski
 date: 2013/11/19
-tags: review, zurb-foundation, book, mobile first, luke wroblewski, zurb foundation, responsive web design, web design, mobile
+tags: review, Zurb Foundation, book, mobile first, luke wroblewski, zurb foundation, responsive web design, web design, mobile
 published: false
 signup_zurb: "true"
 

@@ -2,7 +2,7 @@
 title: To Zurb Foundation from Twitter Bootstap
 tagline: A whirlwind trip through the features and cultures of the two most popular responsive web design frameworks
 date: 2013/11/29
-tags: zurb-foundation, twitter-bootstrap, mobile first, responsive web design
+tags: Zurb Foundation, twitter-bootstrap, mobile first, responsive web design
 published: false
 category: foundation, zurb, twitter, bootstrap rwd, responsive
 signup_zurb: "true"

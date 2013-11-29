@@ -1,7 +1,7 @@
 ---
 title: Zurb Foundation 4, Awesome!
 date: 2013/02/01
-tags: foundation, jquery, zepto, zurb
+tags: Zurb Foundation, jquery, zepto, zurb
 signup_zurb: "true"
 
 ---
@@ -24,7 +24,7 @@ Rather than starting with a full fledged desktop website and figuring out how to
 
 
 
-## Sass 
+## Sass
 
 
 
@@ -60,7 +60,7 @@ The answer from the Zurb Crew was was no, but you do need to be able to use a co
 
 
 
-  
+
 
 
 
@@ -90,4 +90,4 @@ This is probally something most Foundation users may never notice but I am excit
 
 
 
-I can't wait. Thank you Zurb for putting on an awesome meetup and giving us a sneak peak at some of the new features. If you would like to read about this more in depth, I recommend taking a look at their [official blog post](http://zurb.com/article/1152/coding-smarter-the-why-of-foundation-4). 
+I can't wait. Thank you Zurb for putting on an awesome meetup and giving us a sneak peak at some of the new features. If you would like to read about this more in depth, I recommend taking a look at their [official blog post](http://zurb.com/article/1152/coding-smarter-the-why-of-foundation-4).

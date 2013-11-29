@@ -2,7 +2,7 @@
 title: "Using Ruby Middleman with Zurb Foundation 5"
 date: 2013/11/26
 time: 11:18 PM CET
-tags: foundation-quick-tips, zurb-foundation, middleman, middlemanapp
+tags: Zurb Foundation Quick Tips, Zurb Foundation, Middleman
 signup_zurb: "true"
 featured_image: /blog/featured-images/middleman-foundation.jpg
 ---

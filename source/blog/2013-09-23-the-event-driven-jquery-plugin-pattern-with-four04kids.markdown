@@ -2,7 +2,6 @@
 title: The Event Driven jQuery Plugin Pattern with four04kids
 date: 2013/09/23
 tags: code, patterns, jquery, jquery plugin, event driven, coffeescript, mustache, javascript
-signup_zurb: "true"
 featured_image: /blog/featured-images/pattern-giraffe.jpg
 ---
 

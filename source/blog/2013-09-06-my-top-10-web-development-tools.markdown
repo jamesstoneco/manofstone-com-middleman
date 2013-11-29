@@ -1,8 +1,7 @@
 ---
 title: My Top 10 Web Development Tools
 date: 2013/09/06
-tags: code, zurb-foundation, web development, top-10
-signup_zurb: "true"
+tags: code, Zurb Foundation, web development, top-10
 featured_image: /blog/featured-images/top-10-web-design.jpg
 ---
 
