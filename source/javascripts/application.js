@@ -38,6 +38,9 @@ $(document).ready(function() {
   $("time.timeago").timeago();
   hljs.initHighlightingOnLoad();
   Socialite.load("blog-social");
+  $(".search-submit-button").click( function() {
+    $(".search-form").submit();
+  });
 });
 
 // google analytics below

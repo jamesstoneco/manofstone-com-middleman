@@ -52,6 +52,8 @@
 <% test_signup_zurb = current_page.data.signup_zurb %>
 <% if ( defined?(test_signup_zurb) and test_signup_zurb == "true") %>
   <%= partial "zurbsignup" %>
+<% else %>
+  <%= partial "emailsignup" %>
 <% end %>
 
 <div class="row">
