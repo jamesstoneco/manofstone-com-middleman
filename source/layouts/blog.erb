@@ -24,6 +24,9 @@
         </div>
       <% end %>
       <%= yield %>
+
+      <p><strong>If you enjoyed this post, get <a href="/subscribe">free updates by email or RSS</a></strong></p>
+
     </div>
   </div>
 </div>
@@ -52,8 +55,6 @@
 <% test_signup_zurb = current_page.data.signup_zurb %>
 <% if ( defined?(test_signup_zurb) and test_signup_zurb == "true") %>
   <%= partial "zurbsignup" %>
-<% else %>
-  <%= partial "emailsignup" %>
 <% end %>
 
 <div class="row">

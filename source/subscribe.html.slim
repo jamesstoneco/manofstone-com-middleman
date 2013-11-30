@@ -7,4 +7,39 @@ seo_desc: I post about Zurb Foundation, responsive web design, ruby and ruby on 
 
 / .row: .small-12.columns: h2 Subscribe
 
-= partial "emailsignup"
+
+.row
+  .small-12.small-centered.medium-8.large-6.columns: .panel.radius.callout
+    h2 Get ManOfStone Delivered to Your Inbox or RSS Reader
+    p Get free and fresh content as soon as it is published.
+    form#mc-embedded-subscribe-form.custom action="http://jamesjamesjames.us5.list-manage1.com/subscribe/post?u=d4dbc5cdf8&amp;id=30ca2edfef" data-abide="" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank"
+      input#mce-REF name="REF" type="hidden" value=(current_page.url)
+      .row
+        .medium-12.large-12.columns
+          .email-field
+            input#mce-EMAIL.required.email name="EMAIL" placeholder="Enter your email" required="" type="email"
+            small.error You must enter your email to subscribe.
+      .row
+        .medium-12.large-12.columns
+          #mce-responses.clear
+          #mce-error-response.response style="display:none"
+          #mce-success-response.response style="display:none"
+          input#mc-embedded-subscribe.button.cta.radius.expand name="subscribe" type="submit" value="Join &raquo;"
+
+          br
+          input checked="" id="mce-group[13617]-13617-0" name="group[13617][8]" type="checkbox" value="8"
+          label check="" for="mce-group[13617]-13617-0" New Blog Posts
+          br
+          input id="mce-group[13617]-13617-1" name="group[13617][1]" type="checkbox" value="1"
+          label for="mce-group[13617]-13617-1" Zurb Foundation
+          br
+          / .input type="checkbox" value="2" name="group[13617][2]" id="mce-group[13617]-13617-2"
+          / .label for="mce-group[13617]-13617-2" learning foundation 5 email course
+          / br
+          / .input type="checkbox" value="4" name="group[13617][4]" id="mce-group[13617]-13617-3"
+          / label for="mce-group[13617]-13617-3">everything you've got
+          / br
+
+          p I would never share, rent or sell your email address to anyone. Email about once per week. Unsubscribe at anytime with one click.
+
+          p Or if you prefer to rock the RSS feed, go crazy. You can #{link_to 'downlink my RSS feed directly', 'http://feeds.feedburner.com/jamesmanofstone'} into whatever awesomeness you desire.

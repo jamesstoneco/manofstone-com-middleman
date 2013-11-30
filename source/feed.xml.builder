@@ -24,10 +24,10 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       # handle featureded image if found
       unless article.data.featured_image.nil?
         xml.summary "#{tag(:img, :src => "http://www.manofstone.com#{asset_url(article.data.featured_image)}")} #{article.summary.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' )}", "type" => "html"
-        xml.content "#{tag(:img, :src => "http://www.manofstone.com#{asset_url(article.data.featured_image)}")} #{article.body.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' )}", "type" => "html"
+        # xml.content "#{tag(:img, :src => "http://www.manofstone.com#{asset_url(article.data.featured_image)}")} #{article.body.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' )}", "type" => "html"
       else
         xml.summary article.summary.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' ), "type" => "html"
-        xml.content article.body.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' ), "type" => "html"
+        # xml.content article.body.sub( %r{href="/blog/}, 'href="http://www.manofstone.com/blog/' ), "type" => "html"
       end
     end
   end
