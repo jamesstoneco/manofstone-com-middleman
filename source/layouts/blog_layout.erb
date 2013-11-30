@@ -17,14 +17,9 @@
     <% end %>
     <% unless current_page.data.seo_desc.nil? %>
     <meta property="og:description" content="<%= current_page.data.seo_desc %>">
-    <% else %>
-    <meta property="og:description" content="<%= strip_all_html(current_page.summary).lstrip.chomp[0..299] %>">
-    <% end %>
-
-
-    <% unless current_page.data.seo_desc.nil? %>
     <meta name="description" content="<%= current_page.data.seo_desc %>">
     <% else %>
+    <meta property="og:description" content="<%= strip_all_html(current_page.summary).lstrip.chomp[0..299] %>">
     <meta name="description" content="<%= strip_all_html(current_page.summary).lstrip.chomp[0..299] %>">
     <% end %>
     <title><%= current_page.data.title || "James Stone" %></title>
