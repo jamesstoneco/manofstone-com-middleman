@@ -52,6 +52,9 @@ helpers do
   def strip_html(str)
     Sanitize.clean(str, :elements => ['p'])
   end
+  def strip_all_html(str)
+    Sanitize.clean(str)
+  end
 end
 
 

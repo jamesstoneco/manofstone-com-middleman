@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="9FUywMd926za9lLIK5X7myny7HYoAF48CHemANB8Zu0" />
+    <meta name='yandex-verification' content='4d1b71b148f932e6' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="<%= current_page.data.title || "James Stone" %>" />
+    <meta property="og:url" content="<%= URI.join("http://www.manofstone.com", current_page.url) %>" />
+    <% unless current_page.data.featured_image.nil? %>
+    <meta property="og:image" content="<%= "http://www.manofstone.com#{asset_url(current_page.data.featured_image)}" %>"/>
+    <% end %>
+    <% unless current_page.data.seo_desc.nil? %>
+    <meta property="og:description" content="<%= current_page.data.seo_desc %>">
+    <% else %>
+    <meta property="og:description" content="<%= strip_all_html(current_page.summary).lstrip.chomp[0..299] %>">
+    <% end %>
+
+
+    <% unless current_page.data.seo_desc.nil? %>
+    <meta name="description" content="<%= current_page.data.seo_desc %>">
+    <% else %>
+    <meta name="description" content="<%= strip_all_html(current_page.summary).lstrip.chomp[0..299] %>">
+    <% end %>
+    <title><%= current_page.data.title || "James Stone" %></title>
+    <%= stylesheet_link_tag "app" %>
+    <%= javascript_include_tag "vendor/modernizr", :defer => "defer" %>
+  </head>
+
+  <body>
+
+    <%= partial "header" %>
+
+    <%= yield %>
+
+    <%= partial "footer" %>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
+
+    <%= javascript_include_tag  "application", :defer => "defer" %>
+
+    <%= partial "clickytracking" %>
+
+
+  </body>
+</html>
