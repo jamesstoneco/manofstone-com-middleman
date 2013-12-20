@@ -9,32 +9,7 @@ Today I finished the assembling and fabrication of the 1st generation of the Ope
 
 SPLIT\_SUMMARY\_BEFORE\_THIS
 
-
-
-### Photos:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Servo Test:
-
+<div class="flex-video widescreen"><iframe width="1280" height="720" src="//www.youtube.com/embed/FZm_9zukeuE" frameborder="0" allowfullscreen></iframe></div>
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: To Zurb Foundation from Twitter Bootstap
+title: 15 Minutes to a Solid Foundation for Bootstrappers
 tagline: A whirlwind trip through the features and cultures of the two most popular responsive web design frameworks
 date: 2013/11/29
 tags: Zurb Foundation, twitter-bootstrap, mobile first, responsive web design
