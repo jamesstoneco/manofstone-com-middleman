@@ -1,0 +1,151 @@
+---
+title: Year in Review 2013
+date: 2014/01/08
+time: 4:14 PM CET
+tags: Marketing
+featured_image: "/blog/featured-images/paris-marche-de-noel.jpg"
+---
+
+So 2013 has come to a close and inspired by many other posts I have read I decided to reflect on my 2013 and talk about what worked, what didn't work and where I am going in 2014.
+
+SPLIT\_SUMMARY\_BEFORE\_THIS
+
+2013 has been a year filled with great opportunity and also great sorrow for myself and my family.
+
+My wife and I with great planning and execution have moved to Paris, France, one of my favorite places in the world. My passion for ZURB Foundation has led to a contract to write the book [ZURB Foundation Blueprints](/zurb-foundation-blueprints) for Packt Publishing. I have also been building my personal brand around my passions and interests and it seems that people are interested in what I have to say. This is all fantastic news.
+
+The difficult thing is that we had two unexpected deaths in the family which has made things very difficult for all of us. Personally I lost my father who was a great inspiration and one of my biggest fans. He was my biggest supporter and was really excited about our move to France as well as my upcoming book. I miss him immensely and will be grieving for many years I am sure.
+
+In my wifes family my grandmother-in-law also passed away suddenly and she was one of my favorite people in the world. She was from a village in the Ukraine, worked for the Soviet Trains and she had the most moxie of any person I have ever met. She was loving, caring, sometimes gruff and always entertaining. She will be missed immensely and I can't even begin the tell you the void this leaves in my life.
+
+So 2013, the good with the bad. I have never such tragedy in such a short time especially with people I am so close to so it has been quite an experience. Very much an emotional roller-coaster that is maybe amplified by the fact I am living abroad and have limited means of expression and communication.
+
+The good news is that Paris is fantastic and it is truly inspiring to be living in such a great city. I am a big city person and the energy and the amount of innovation is electrifying. (for more on this, read [Where Good Ideas Come From: The Natural History of Innovation by Steven Johnson](http://www.amazon.com/gp/product/1594485380/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1594485380&linkCode=as2&tag=jamestonport-20)) Also my publisher has been very patient with me and has made accommodations for me to continue working on the project.
+
+One of the more surprising things is that I have taken a few risks and started being more transparent in my process and sharing more online.
+
+Thus far, it seems people are interested in what I have to say.
+
+## What Worked
+
+In the past year I have been experimenting with a lot of things: Writing a blog, doing screencasts, posting on twitter, facebook, linkedin, g+. created a mailing list, created a quick reference guide, going to meetups (in Paris in French), connecting with other bloggers and authors and trying to have a healthier lifestyle while being on the computer.
+
+Lets take a look at what worked well:
+
+### 1. Screencasts
+
+I have had some luck in the past with doing videos on YouTube and my [Dvorak Video](/dvorak) is amongst the most popular in that niche. Frustrated by the lack of straight to the point demos and tutorials for Foundation I recorded a [short screencast](/blog/getting-started-with-the-zurb-foundation-5-grid/) creating start to finish some basic grids using Sublime Text 3 and the Emmett plugin. Basically the tools I use everyday for products, consulting and in my upcoming book. The response has been great.
+
+Although there is less traffic than my dvorak video the amount of minutes watched is starting to surpass it. Also, I am getting a lot of great comments and questions. The final great thing is a lot of my viewers on youtube are coming to my site, finding other great content and signing up for updates.
+
+### 2. Quick Reference
+
+Like the screencast, this grew out of my frustration of complicated and verbose documentation that exists for Foundation. Specifically, I think grid systems are really not that complicated and if it is explained simply and clearly people get it. If you are struggling with figuring out the grid, definitely pick [this up](/zurb-foundation-blueprints) as well as my screencast.
+
+Although I originally had plans to sell this as a product, I have been giving this away to people that signup for my list. (A suggestion from [Authority by Nathan Barry](http://nathanbarry.com/authority/)) I have a pretty high conversion rate on my landing page (about 40%) so I assume it is pretty compelling. I have also been updating this to cover Foundation 5 and plan to keep updating and expanding it.
+
+### 3. Twitter
+
+As a big surprise to me Twitter ([@manofstone](https://twitter.com/manofstone)) has been driving the most qualified traffic and resulted in the most meaningful interaction with my audience. It is not to say that the other interactions or networks are not good but it seems those that Grok ZURB Foundation, JavaScript and Ruby stuff all seem to be living on Twitter, at least for me at this point.
+
+### 4. Tracking Everything
+
+I am not going to pretend to be a big shot here so I will give you the honest truth. Before going through some major revisions and ramping up my content sharing I was getting just a couple hundred unique visitors per month. In September 121 uniques to be exact. As I started to ramp things up in the late summer of last year my traffic has been consistently rising. In December 2012 I had over 2000 unique visitors.
+
+Monthly Visitors:
+
+![Monthly Visitors](../../images/blog/2014/year-in-review/visitors-monthly.jpg)
+
+Daily Visitors:
+
+![Daily Visitors](../../images/blog/2014/year-in-review/visitors-daily.jpg)
+
+Another thing I have learned is to just try everything, track it and see what works. I would like to think that I can predict what will be popular and not but I am surprised time and time again.
+
+If you look at the graphs between monthly and daily you will see huge spikes in daily traffic. This is because some posts are way more popular than others. Some are popular for a few days then taper off, others become more popular over time.
+
+If I wasn't tracking the specifics of how my posts worked it and what is working well and in what contexts I would just be blindly guessing what to do next.
+
+### 5. Having a mailing list
+
+This has been one of the scariest and most exciting things I have done. At first I thought no one is going to be interested to sign up for my list, even if I offer something in return. At first my numbers were pretty dismal but my list has been growing every month and is now exceeding the rate of unique visitors to my site.
+
+I am right now with 179 subscribers that have a 56.6% pen rate and a 31% click rate. According to MailChimp these are way above industry standards and I can only attribute it to I do my best to provide great value with every post and email and keep things focused on what people are interested in, in this case, ZURB Foundation.
+
+It has also been a great way to experiment with the new ZURB Ink responsive email framework. Its like ZURB Foundation but for email and it is fantastic. If you are on my list, you have seen ZURB Ink in action.
+
+### 6. Leveling Up my About Page
+
+About a year ago I read [Platform by Michael Hyatt](http://www.amazon.com/gp/product/159555503X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=159555503X&linkCode=as2&tag=jamestonport-20) and really didn't like it. Recently I picked it up again and with some of my small successes I felt that it had more application in what I was doing. As Michael argues and my traffic concurs with his findings is that the about page gets a significant portion of the traffic to your blog. In my case, it gets more traffic than any other page besides the home page. I went through and overhauled it from the audiences point of view and tried to offer a jumping off point for more content as well as a way to get to know me.
+
+Before this change I had huge dropoffs on the about page because it didn't lead anywhere. Now it drives traffic back to relevant posts and gets people more engaged with content they are interested in. He recommends updating it every several months and I plan to update mine at some point in January.
+
+### 7. Connecting with Other Bloggers and Authors
+
+This has been one of the greatest things on a personal level that has happened in the last year. I have made connections and have several conversations going back and forth with other bloggers and writers in my space. It is great to learn about their experiences, upcoming projects and most of all to see the reality of writing for a living. I am hoping to get more involved engaging with other sites and blogs in the new year and find the focused interaction incredibly engaging.
+
+### 8. Being Healthy
+
+Being on a computer all day can really take its toll and I have been wanting to do something about this for quite some time. With the catalyst of [The Healthy Programmer by Joe Kutner](http://www.amazon.com/gp/product/1937785319/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937785319&linkCode=as2&tag=jamestonport-20) I have been making some small changes that have had a pretty big impact not only on my health but also on my focus and comfort.
+
+First, I go for a brisk walk two times per day. Luckily I live near this huge park and I have to walk or take public transport for everything. I have also set a policy that if I get frustrated or lose focus I go for an extra walk. This has had already a enormous impact on what I am doing.
+
+Next I stand up, mill about and change my position about every 20 minutes. I use jump desktop to connect to my ipad and although it is a little slower I can mill about and continue working quite easily. Also with and external keyboard I can easily relocate with out losing my flow.
+
+Working from my iPad:
+
+![Jump Desktop on iPad using Sublime Text](../../images/blog/2014/year-in-review/working-on-ipad.jpg)
+
+Also every 20 minutes I try and look at least 20 feet away. I check out the construction out my window or step out of our flat to give my eyes a quick work out. I also sport a pair of Gunnar Computer Glasses but this is not substitute for bad eye habits.
+
+## What Didn't Work
+
+There were a lot of things that I tried that really didn't work out well or maybe just were not as successful as other approaches.
+
+### 1. Social Networking
+
+I have a pretty extensive network on LinkedIn and Facebook and I expected them to be at the forefront but I found they do not work well for what I am doing. Every once and a while I get a few people from LinkedIn and the occasional comment but I believe my content gets so buried that no once can see it. Furthermore on Twitter, hashtags, retweeting and people searching can have a significant impact. I have seen people come from tweets that are days or weeks old. I have never seen that effect on LinkedIn.
+
+Facebook can drive a bit of traffic but it is mostly friends and family. A few are interested in what I am doing but in general when I get a lot of traffic on Facebook it results in a lot of Facebook comments which are fun, but generally amount to hanging out with friends and family.
+
+I also had really high hopes for g+ but it is not really taking off. Maybe for the same reasons of things getting buried. The one exception to this is comments that I get on YouTube that are also part of g+. Those are fantastic and I would like to find a way to love this service but still haven't found my spot just yet.
+
+### 2. Personal or Inspiring Posts
+
+I may continue to experiment with this but I get a lot of traffic on some posts that I have written but it is very unfocused traffic. Often these are people that I know or who are totally outside of my interest area so although they drive significant traffic they do not typically result in: interaction, signups or engagement. These posts typically have the highest drop rate.
+
+### 3. Automation
+
+A lot of people I really like use automation tools and I have experimenting with using some of them. I used bufferapp for a while to send out relevant links to my network and socialbro to increase my visibility.
+
+Two things with this: Authenticity and Attracting Automators.
+
+First off, using these services and automation really does not help and can potentially really hurt your authenticity. I just recently read and am totally fired up about [UnMarketing by Scott Stratten](http://www.amazon.com/gp/product/1118176286/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118176286&linkCode=as2&tag=jamestonport-20). I have found that if you tweet people expect that to be you and you should be in a reasonable sense able to respond and it should be you responding. Not a VA or an autoresponder but you.
+
+Concerning attracting automators, when you start to automate things you start to attract the type of behaviors that automators like. I have found that now that I am posting things and having conversations in an authentic way it is easy to see who is using automators to add, follow, favorite, retweet me, etc.
+
+My policy is this, if you follow me and I am interested in what you have to say or you look interesting I will follow back. I follow other people and don't expect the same in return. Twitter is a community and in the time I have really gotten into it I have had some really enriching and engaging conversations.
+
+### 4. Being on Email, Chat and Social Networks All the Time
+
+This is just such a time suck and although I am want to keep in the loop there is no reason that I have to be connected all the time. Day after day this is a vice I struggle with and exactly what those networks want.
+
+### 5. Not Taking Time Off
+
+It is not like I don't do anything for fun but I can't even remember the last time I took some significant time off without email, without everything and took those days for myself and my family. I know a lot of other freelancers struggle with this and it is something that I am struggling with as well.
+
+## 2014, What Lies Ahead
+
+So in 2014 what lies ahead. I am not making resolutions but I have some big plans for 2014. First doing some of the things that worked well. I plan on doing great things, sharing great content and fully immersing myself in the world of ZURB Foundation and Front End Development. I have been working a lot with Meteor and this is going to be a bigger and bigger part of what I do.
+
+I also plan on working on more screencasts. My first one was well received so I will be continuing to expand upon that and explore other topics. I also plan on getting more engaged in the community, through Twitter, YouTube, Blogs and other forums.
+
+The biggest thing is the release of my book [ZURB Foundation Blueprints](/zurb-foundation-blueprints) in the next couple of months. This has been a huge project and although it is sad to see it coming to an end I am very excited about the opportunities that lie ahead. I have already been contacted about several other projects already. Very exciting stuff.
+
+I also plan on releasing some new products. Some will be services bundled as products. I am going to experiment and see what sticks. I am also working through several books right now which will hopefully give me some clarity on my brand, services and message.
+
+So how was your 2013? What were the high and low points? What did you learn? Do you have any plans for 2014? Is there content that you would like to see from me on this site? I would love to hear from you in the comments and I try to respond to everyone that posts.
+
+Good luck as you transition into 2014 and I wish you the best of luck.
+
+Full Disclaimer: Books linked in this article are attached with my Amazon Affiliate information. You are more than welcome to do a Google Search or buy them by other means. This is just a way to support my insatiable kindle reading habit and show your support for my work.
