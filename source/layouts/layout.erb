@@ -33,6 +33,10 @@
 
     <%= partial "clickytracking" %>
 
+    <% test_mouseflowtracking = current_page.data.mouseflowtracking %>
+    <% if ( defined?(test_mouseflowtracking) and test_mouseflowtracking == "true") %>
+      <%= partial "mouseflowtracking" %>
+    <% end %>
 
   </body>
 </html>
