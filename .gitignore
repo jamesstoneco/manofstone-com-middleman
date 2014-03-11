@@ -19,3 +19,6 @@ doc/
 
 # build and other stuff
 build
+
+#macosx
+.DS_Store

@@ -9,7 +9,7 @@
 
 
 
-// @import "foundation/components/accordion";
+@import "foundation/components/accordion";
 // @import "foundation/components/alert-boxes";
 // @import "foundation/components/block-grid";
 // @import "foundation/components/breadcrumbs";
@@ -23,13 +23,13 @@
 @import "foundation/components/grid";
 @import "foundation/components/inline-lists";
 // @import "foundation/components/joyride";
-// @import "foundation/components/keystrokes";
+@import "foundation/components/keystrokes";
 @import "foundation/components/labels";
 // @import "foundation/components/magellan";
 // @import "foundation/components/orbit";
 @import "foundation/components/pagination";
 @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
+@import "foundation/components/pricing-tables";
 // @import "foundation/components/progress-bars";
 // @import "foundation/components/reveal";
 @import "foundation/components/side-nav";
@@ -39,6 +39,7 @@
 // @import "foundation/components/tables";
 // @import "foundation/components/tabs";
 @import "foundation/components/thumbs";
+@import "foundation/components/top-bar";
 // @import "foundation/components/tooltips";
 @import "foundation/components/offcanvas";
 @import "foundation/components/visibility";
@@ -121,6 +122,12 @@ pre + p {
   padding-bottom: $padding-global;
 }
 
+#videos-banner {
+  background: darken($secondary-color, 80%);
+  padding-top: $padding-global;
+  padding-bottom: $padding-global;
+}
+
 #mos-top-footer {
   background: $primary-color;
   padding-top: $padding-global;
@@ -181,7 +188,7 @@ padding-bottom:10px;
 margin-top:12px;
 margin-bottom:10px;
 padding:5px;
-background:#FFFFFF;
+background:#FFFFFF !important;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border:0px solid #ccc;
@@ -251,3 +258,15 @@ padding-bottom:0px;
 .dvorak-fixed-height {
   height:emCalc(450px);
 }
+
+
+
+// div {
+//   border-width: 1px !important;
+//   border-color: #000 !important;
+// }
+
+
+// 5.2 bugfix
+
+html { background: $body-bg;}

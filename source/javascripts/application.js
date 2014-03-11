@@ -12,16 +12,18 @@
 //
 //= require foundation/js/foundation
 //= require foundation/js/foundation/foundation.abide
-// require foundation/js/foundation/foundation.accordion
+//= require foundation/js/foundation/foundation.accordion
 // require foundation/js/foundation/foundation.alert
 //= require foundation/js/foundation/foundation.clearing
-// require foundation/js/foundation/foundation.dropdown
+//= require foundation/js/foundation/foundation.dropdown
+// require foundation/js/foundation/foundation.equalizer
 //= require foundation/js/foundation/foundation.interchange
 // require foundation/js/foundation/foundation.joyride
 // require foundation/js/foundation/foundation.magellan
 //= require foundation/js/foundation/foundation.offcanvas
 // require foundation/js/foundation/foundation.orbit
 // require foundation/js/foundation/foundation.reveal
+// require foundation/js/foundation/foundation.slider
 // require foundation/js/foundation/foundation.tab
 // require foundation/js/foundation/foundation.tooltip
 //= require foundation/js/foundation/foundation.topbar

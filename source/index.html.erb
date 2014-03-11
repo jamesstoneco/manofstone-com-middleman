@@ -10,118 +10,127 @@ active_nav: home
 
 <div id="mos-header">
 
-<div class="row">
-  <div class="medium-10 medium-centered large-10 large-centered columns">
-    <div class="row">
-      <div class="small-8 small-centered medium-4 medium-uncentered large-4 large-uncentered columns">
-        <p><a href="about"><img src="images/headshot-james-circle-retina.png" alt="James Stone"></a></p>
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 class="alt-text">Is Responsive Web Design the Future? <small class="alt-text">You bet it is. </small></h2>
+
+      <div class="row">
+        <div class="large-8 columns">
+
+          <p class="alt-text">If you want to learn responsive design and fast, iterative prototyping, look no further. I produce books, screencasts, articles and courses to show you how to approach modern responsive web development and design. I will show you the very same workflow and tools that I use on a daily basis.</p>
+          <p class="alt-text">I work with ZURB Foundation, Meteor and Ruby.</p>
+          <p class="alt-text">Learn from my mistakes and gain insight and knowledge about best practices and approaches that can help you to refine your own toolset, workflow and projects.</p>
+
+          <div class="row">
+            <div class="small-4 columns">
+              <p><a href="about"><img src="images/headshot-james-circle-retina.png" alt="James Stone"></a></p>
+            </div>
+            <div class="small-8 columns">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p class="alt-text">&mdash;James Stone<br>Author of ZURB Foundation Blueprints</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="large-4 columns">
+          <p>&nbsp;</p>
+          <div class="panel secondary radius">
+            <h4>Quick Start Guide</h4>
+            <ul class="no-bullet">
+            <% data.widgets.quick_start.each do | q | %>
+              <li><a href="<%= q["url"] %>"><%= q["title"] %></a><li>
+                <% end %>
+
+              </ul>
+            </div>   
+          </div>
+
+        </div>
       </div>
-      <div class="small-10 small-centered medium-8 medium-uncentered large-8 large-uncentered columns">
-        <h2 class="alt-text">Hi, I'm James. <small class="alt-text">I like to build stuff.</small></h2>
-        <p class="alt-text">I have never taken the traditional path in life. I got kicked out of high school for hacking computers and later completed a masters degree with top honors at Penn State. I am both a developer and a designer, a musician and a poet and an accomplished media artist who is not afraid of the commercial world.</p>
-
-        <p class="alt-text">If you are looking for ZURB Foundation, HTML5, Ruby, Creative Coding, Processing, or Cyborg Plants, you are at the right place.</p>
-        <p class="text-right"><a href="/about" class="button secondary radius">Learn more &raquo;</a></p>
-
-       </div>
-    </div>
     </div>
   </div>
-</div>
 
-<div class="content-top-spacing"></div>
-
+  <div class="content-top-spacing"></div>
 
 
-<div class="row">
-  <div class="large-12 columns">
-    <h2>Recent Articles</h2>
-    <% page_articles.each_slice(2) do | row | %>
-    <div class="row">
-      <% row.each do |article| %>
-      <div class="medium-6 large-6 columns">
-        <div class="panel">
-          <% test_featured_image = article.data.featured_image %>
-          <% if ( defined?(test_featured_image)) %>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Recent Articles</h2>
+      <% page_articles.each_slice(2) do | row | %>
+      <div class="row">
+        <% row.each do |article| %>
+        <div class="medium-6 large-6 columns">
+          <div class="panel">
+            <% test_featured_image = article.data.featured_image %>
+            <% if ( defined?(test_featured_image)) %>
             <p><a href="<%= article.url %>"><img src="<%= article.data.featured_image %>"></a></p>
-          <% end %>
-          <h4 class="entry-title"><%= link_to article.title, article %></h4>
-          <p><time class="timeago published" datetime="<%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").to_time.iso8601 %>"><%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").strftime('%B %e, %Y %I:%M %p') %></time></p>
-          <p class="entry-summary"><%= strip_html(article.summary(125)) %></p>
-          <%= link_to "Read more &raquo;", article, :class => "button primary" %>
+            <% end %>
+            <h4 class="entry-title"><%= link_to article.title, article %></h4>
+            <p><time class="timeago published" datetime="<%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").to_time.iso8601 %>"><%= Time.parse("#{article.date.strftime('%B %e, %Y')} #{article.data.time}").strftime('%B %e, %Y %I:%M %p') %></time></p>
+            <p class="entry-summary"><%= strip_html(article.summary(125)) %></p>
+            <%= link_to "Read more &raquo;", article, :class => "button secondary expand" %>
+          </div>
         </div>
+        <% end %>
       </div>
       <% end %>
     </div>
-    <% end %>
   </div>
-</div>
 
-
-<div class="row"> <div class="large-12 columns"> <p>&nbsp;</p> </div> </div>
-
-
-<div id="products-banner">
   <div class="row">
-<!--     <div class="large-12 columns">
-      <h2 class="alt-text">Products</h2>
-    </div>
- -->    </div>
+    <div class="large-6 columns end"><a href="/blog">&laquo; Previous Articles</a></div>
+  </div>
+
+
+  <div class="row"> <div class="large-12 columns"> <p>&nbsp;</p> </div> </div>
+
+  <div id="products-banner">
     <div class="row">
-    <div class="medium-4 large-4 push-1 columns">
-      <h5 class="alt-text text-center">ZURB Foundation Blueprints</h5>
-      <div class="row">
-      <div class="small-8 small-centered medium-8 large-8 columns">
-          <p class="alt-text">
-            <a href="zurb-foundation-blueprints"><img src="images/zurb-foundation-blueprints/mocked-cover.png" alt=""></a>
-          </p>
-        </div>
-      </div>
-<!--       <p class="alt-text text-center">Comming soon from Packt Publishing.</p>
- -->    </div>
-    <div class="medium-4 large-4 pull-1 columns">
-      <h5 class="alt-text text-center">ZURB Foundation Quick Reference</h5>
-      <div class="row">
-        <div class="small-10 small-centered medium-10 large-10 columns">
-        <br><br>
-          <p class="alt-text">
-            <a href="zurb-foundation-blueprints"><img class="th" src="images/zurb-foundation-blueprints/quick-ref-placed.jpg" alt=""></a>
-          </p>
-        </div>
+      <div class="small-12 columns">
+        <h2 class="alt-text">Subscribe for Updates <small class="alt-text">Get free and fresh content as soon as it is published.</small></h2>
+        <%= partial "thinemailsignup" %>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>
-
-<div class="row">
-  <div class="large-12 columns">
-    <h2>Speaking Engagements and Presentations</h2>
-
+  <div id="videos-banner">
     <div class="row">
-      <div class="medium-6 large-6 columns">
-        <h5>
+      <div class="small-12">
+        <h2 class="alt-text">Recent Videos</h2>
 
-          <ul class="inline-list">
-            <li>HTML5 Developers Conference, San Francisco  <!-- http://html5devconf.com/archives/april2013/speakers.html --> </li>
-            <li>Schreyers Honors College, the Pennsylvania State University</li>
-            <li>TEDxPSU</li>
-            <li>Digital Cultures and Creativity Honors College, University of Maryland</li>
-            <li>Salisbury University</li>
-            <li>ISEA Istanbul (International Symposium for the Electronic Arts)</li>
-            <li>Penn State Exploration Day</li>
-            <li>Penn State Altoona</li>
-          </ul>
-        </h5>
-      </div>
-      <div class="medium-6 large-6 columns">
-        <a class="th" href="http://tedxtalks.ted.com/video/TEDxPSU-James-Stone-A-Technolog"><img src="images/tedxpsu-widescreen-retina.jpg" alt="James Stone speaking at TEDxPSU"></a>
+        <div class="row">
+
+          <% data.widgets.recent_videos.each do | v | %>
+          <div class="large-4 columns end">
+            <div class="flex-video widescreen">
+              <a href="http://www.youtube.com/watch?v=<%= v["movie"] %>"><img src="http://img.youtube.com/vi/<%= v["movie"] %>/mqdefault.jpg" alt=""></a>
+            </div>
+            <p><a href="http://www.youtube.com/watch?v=<%= v["movie"] %>"><%= v["title"] %></a></p>
+          </div>
+
+          <% end %>
+        </div>
+
+        <script src="https://apis.google.com/js/platform.js" defer></script>
+        <div class="g-ytsubscribe" data-channel="JamesManOfStone" data-layout="default" data-theme="dark" data-count="default"></div>
+
 
       </div>
     </div>
-
   </div>
-</div>
 
-<div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>
+  <div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Recent Comments</h2>
+        <div class="wrapper">
+        <div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://manofstone.disqus.com/recent_comments_widget.js?num_items=10&hide_avatars=0&avatar_size=64&excerpt_length=255"></script></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row"><div class="large-12 columns"><p>&nbsp;</p></div></div>

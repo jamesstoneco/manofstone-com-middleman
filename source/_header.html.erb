@@ -2,20 +2,15 @@
 
 <div class="off-canvas-wrap">
   <div class="inner-wrap">
-    <nav class="tab-bar">
+    <nav class="tab-bar hide-for-medium-up">
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
       </section>
 
       <section class="middle tab-bar-section">
-        <h2 class="title"><a href="/">manofstone.com</a></h2>
+        <h2 class="title"><a href="/">ManOfStone.com</a></h2>
       </section>
 
-
-
-      <!-- <section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
-      </section> -->
 
 
 
@@ -26,10 +21,7 @@
         <li><label>James Stone</label></li>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
-        <!-- <li><a href="/teaching">Teaching</a></li> -->
         <li><a href="/blog">Blog</a></li>
-        <!-- <li><a href="/studio">Studio</a></li> -->
-        <!-- <li><a href="/contact">Contact</a></li> -->
         <li><a href="/blog/zurb-foundation-quick-tips/">Zurb Foundation</a></li>
         <li><a href="/updates/">Updates via Email or RSS</a></li>
 
@@ -57,13 +49,54 @@
       </ul>
     </aside>
 
-    <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        ...
-      </ul>
-    </aside>
-
     <section class="main-section">
+
+      <!-- add topbar, hide for small -->
+      <div class="contain-to-grid sticky" data-options="sticky_on: large">
+        <nav class="top-bar hide-for-small" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/">ManOfStone.com</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class="right">
+              <li><a href="/">Home</a></li>
+              <li><a href="http://www.youtube.com/user/JamesManOfStone">Videos</a></li>
+              <li class="has-dropdown">
+                <a href="/blog">Blog</a>
+                <ul class="dropdown">
+                  <li><a href="/blog/zurb-foundation">ZURB Foundation</a></li>
+                  <li><a href="/blog/middleman">Ruby Middleman</a></li>
+                  <li><a href="/blog/studio">Studio</a></li>
+                </ul>
+              </li>
+              <li><a href="/about">About</a></li>
+              <li><a class="button" href="/updates">Updates</a></li>
+<!--               <li class="has-form">
+                <form class="search-form" method="get" action="http://www.google.com/search">
+                  <input class="hide" type="checkbox"  name="sitesearch" value="manofstone.com" checked >
+                  <div class="row">
+                    <div class="large-10 large-centered columns">
+                      <div class="row collapse">
+                        <div class="large-9 small-10 columns">
+                          <input type="text" placeholder="Search" name="q">
+                        </div>
+                        <div class="large-3 small-2 columns">
+                          <a href="#" class="secondary button expand search-submit-button">&raquo;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </li>
+ -->            </ul>
+          </section>
+        </nav>
+      </div>
+
+
+
       <!-- content goes here -->
