@@ -23,13 +23,61 @@
           </div>
         </div>
       <% end %>
+
+
+
+
+<% if ( current_page.data.disclaimer_aff.eql?('true')) %>
+  <div class="row">
+    <div class="small-8 small-centered columns">
+      <div id="disclaimer-aff"class="panel">
+        <% test_amazon_aff_url = current_page.data.amazon_aff_url %>
+        <% if ( defined?(test_amazon_aff_url)) %>
+        <a href="<%= current_page.data.amazon_aff_url %>" class="button large expand">View on Amazon &raquo;</a>
+        <% end %>
+
+        <p>This post contains Amazon Affiliate Links, which help support my insatiable kindle habit. It is possible for me to make more than I can read, however, this is also incredibly unlikely.</p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<% if ( current_page.data.disclaimer_free.eql?('true')) %>
+  <div class="row">
+    <div class="small-8 small-centered columns">
+      <div id="disclaimer-aff"class="panel">
+        <p>Review Copy Disclaimer: I recieved a copy of this product at no cost from the publisher / manufacturer. The opinions are of my own and I did not recieve any compensation for the review other than the product itself.</p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
       <%= yield %>
+
+<% if ( current_page.data.disclaimer_aff.eql?('true')) %>
+  <div class="row">
+    <div class="small-8 small-centered columns">
+      <div id="disclaimer-aff"class="panel">
+        <% test_amazon_aff_url = current_page.data.amazon_aff_url %>
+        <% if ( defined?(test_amazon_aff_url)) %>
+        <a href="<%= current_page.data.amazon_aff_url %>" class="button large expand">View on Amazon &raquo;</a>
+        <% end %>
+
+        <p>This post contains Amazon Affiliate Links, which help support my insatiable kindle habit. It is possible for me to make more than I can read, however, this is also incredibly unlikely.</p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
 
       <p><strong>If you enjoyed this post, get <a href="/updates">free updates by email or RSS</a></strong></p>
 
     </div>
   </div>
 </div>
+
+
 
 <% permalink_url = "http://www.manofstone.com#{current_page.url}" %>
 

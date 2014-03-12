@@ -22,7 +22,7 @@ products:
   url: "https://gumroad.com/l/foundationquickref"
 quick_start:
 - title: "Install ZURB Foundation, Mavericks"
-  url: "http://www.youtube.com/watch?v=KdFZnvLPnz4"
+  url: "/blog/installing-zurb-foundation-5-sass-on-macosx-mavericks"
 - title: "Get Started with the Grid"
   url: "http://www.youtube.com/watch?v=kk6KpKK5Jjc"
 - title: "Learn the History of ZURB and Foundation"
