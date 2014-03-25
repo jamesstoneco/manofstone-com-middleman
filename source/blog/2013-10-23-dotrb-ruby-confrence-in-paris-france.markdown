@@ -1,7 +1,7 @@
 ---
 title: DotRB Ruby Conference in Paris, France
 date: 2013/10/23
-tags: ruby, news, event
+tags: Ruby, News, Event
 featured_image: /blog/featured-images/dotrb.jpg
 signup_zurb: "true"
 ---

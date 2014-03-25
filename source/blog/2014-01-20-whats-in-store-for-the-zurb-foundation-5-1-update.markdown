@@ -2,7 +2,7 @@
 title: Whats in Store for the ZURB Foundation 5.1 Update
 date: 2014/01/20
 time: 2:01 PM CET
-tags: ZURB, ZURB Foundation, Responsive Web Design, Web Design, Mobile
+tags: ZURB Foundation, Responsive Web Design, Web Design, Mobile
 featured_image: "/blog/featured-images/5point1.jpg"
 signup_zurb: "true"
 ---

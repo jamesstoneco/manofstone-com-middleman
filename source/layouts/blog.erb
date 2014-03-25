@@ -24,12 +24,32 @@
         </div>
       <% end %>
 
+<% permalink_url = "http://www.manofstone.com#{current_page.url}" %>
+
+<div class="row">
+  <div class="small-12 columns">
+      <ul class="social-buttons cf">
+          <li>
+              <a href="http://twitter.com/share" class="socialite twitter-share" data-text="<%= current_page.title %>" data-url="<%= permalink_url %>" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a>
+          </li>
+          <li>
+              <a href="https://plus.google.com/share?url=<%= permalink_url %>" class="socialite googleplus-one" data-size="tall" data-href="<%= permalink_url %>" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a>
+          </li>
+          <li>
+              <a href="http://www.facebook.com/sharer.php?u=<%= permalink_url %>&t=<%= URI.encode(current_page.title) %>" class="socialite facebook-like" data-href="<%= permalink_url %>" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a>
+          </li>
+          <li>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%= permalink_url %>&title=<%= URI.encode(current_page.title) %>" class="socialite linkedin-share" data-url="<%= permalink_url %>" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a>
+          </li>
+      </ul>
+    </div>
+</div>
 
 
 
 <% if ( current_page.data.disclaimer_aff.eql?('true')) %>
   <div class="row">
-    <div class="small-8 small-centered columns">
+    <div class="small-10 small-centered medium-8 large-10 columns">
       <div id="disclaimer-aff"class="panel">
         <% test_amazon_aff_url = current_page.data.amazon_aff_url %>
         <% if ( defined?(test_amazon_aff_url)) %>
@@ -55,9 +75,13 @@
 
       <%= yield %>
 
+    </div>
+  </div>
+</div>
+
 <% if ( current_page.data.disclaimer_aff.eql?('true')) %>
   <div class="row">
-    <div class="small-8 small-centered columns">
+    <div class="small-10 small-centered medium-8 large-10 columns">
       <div id="disclaimer-aff"class="panel">
         <% test_amazon_aff_url = current_page.data.amazon_aff_url %>
         <% if ( defined?(test_amazon_aff_url)) %>
@@ -71,34 +95,15 @@
 <% end %>
 
 
-      <p><strong>If you enjoyed this post, get <a href="/updates">free updates by email or RSS</a></strong></p>
-
+  <div id="products-banner">
+    <div class="row">
+      <div class="small-12 columns">
+        <h2 class="alt-text">Subscribe for Updates <small class="alt-text">Get free and fresh content as soon as it is published.</small></h2>
+        <%= partial "thinemailsignup" %>
+      </div>
     </div>
   </div>
-</div>
 
-
-
-<% permalink_url = "http://www.manofstone.com#{current_page.url}" %>
-
-<div class="row">
-<div class="small-12 medium-5 large-5 small-centered columns blog-social">
-    <ul class="social-buttons cf">
-        <li>
-            <a href="http://twitter.com/share" class="socialite twitter-share" data-text="<%= current_page.title %>" data-url="<%= permalink_url %>" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a>
-        </li>
-        <li>
-            <a href="https://plus.google.com/share?url=<%= permalink_url %>" class="socialite googleplus-one" data-size="tall" data-href="<%= permalink_url %>" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a>
-        </li>
-        <li>
-            <a href="http://www.facebook.com/sharer.php?u=<%= permalink_url %>&t=<%= URI.encode(current_page.title) %>" class="socialite facebook-like" data-href="<%= permalink_url %>" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a>
-        </li>
-        <li>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%= permalink_url %>&title=<%= URI.encode(current_page.title) %>" class="socialite linkedin-share" data-url="<%= permalink_url %>" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a>
-        </li>
-    </ul>
-  </div>
-</div>
 
 <% test_signup_zurb = current_page.data.signup_zurb %>
 <% if ( defined?(test_signup_zurb) and test_signup_zurb == "true") %>

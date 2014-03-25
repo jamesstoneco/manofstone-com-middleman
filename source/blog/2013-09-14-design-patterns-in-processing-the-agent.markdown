@@ -1,7 +1,7 @@
 ---
 title: Design Patterns in Processing, the Agent
 date: 2013/09/14
-tags: studio, code, processing, patterns
+tags: Pattern, Studio, Processing
 featured_image: /blog/featured-images/grey-blocks.jpg
 ---
 

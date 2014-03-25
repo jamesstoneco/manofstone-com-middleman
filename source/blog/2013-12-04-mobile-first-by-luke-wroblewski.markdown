@@ -2,12 +2,14 @@
 title: Mobile First by Luke Wroblewski
 date: 2013/12/04
 time: 17:22 PM CET
-tags: Mobile First, Zurb Foundation, Book, Responsive Web Design, Web Design, Mobile
+tags: Review, Book, Mobile First, Zurb Foundation, Responsive Web Design, Web Design, Mobile
 signup_zurb: "true"
 featured_image: "/blog/featured-images/review-mobile-first.jpg"
+disclaimer_aff: "true"
+amazon_aff_url: "http://www.amazon.com/gp/product/1937557022/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937557022&linkCode=as2&tag=manocom-20"
 ---
 
-I read [Mobile First](http://www.amazon.com/gp/product/1937557022/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937557022&linkCode=as2&tag=manocom-20) and couldn't put it down. I won't lie, at the time with the upcoming release of [Zurb Foundation 4](/blog/zurb-foundation-4-awesome-2/) and everyone talking about Mobile First I was more than curious. I recently read it again and everything still rings true today.
+I read Mobile First and couldn't put it down. I won't lie, at the time with the upcoming release of [Zurb Foundation 4](/blog/zurb-foundation-4-awesome-2/) and everyone talking about Mobile First I was more than curious. I recently read it again and everything still rings true today.
 
 SPLIT\_SUMMARY\_BEFORE\_THIS
 
@@ -54,8 +56,6 @@ The one thing that remains the same though is the screen size. Even with the adv
 So the real estate issue is the same, the only difference is the clarity of the image.
 
 So on your next design or redesign where you are thinking about going responsive I encourage you to pick up this book and consider trimming the fat. Your users will love you for it, if you can convince your stakeholders to [kill their darlings](http://en.wikiquote.org/wiki/William_Faulkner).
-
-If you want to pick up a copy check out the [Amazon Product Page](http://www.amazon.com/gp/product/1937557022/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937557022&linkCode=as2&tag=manocom-20).
 
 Have you read this book? Do you agree or disagree with my take on it? Have you read anything else that has influenced your design of web apps or sites?
 

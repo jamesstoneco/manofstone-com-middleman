@@ -1,7 +1,7 @@
 ---
 title: Ruby Slim and Zurb Foundation
 date: 2013/10/29
-tags: Zurb Foundation, Zurb Foundation Quick Tips, ruby, slim
+tags: ZURB Foundation, Ruby, Slim
 featured_image: /blog/featured-images/foundation-and-slim.jpg
 signup_zurb: "true"
 ---

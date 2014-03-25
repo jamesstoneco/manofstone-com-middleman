@@ -261,12 +261,20 @@ padding-bottom:0px;
 
 
 
-// div {
-//   border-width: 1px !important;
-//   border-color: #000 !important;
-// }
-
 
 // 5.2 bugfix
 
 html { background: $body-bg;}
+
+
+.social-buttons {
+  position: relative;
+  overflow: visible;
+  float: left;
+  left: 47%;
+}
+
+.social-buttons > li {
+  position: relative;
+  right: 53%;
+}

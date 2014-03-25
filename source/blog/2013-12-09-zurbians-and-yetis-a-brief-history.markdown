@@ -2,7 +2,7 @@
 title: ZURBians and Yetis a Brief History
 date: 2013/12/09
 time: 4:24 PM CET
-tags: ZURB, ZURB Foundation, Responsive Web Design, Web Design, Mobile
+tags: ZURB Foundation, Responsive Web Design, Web Design, Mobile
 featured_image: "/blog/featured-images/zurbians-and-yetis.jpg"
 signup_zurb: "true"
 ---
@@ -43,7 +43,7 @@ When you look at Bootstrap in comparison, it is not that it is wrong or right it
 
 Which brings us to the Yeti. Whats up with the Yeti and what does that mean anyways?
 
-Well, ZURB [offers a explanationn](http://foundation.zurb.com/learn/about.html), but I think the Yeti is much more.
+Well, ZURB [offers a explanation](http://foundation.zurb.com/learn/about.html), but I think the Yeti is much more.
 
 The Yeti is really the mascot for ZURB Foundation and is lovingly crafted by some of its best designers. There is even [ZURB swag](http://zurb.com/article/1126/zurb-giveaway-a-foundation-yeti-t-shirt) if you are lucky enough to get your hands on it. There are stickers, T-Shirts and other Yeti sightings.
 

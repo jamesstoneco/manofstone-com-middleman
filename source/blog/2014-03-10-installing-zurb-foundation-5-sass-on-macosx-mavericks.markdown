@@ -2,7 +2,7 @@
 title: Installing ZURB Foundation 5 Sass on Mac OS X Mavericks
 date: 2014/03/10
 time: 7:51 PM CET
-tags: ZURB, ZURB Foundation, Responsive Web Design, Web Design, Mobile
+tags: ZURB Foundation, Responsive Web Design, Web Design, Mobile
 featured_image: "/blog/featured-images/install-guide-mavericks.jpg"
 signup_zurb: "true"
 ---
@@ -749,5 +749,5 @@ WH: Thats awesome!
   </dd>
 </dl>
 
-
+<br>
 

@@ -2,7 +2,7 @@
 title: Compass Sass vs Sassc for Zurb Foundation 4
 date: November 16, 2013
 time: 12:24 AM CET
-tags: Zurb Foundation, Zurb Foundation Quick Tips, rwd, responsive
+tags: ZURB Foundation, rwd, responsive
 signup_zurb: "true"
 featured_image: /blog/featured-images/compass-vs-sassc.jpg
 ---

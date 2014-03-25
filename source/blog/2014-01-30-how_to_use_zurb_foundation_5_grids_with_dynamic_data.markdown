@@ -2,7 +2,7 @@
 title: How to use ZURB Foundation 5 Grids with Dynamic Data
 date: 2014/01/30
 time: 13:35 PM CET
-tags: ZURB, ZURB Foundation, Responsive Web Design, Web Design, Mobile, Video
+tags: ZURB Foundation, Responsive Web Design, Web Design, Mobile, Video
 featured_image: "/blog/featured-images/featured-video.jpg"
 signup_zurb: "true"
 ---

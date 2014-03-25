@@ -1,7 +1,7 @@
 ---
 title: Semantic UI Style Grids in Zurb Foundation
 date: 2013/09/28
-tags: Zurb Foundation, Zurb Foundation Quick Tips, Semantic-UI, grid, semantic, sass, mixins, media queries
+tags: ZURB Foundation, Semantic-UI, grid, semantic, sass, mixins, media queries
 signup_zurb: "true"
 featured_image: /blog/featured-images/grid-windows.jpg
 ---

@@ -2,7 +2,7 @@
 title: Using Zurb Ink with MailChimp
 date: 2013/11/13
 time: 8:00 PM CET
-tags: Zurb Foundation, Zurb Ink, MailChimp, Email, rwd, responsive
+tags: Zurb Ink, MailChimp, Email, rwd, responsive
 signup_zurb: "true"
 featured_image: /blog/featured-images/iphone-blur.jpg
 ---
