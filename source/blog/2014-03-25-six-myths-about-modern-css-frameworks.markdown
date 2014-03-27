@@ -49,9 +49,9 @@ Lennartz continues in this myth to address the idea of uniqueness in projects. W
 
 The biggest myth of all is that somehow using a CSS Framework is somehow poor craft. There are places for this. If you are working on a large scale project then you probably don't need a framework. Or you are using a homebrew in-house version. No problem.
 
-Odds are, you are not going to be building things from the ground up by yourself in this situation anyways. The biggest reasons that I choose to use the ZURB Foundation 5 framework is because ZURB really knows their stuff. If you really want to learn about modern UX, UI and design it is a really good place to start. You can even jump into the source and learn how they are doing the things they are doing.
+Odds are, you are not going to be building things from the ground up by yourself in this situation anyways. The biggest reason that I choose to use the ZURB Foundation 5 framework is because ZURB really knows their stuff. If you really want to learn about modern UX, UI and design it is a really good place to start. You can even jump into the source and learn how they are doing the things they are doing.
 
-Maybe you will even develop a preference and build a your own presonal modification of Foundation. Or start it with more advanced frameworks such as Bourbon + Neat or Inuit CSS.
+Maybe you will even develop a preference and build a your own personal modification of Foundation. Or start it with more advanced frameworks such as Bourbon + Neat or Inuit CSS.
 
 The argument about craft and CSS frameworks all depends on **how** you use them.
 
